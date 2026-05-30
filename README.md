@@ -8,13 +8,15 @@ off — and moments later your phone buzzes with a taunt from a contact named **
 
 - **Hijacks a real traffic car** (it already has a live AI driver) and sends it after you — no spawning or
   teleporting, so the chase always looks natural.
-- **Picks an attacker from *behind* you**, within a configurable distance and a height window (so a car on a
-  bridge overhead or a road below never gets chosen).
+- **Picks a random nearby car** within a configurable distance and a height window (so a car on a bridge
+  overhead or a road below never gets chosen). By default any direction is eligible — oncoming, cross, or
+  rear traffic — but a toggle can restrict it to cars *behind* you for a more natural-looking chase.
 - **Aggressive ramming** with a close-range lunge, then a forceful, reliable break-off (the attacker flees).
 - **Real in-phone SMS**: on a successful hit, the **Bowie Knife99** contact texts you one of **100** rotating
   taunts.
 - **Fully configurable** live via the in-game **Mod Settings** menu — attack chance, check interval, cooldown,
-  pursuit timeout, max distance, height limit, ram strength, debug HUD, and an on/off toggle.
+  pursuit timeout, max distance, height limit, attack direction (behind-only or any direction), ram strength,
+  debug HUD, and an on/off toggle.
 
 ## Requirements
 

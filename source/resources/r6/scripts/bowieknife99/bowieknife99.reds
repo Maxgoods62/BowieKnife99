@@ -47,6 +47,7 @@ public class BowieKnifeSystem extends ScriptableSystem {
   private final func MaxDistance()    -> Float { return IsDefined(this.m_settings) ? this.m_settings.maxDistance    : 50.0; }
   private final func MaxHeightDelta() -> Float { return IsDefined(this.m_settings) ? this.m_settings.maxHeightDelta : 6.0; }
   private final func BumpBoost()      -> Float { return IsDefined(this.m_settings) ? this.m_settings.bumpBoost      : 15.0; }
+  private final func RearOnly()       -> Bool  { return IsDefined(this.m_settings) ? this.m_settings.rearOnly       : false; }
   private final func MsgCount()       -> Int32 { return 100; }  // AUTO-MANAGED by tools/gen_bowie_sms.py (= len(TAUNTS)); do not hand-edit
 
   // proven HUD pattern (from adding_my_mod_dialogue.reds: UI_Notifications.WarningMessage)
@@ -113,13 +114,18 @@ public class BowieKnifeSystem extends ScriptableSystem {
   // Pick a car with RUNWAY to build speed: at least ~18m away (so it can accelerate into a real hit
   // instead of a slow nudge), within a configurable radius (default 50m), AND within a height window
   // (default 6m) so a car on a bridge/overpass above or a road below is skipped. Skip the previous attacker.
-  // REAR-STRICT: only a moving traffic car BEHIND us is eligible, so it chases up from the rear with
-  // no U-turn in front. If none this cycle, return null and retry next scheduler period.
+  // Every car that clears those gates is buffered, then ONE is chosen at RANDOM (not the nearest) so the
+  // same spot doesn't always produce the same attacker. DIRECTION is mode-controlled by RearOnly():
+  //   - ON : only a moving traffic car BEHIND us is eligible, so it chases up from the rear with no
+  //          U-turn in front (natural-looking).
+  //   - OFF (default): any direction is eligible — oncoming/side traffic can attack too (more chaos).
+  // If no candidate this cycle, return null and retry next scheduler period.
   //
   // KEY: TSQ_ALL() leaves testedSet = TargetingSet.Visible (the view frustum), which is why earlier
   // attempts saw cars=N rear=0 — the query never surfaced anything behind us. TargetingSet.Complete
-  // returns candidates regardless of view (same trick GameObject.GetEntitiesAroundObject uses).
-  private final func FindNearestVehicle(playerVeh: ref<VehicleObject>) -> ref<VehicleObject> {
+  // returns candidates regardless of view (same trick GameObject.GetEntitiesAroundObject uses) — required
+  // for rear-only mode and still correct for all-directions mode.
+  private final func FindAttackerVehicle(playerVeh: ref<VehicleObject>) -> ref<VehicleObject> {
     let q: TargetSearchQuery = TSQ_ALL();
     q.maxDistance = this.MaxDistance();    // configurable search radius (replaces hardcoded 90m)
     q.testedSet = TargetingSet.Complete;   // include cars OUTSIDE the view frustum (i.e. behind us)
@@ -131,8 +137,8 @@ public class BowieKnifeSystem extends ScriptableSystem {
     let fwd: Vector4 = playerVeh.GetWorldForward();   // car heading; <0 dot = the car is behind us
     let pid: EntityID = playerVeh.GetEntityID();
 
-    let bestRear: ref<VehicleObject> = null;
-    let bestRearD: Float = 100000.0;
+    let candidates: array<ref<VehicleObject>>;   // every eligible car this cycle (random pick below)
+    let candIsRear: array<Bool>;                 // parallel: was candidate[i] behind us? (for the HUD)
     let total: Int32 = 0;
     let rear: Int32 = 0;
 
@@ -152,12 +158,14 @@ public class BowieKnifeSystem extends ScriptableSystem {
               total += 1;
               // 2D dot of our forward with (car - player); <0 = behind. Z handled by the dz gate above.
               let behind: Float = fwd.X * (cpos.X - pp.X) + fwd.Y * (cpos.Y - pp.Y);
-              if behind < 0.0 {
+              let isRear: Bool = behind < 0.0;
+              if isRear {
                 rear += 1;
-                if d < bestRearD {
-                  bestRearD = d;
-                  bestRear = veh;
-                };
+              };
+              // rear-only mode keeps just the behind-us cars; all-directions keeps everything eligible
+              if !this.RearOnly() || isRear {
+                ArrayPush(candidates, veh);
+                ArrayPush(candIsRear, isRear);
               };
             };
           };
@@ -166,13 +174,23 @@ public class BowieKnifeSystem extends ScriptableSystem {
       i += 1;
     };
 
+    // pick one eligible car at RANDOM (not the nearest) — same RandRange idiom as the SMS picker
+    let chosen: ref<VehicleObject> = null;
+    let n: Int32 = ArraySize(candidates);
+    if n > 0 {
+      let idx: Int32 = RandRange(0, n);   // 0..n-1, uniform
+      chosen = candidates[idx];
+      this.m_pickWasRear = candIsRear[idx];
+    } else {
+      this.m_pickWasRear = false;
+    };
+
     // stash for the (single-slot) HUD message in LaunchAttack — printing here gets clobbered
     // by the ram message in the same frame, so we ride those counts on that surviving message.
     this.m_pickTotal = total;
     this.m_pickRear = rear;
-    this.m_pickWasRear = IsDefined(bestRear);
 
-    return bestRear;   // rear-strict: a real behind-us attacker, or null (no attack this cycle)
+    return chosen;   // a random eligible attacker (rear-only or any direction), or null this cycle
   }
 
   // ---- scheduler ----
@@ -208,7 +226,7 @@ public class BowieKnifeSystem extends ScriptableSystem {
 
   // ---- hijack nearest traffic car + send aggressive ram ----
   private final func LaunchAttack(playerVeh: ref<VehicleObject>) -> Void {
-    let attacker: ref<VehicleObject> = this.FindNearestVehicle(playerVeh);
+    let attacker: ref<VehicleObject> = this.FindAttackerVehicle(playerVeh);
     if !IsDefined(attacker) {
       this.Notify("BK: no target (cars=" + IntToString(this.m_pickTotal) + " rear=" + IntToString(this.m_pickRear) + ")");
       return;
@@ -469,8 +487,8 @@ public class BowieKnifeSettings extends IScriptable {
   @runtimeProperty("ModSettings.category", "Behavior")
   @runtimeProperty("ModSettings.displayName", "Pursuit timeout (s)")
   @runtimeProperty("ModSettings.description", "How long Bowie chases before giving up if he never lands a hit.")
-  @runtimeProperty("ModSettings.min", "5.0")
-  @runtimeProperty("ModSettings.max", "60.0")
+  @runtimeProperty("ModSettings.min", "10.0")
+  @runtimeProperty("ModSettings.max", "120.0")
   @runtimeProperty("ModSettings.step", "1.0")
   public let pursuitTimeout: Float = 30.0;
 
@@ -491,6 +509,12 @@ public class BowieKnifeSettings extends IScriptable {
   @runtimeProperty("ModSettings.max", "20.0")
   @runtimeProperty("ModSettings.step", "1.0")
   public let maxHeightDelta: Float = 6.0;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Attack from behind only")
+  @runtimeProperty("ModSettings.description", "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.")
+  public let rearOnly: Bool = false;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
   @runtimeProperty("ModSettings.category", "Behavior")
