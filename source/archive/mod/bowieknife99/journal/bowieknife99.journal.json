@@ -1,0 +1,2176 @@
+{
+  "Header": {
+    "WolvenKitVersion": "8.18.0",
+    "WKitJsonVersion": "0.0.9",
+    "GameVersion": 2310,
+    "DataType": "CR2W",
+    "ArchiveFileName": "bowieknife99.journal"
+  },
+  "Data": {
+    "Version": 195,
+    "BuildVersion": 0,
+    "RootChunk": {
+      "$type": "gameJournalResource",
+      "cookingPlatform": "PLATFORM_None",
+      "entry": {
+        "HandleId": "0",
+        "Data": {
+          "$type": "gameJournalRootFolderEntry",
+          "descriptor": {
+            "DepotPath": {
+              "$type": "ResourcePath",
+              "$storage": "uint64",
+              "$value": "0"
+            },
+            "Flags": "Soft"
+          },
+          "entries": [
+            {
+              "HandleId": "1",
+              "Data": {
+                "$type": "gameJournalPrimaryFolderEntry",
+                "id": "contacts",
+                "entries": [
+                  {
+                    "HandleId": "2",
+                    "Data": {
+                      "$type": "gameJournalContact",
+                      "id": "bowie",
+                      "avatarID": {
+                        "$type": "TweakDBID",
+                        "$storage": "string",
+                        "$value": "PhoneAvatars.Avatar_Vik"
+                      },
+                      "isCallableDefault": 0,
+                      "name": {
+                        "unk1": "4435421321336067356",
+                        "value": "bowie_contact_name"
+                      },
+                      "type": "Caller",
+                      "useFlatMessageLayout": 1,
+                      "entries": [
+                        {
+                          "HandleId": "3",
+                          "Data": {
+                            "$type": "gameJournalPhoneConversation",
+                            "id": "taunts",
+                            "title": {
+                              "unk1": "1017240113626931080",
+                              "value": "bowie_blank"
+                            },
+                            "entries": [
+                              {
+                                "HandleId": "4",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg1",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137027662075639830",
+                                    "value": "bowie_taunt_1"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "5",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg2",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137026562564011619",
+                                    "value": "bowie_taunt_2"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "6",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg3",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137025463052383408",
+                                    "value": "bowie_taunt_3"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "7",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg4",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137033159633780885",
+                                    "value": "bowie_taunt_4"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "8",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg5",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137032060122152674",
+                                    "value": "bowie_taunt_5"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "9",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg6",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137030960610524463",
+                                    "value": "bowie_taunt_6"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "10",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg7",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137029861098896252",
+                                    "value": "bowie_taunt_7"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "11",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg8",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137037557680293729",
+                                    "value": "bowie_taunt_8"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "12",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg9",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "8137036458168665518",
+                                    "value": "bowie_taunt_9"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "13",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg10",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900009599098022034",
+                                    "value": "bowie_taunt_10"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "14",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg11",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900010698609650245",
+                                    "value": "bowie_taunt_11"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "15",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg12",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900007400074765612",
+                                    "value": "bowie_taunt_12"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "16",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg13",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900008499586393823",
+                                    "value": "bowie_taunt_13"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "17",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg14",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900005201051509190",
+                                    "value": "bowie_taunt_14"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "18",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg15",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900006300563137401",
+                                    "value": "bowie_taunt_15"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "19",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg16",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900003002028252768",
+                                    "value": "bowie_taunt_16"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "20",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg17",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900004101539880979",
+                                    "value": "bowie_taunt_17"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "21",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg18",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900018395191047722",
+                                    "value": "bowie_taunt_18"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "22",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg19",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7900019494702675933",
+                                    "value": "bowie_taunt_19"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "23",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg20",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899017839609564937",
+                                    "value": "bowie_taunt_20"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "24",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg21",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899016740097936726",
+                                    "value": "bowie_taunt_21"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "25",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg22",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899015640586308515",
+                                    "value": "bowie_taunt_22"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "26",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg23",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899014541074680304",
+                                    "value": "bowie_taunt_23"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "27",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg24",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899022237656077781",
+                                    "value": "bowie_taunt_24"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "28",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg25",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899021138144449570",
+                                    "value": "bowie_taunt_25"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "29",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg26",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899020038632821359",
+                                    "value": "bowie_taunt_26"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "30",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg27",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899018939121193148",
+                                    "value": "bowie_taunt_27"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "31",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg28",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899026635702590625",
+                                    "value": "bowie_taunt_28"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "32",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg29",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7899025536190962414",
+                                    "value": "bowie_taunt_29"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "33",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg30",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898026080121107840",
+                                    "value": "bowie_taunt_30"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "34",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg31",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898027179632736051",
+                                    "value": "bowie_taunt_31"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "35",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg32",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898028279144364262",
+                                    "value": "bowie_taunt_32"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "36",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg33",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898029378655992473",
+                                    "value": "bowie_taunt_33"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "37",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg34",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898030478167620684",
+                                    "value": "bowie_taunt_34"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "38",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg35",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898031577679248895",
+                                    "value": "bowie_taunt_35"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "39",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg36",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898032677190877106",
+                                    "value": "bowie_taunt_36"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "40",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg37",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898033776702505317",
+                                    "value": "bowie_taunt_37"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "41",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg38",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898034876214133528",
+                                    "value": "bowie_taunt_38"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "42",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg39",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7898035975725761739",
+                                    "value": "bowie_taunt_39"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "43",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg40",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904792474679793759",
+                                    "value": "bowie_taunt_40"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "44",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg41",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904791375168165548",
+                                    "value": "bowie_taunt_41"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "45",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg42",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904794673703050181",
+                                    "value": "bowie_taunt_42"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "46",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg43",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904793574191421970",
+                                    "value": "bowie_taunt_43"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "47",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg44",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904788076633280915",
+                                    "value": "bowie_taunt_44"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "48",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg45",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904786977121652704",
+                                    "value": "bowie_taunt_45"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "49",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg46",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904790275656537337",
+                                    "value": "bowie_taunt_46"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "50",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg47",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904789176144909126",
+                                    "value": "bowie_taunt_47"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "51",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg48",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904801270772819447",
+                                    "value": "bowie_taunt_48"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "52",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg49",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7904800171261191236",
+                                    "value": "bowie_taunt_49"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "53",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg50",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903800715191336662",
+                                    "value": "bowie_taunt_50"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "54",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg51",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903801814702964873",
+                                    "value": "bowie_taunt_51"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "55",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg52",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903798516168080240",
+                                    "value": "bowie_taunt_52"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "56",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg53",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903799615679708451",
+                                    "value": "bowie_taunt_53"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "57",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg54",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903805113237849506",
+                                    "value": "bowie_taunt_54"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "58",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg55",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903806212749477717",
+                                    "value": "bowie_taunt_55"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "59",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg56",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903802914214593084",
+                                    "value": "bowie_taunt_56"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "60",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg57",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903804013726221295",
+                                    "value": "bowie_taunt_57"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "61",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg58",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903809511284362350",
+                                    "value": "bowie_taunt_58"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "62",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg59",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7903810610795990561",
+                                    "value": "bowie_taunt_59"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "63",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg60",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902844140074982317",
+                                    "value": "bowie_taunt_60"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "64",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg61",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902843040563354106",
+                                    "value": "bowie_taunt_61"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "65",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg62",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902841941051725895",
+                                    "value": "bowie_taunt_62"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "66",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg63",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902840841540097684",
+                                    "value": "bowie_taunt_63"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "67",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg64",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902839742028469473",
+                                    "value": "bowie_taunt_64"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "68",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg65",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902838642516841262",
+                                    "value": "bowie_taunt_65"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "69",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg66",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902837543005213051",
+                                    "value": "bowie_taunt_66"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "70",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg67",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902836443493584840",
+                                    "value": "bowie_taunt_67"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "71",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg68",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902835343981956629",
+                                    "value": "bowie_taunt_68"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "72",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg69",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7902834244470328418",
+                                    "value": "bowie_taunt_69"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "73",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg70",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901852380586525220",
+                                    "value": "bowie_taunt_70"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "74",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg71",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901853480098153431",
+                                    "value": "bowie_taunt_71"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "75",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg72",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901854579609781642",
+                                    "value": "bowie_taunt_72"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "76",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg73",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901855679121409853",
+                                    "value": "bowie_taunt_73"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "77",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg74",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901847982540012376",
+                                    "value": "bowie_taunt_74"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "78",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg75",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901849082051640587",
+                                    "value": "bowie_taunt_75"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "79",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg76",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901850181563268798",
+                                    "value": "bowie_taunt_76"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "80",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg77",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901851281074897009",
+                                    "value": "bowie_taunt_77"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "81",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg78",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901843584493499532",
+                                    "value": "bowie_taunt_78"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "82",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg79",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7901844684005127743",
+                                    "value": "bowie_taunt_79"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "83",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg80",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908583590773108387",
+                                    "value": "bowie_taunt_80"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "84",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg81",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908582491261480176",
+                                    "value": "bowie_taunt_81"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "85",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg82",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908585789796364809",
+                                    "value": "bowie_taunt_82"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "86",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg83",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908584690284736598",
+                                    "value": "bowie_taunt_83"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "87",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg84",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908587988819621231",
+                                    "value": "bowie_taunt_84"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "88",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg85",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908586889307993020",
+                                    "value": "bowie_taunt_85"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "89",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg86",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908590187842877653",
+                                    "value": "bowie_taunt_86"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "90",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg87",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908589088331249442",
+                                    "value": "bowie_taunt_87"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "91",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg88",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908592386866134075",
+                                    "value": "bowie_taunt_88"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "92",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg89",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7908591287354505864",
+                                    "value": "bowie_taunt_89"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "93",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg90",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907627015656754042",
+                                    "value": "bowie_taunt_90"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "94",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg91",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907628115168382253",
+                                    "value": "bowie_taunt_91"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "95",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg92",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907624816633497620",
+                                    "value": "bowie_taunt_92"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "96",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg93",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907625916145125831",
+                                    "value": "bowie_taunt_93"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "97",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg94",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907622617610241198",
+                                    "value": "bowie_taunt_94"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "98",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg95",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907623717121869409",
+                                    "value": "bowie_taunt_95"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "99",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg96",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907620418586984776",
+                                    "value": "bowie_taunt_96"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "100",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg97",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907621518098612987",
+                                    "value": "bowie_taunt_97"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "101",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg98",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907618219563728354",
+                                    "value": "bowie_taunt_98"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "102",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg99",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "7907619319075356565",
+                                    "value": "bowie_taunt_99"
+                                  }
+                                }
+                              },
+                              {
+                                "HandleId": "103",
+                                "Data": {
+                                  "$type": "gameJournalPhoneMessage",
+                                  "attachment": null,
+                                  "delay": 0,
+                                  "id": "msg100",
+                                  "imageId": {
+                                    "$type": "TweakDBID",
+                                    "$storage": "uint64",
+                                    "$value": "0"
+                                  },
+                                  "isQuestImportant": 0,
+                                  "journalEntryOverrideDataList": [],
+                                  "sender": "NPC",
+                                  "text": {
+                                    "unk1": "13041305587125996358",
+                                    "value": "bowie_taunt_100"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

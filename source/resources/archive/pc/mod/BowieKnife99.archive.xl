@@ -1,0 +1,6 @@
+journal:
+  - mod\bowieknife99\journal\bowieknife99.journal
+
+localization:
+  onscreens:
+    en-us: mod\bowieknife99\onscreens\en-us\bowieknife99_onscreens.json

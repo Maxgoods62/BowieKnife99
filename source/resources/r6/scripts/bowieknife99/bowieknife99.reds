@@ -1,0 +1,563 @@
+// BowieKnife — while you drive, on a random timer an existing traffic car turns hostile,
+// aggressively rams your car, then is reliably called off. (Forza "bowieknife999" meme.)
+//
+// All names below are VERIFIED against the REDmod script dump
+// (tools/redmod/scripts/core/ai/aiCommand.script + core/components/aiComponent.script):
+//   AIVehicleChaseCommand : target, distanceMin, distanceMax, forcedStartSpeed,
+//                           aggressiveRamming, ignoreChaseVehiclesLimit, boostDrivingStats
+//   AIVehiclePanicCommand : tryDriveAwayFromPlayer, ignoreTickets, disableStuckDetection,
+//                           allowSimplifiedMovement, useSpeedBasedLookupRange
+//   AIComponent (on the vehicle's AIVehicleAgent):
+//     SendCommand(cmd):Bool, CancelCommand(cmd):Bool, CancelCommandById(id, optional doNotRepeat):Bool,
+//     CancelOrInterruptCommand(name, useInheritance, success):Bool,
+//     GetEnqueuedOrExecutingCommand(name, useInheritance):AICommand,  AICommand.id : Uint32
+//
+// STOP STRATEGY (the recurring "won't stop chasing" bug): a forceful by-name INTERRUPT
+//   CancelOrInterruptCommand(n"AIVehicleChaseCommand", true, true)
+// is the primary kill (no id needed); we also CancelCommand(handle) + CancelCommandById(live.id)
+// as belt-and-suspenders, then send a panic so it drives off.
+
+module BowieKnife
+
+public class BowieKnifeSystem extends ScriptableSystem {
+  private let m_gi: GameInstance;
+  private let m_player: wref<PlayerPuppet>;
+
+  private let m_attacker: wref<VehicleObject>;
+  private let m_lastAttacker: wref<VehicleObject>;   // don't immediately re-target the car that just rammed us
+  private let m_chaseCmd: ref<AIVehicleChaseCommand>; // held handle (for CancelCommand)
+  private let m_attackActive: Bool;
+  private let m_smsSent: Bool;          // one SMS per ram, fired only on a real collision
+  private let m_lunged: Bool;           // close-range bump surge fired this approach (hysteresis re-arm)
+  private let m_watchElapsed: Float;    // seconds the current pursuit has run (timeout accumulator)
+  private let m_pickTotal: Int32;       // last selection: eligible cars seen (>=18m, not last attacker)
+  private let m_pickRear: Int32;        // last selection: how many of those were behind us
+  private let m_pickWasRear: Bool;      // last selection: was the chosen attacker a rear car?
+  private let m_cooldownFires: Int32;
+  private let m_running: Bool;
+  private let m_settings: ref<BowieKnifeSettings>;   // live config from the Mod Settings UI (Nexus 4885)
+
+  // --- tunables: read live from the settings object, falling back to the shipping default until
+  //     OnPlayerAttach creates it (see BowieKnifeSettings at the bottom of this file) ---
+  private final func Debug()          -> Bool  { return IsDefined(this.m_settings) && this.m_settings.showDebug; }
+  private final func SchedPeriod()    -> Float { return IsDefined(this.m_settings) ? this.m_settings.schedPeriod    : 90.0; }
+  private final func SpawnChance()    -> Float { return IsDefined(this.m_settings) ? this.m_settings.spawnChance    : 0.05; }
+  private final func CooldownFires()  -> Int32 { return IsDefined(this.m_settings) ? this.m_settings.cooldownFires  : 20; }
+  private final func PursuitTimeout() -> Float { return IsDefined(this.m_settings) ? this.m_settings.pursuitTimeout : 30.0; }
+  private final func MaxDistance()    -> Float { return IsDefined(this.m_settings) ? this.m_settings.maxDistance    : 50.0; }
+  private final func MaxHeightDelta() -> Float { return IsDefined(this.m_settings) ? this.m_settings.maxHeightDelta : 6.0; }
+  private final func BumpBoost()      -> Float { return IsDefined(this.m_settings) ? this.m_settings.bumpBoost      : 15.0; }
+  private final func MsgCount()       -> Int32 { return 100; }  // AUTO-MANAGED by tools/gen_bowie_sms.py (= len(TAUNTS)); do not hand-edit
+
+  // proven HUD pattern (from adding_my_mod_dialogue.reds: UI_Notifications.WarningMessage)
+  private final func Notify(text: String) -> Void {
+    if !this.Debug() {
+      return;
+    }
+    let msg: SimpleScreenMessage;
+    msg.isShown = true;
+    msg.duration = 3.0;
+    msg.message = text;
+    let bb: ref<IBlackboard> = GameInstance.GetBlackboardSystem(this.m_gi)
+      .Get(GetAllBlackboardDefs().UI_Notifications);
+    if IsDefined(bb) {
+      bb.SetVariant(GetAllBlackboardDefs().UI_Notifications.WarningMessage, ToVariant(msg), true);
+    }
+  }
+
+  private final func OnPlayerAttach(request: ref<PlayerAttachRequest>) -> Void {
+    // No pre-game guard needed: there is no PlayerPuppet in the main menu (the cast below
+    // returns null and we bail), and during character creation the mod is inert since it only
+    // acts while driving. (GameInstance has no GetSystemRequestsHandler()/IsPreGame() — that
+    // lives on inkISystemRequestsHandler, reachable only from UI controllers, not a system.)
+    let player: ref<PlayerPuppet> = request.owner as PlayerPuppet;
+    if !IsDefined(player) {
+      return;
+    }
+    this.m_player = player;
+    this.m_gi = player.GetGame();
+    this.m_attackActive = false;
+    this.m_cooldownFires = 0;
+    if !IsDefined(this.m_settings) {
+      this.m_settings = new BowieKnifeSettings();
+      ModSettings.RegisterListenerToClass(this.m_settings);
+    }
+    if !this.m_running {
+      this.m_running = true;
+      this.ScheduleTick();
+    }
+  }
+
+  private final func OnPlayerDetach(request: ref<PlayerDetachRequest>) -> Void {
+    this.CallOff();
+    if IsDefined(this.m_settings) {
+      ModSettings.UnregisterListenerToClass(this.m_settings);
+    }
+    this.m_running = false;
+  }
+
+  private final func GetPlayerVehicle() -> ref<VehicleObject> {
+    let player: wref<PlayerPuppet> = this.m_player;
+    if !IsDefined(player) {
+      return null;
+    }
+    let mf = GameInstance.GetMountingFacility(this.m_gi);
+    if !IsDefined(mf) {
+      return null;
+    }
+    let info: MountingInfo = mf.GetMountingInfoSingleWithObjects(player);
+    let ent: ref<Entity> = GameInstance.FindEntityByID(this.m_gi, info.parentId);
+    return ent as VehicleObject;
+  }
+
+  // Pick a car with RUNWAY to build speed: at least ~18m away (so it can accelerate into a real hit
+  // instead of a slow nudge), within a configurable radius (default 50m), AND within a height window
+  // (default 6m) so a car on a bridge/overpass above or a road below is skipped. Skip the previous attacker.
+  // REAR-STRICT: only a moving traffic car BEHIND us is eligible, so it chases up from the rear with
+  // no U-turn in front. If none this cycle, return null and retry next scheduler period.
+  //
+  // KEY: TSQ_ALL() leaves testedSet = TargetingSet.Visible (the view frustum), which is why earlier
+  // attempts saw cars=N rear=0 — the query never surfaced anything behind us. TargetingSet.Complete
+  // returns candidates regardless of view (same trick GameObject.GetEntitiesAroundObject uses).
+  private final func FindNearestVehicle(playerVeh: ref<VehicleObject>) -> ref<VehicleObject> {
+    let q: TargetSearchQuery = TSQ_ALL();
+    q.maxDistance = this.MaxDistance();    // configurable search radius (replaces hardcoded 90m)
+    q.testedSet = TargetingSet.Complete;   // include cars OUTSIDE the view frustum (i.e. behind us)
+    q.filterObjectByDistance = true;       // honor maxDistance, matching GetEntitiesAroundObject
+    let parts: array<TS_TargetPartInfo>;
+    GameInstance.GetTargetingSystem(this.m_gi).GetTargetParts(this.m_player, q, parts);
+
+    let pp: Vector4 = playerVeh.GetWorldPosition();
+    let fwd: Vector4 = playerVeh.GetWorldForward();   // car heading; <0 dot = the car is behind us
+    let pid: EntityID = playerVeh.GetEntityID();
+
+    let bestRear: ref<VehicleObject> = null;
+    let bestRearD: Float = 100000.0;
+    let total: Int32 = 0;
+    let rear: Int32 = 0;
+
+    let i: Int32 = 0;
+    while i < ArraySize(parts) {
+      let comp: ref<IComponent> = TS_TargetPartInfo.GetComponent(parts[i]);
+      if IsDefined(comp) {
+        let veh: ref<VehicleObject> = comp.GetEntity() as VehicleObject;
+        // only a live traffic car can give chase — skip player, parked, and non-crowd vehicles
+        if IsDefined(veh) && veh.GetEntityID() != pid && veh.IsCrowdVehicle() && !veh.IsVehicleParked() {
+          let isLast: Bool = IsDefined(this.m_lastAttacker) && veh.GetEntityID() == this.m_lastAttacker.GetEntityID();
+          if !isLast {
+            let cpos: Vector4 = veh.GetWorldPosition();
+            let d: Float = Vector4.Distance(cpos, pp);
+            let dz: Float = AbsF(cpos.Z - pp.Z);   // vertical gap: rejects bridge-above / road-below cars
+            if d >= 18.0 && d <= this.MaxDistance() && dz <= this.MaxHeightDelta() {
+              total += 1;
+              // 2D dot of our forward with (car - player); <0 = behind. Z handled by the dz gate above.
+              let behind: Float = fwd.X * (cpos.X - pp.X) + fwd.Y * (cpos.Y - pp.Y);
+              if behind < 0.0 {
+                rear += 1;
+                if d < bestRearD {
+                  bestRearD = d;
+                  bestRear = veh;
+                };
+              };
+            };
+          };
+        };
+      };
+      i += 1;
+    };
+
+    // stash for the (single-slot) HUD message in LaunchAttack — printing here gets clobbered
+    // by the ram message in the same frame, so we ride those counts on that surviving message.
+    this.m_pickTotal = total;
+    this.m_pickRear = rear;
+    this.m_pickWasRear = IsDefined(bestRear);
+
+    return bestRear;   // rear-strict: a real behind-us attacker, or null (no attack this cycle)
+  }
+
+  // ---- scheduler ----
+  private final func ScheduleTick() -> Void {
+    let cb: ref<BKSchedCallback> = new BKSchedCallback();
+    cb.system = this;
+    GameInstance.GetDelaySystem(this.m_gi).DelayCallback(cb, this.SchedPeriod(), false);
+  }
+
+  public final func OnSchedTick() -> Void {
+    if !this.m_running {
+      return;
+    }
+    // master on/off from the Mod Settings UI — keep rescheduling so re-enabling resumes without a reload
+    if IsDefined(this.m_settings) && !this.m_settings.enabled {
+      this.ScheduleTick();
+      return;
+    }
+    if this.m_cooldownFires > 0 {
+      this.m_cooldownFires -= 1;
+    } else {
+      if !this.m_attackActive {
+        let veh: ref<VehicleObject> = this.GetPlayerVehicle();
+        if IsDefined(veh) {
+          if RandF() < this.SpawnChance() {
+            this.LaunchAttack(veh);
+          };
+        };
+      };
+    };
+    this.ScheduleTick();
+  }
+
+  // ---- hijack nearest traffic car + send aggressive ram ----
+  private final func LaunchAttack(playerVeh: ref<VehicleObject>) -> Void {
+    let attacker: ref<VehicleObject> = this.FindNearestVehicle(playerVeh);
+    if !IsDefined(attacker) {
+      this.Notify("BK: no target (cars=" + IntToString(this.m_pickTotal) + " rear=" + IntToString(this.m_pickRear) + ")");
+      return;
+    }
+    this.m_attacker = attacker;
+    this.m_attackActive = true;
+    this.m_watchElapsed = 0.0;
+    this.m_smsSent = false;
+    this.m_lunged = false;
+
+    attacker.TurnEngineOn(true);
+    let agent = attacker.GetAIComponent();
+    if !IsDefined(agent) {
+      this.m_attackActive = false;
+      return;
+    }
+
+    let cmd: ref<AIVehicleChaseCommand> = new AIVehicleChaseCommand();
+    cmd.target = playerVeh;
+    cmd.distanceMin = 0.0;
+    cmd.distanceMax = 0.0;             // 0 = drive all the way in (no follow band) = harder hit
+    cmd.aggressiveRamming = true;
+    cmd.boostDrivingStats = true;
+    cmd.ignoreChaseVehiclesLimit = true;
+    // NB: no forcedStartSpeed — he starts at natural traffic speed (no unnatural jump at selection).
+    // The acceleration now happens on close approach as a physics surge (see MaybeBump in Watch()).
+    this.m_chaseCmd = cmd;
+    agent.SendCommand(cmd);
+
+    let dir: String = this.m_pickWasRear ? "REAR" : "FRONT";
+    this.Notify("BK RAM [" + dir + "] cars=" + IntToString(this.m_pickTotal) + " rear=" + IntToString(this.m_pickRear));
+    this.Watch();
+  }
+
+  // watchdog: SMS + flee fire on a REAL collision (OnVehicleGridHit). This watchdog is only the
+  // "he missed" safety timeout (PursuitTimeout, default 30s) so the chase always ends with no contact.
+  public final func Watch() -> Void {
+    if !this.m_attackActive {
+      return;
+    }
+    let attacker: ref<VehicleObject> = this.m_attacker;
+    let veh: ref<VehicleObject> = this.GetPlayerVehicle();
+    if !IsDefined(attacker) || !IsDefined(veh) {
+      this.StopAttacker();
+      this.EndAttack(false);   // aborted (lost the cars) — no hit, no cooldown
+      return;
+    }
+    this.MaybeBump(attacker, veh);   // surge forward to bump when he closes in
+    if this.m_watchElapsed >= this.PursuitTimeout() {   // configurable give-up; give a far car time to close
+      this.StopAttacker();
+      this.EndAttack(false);   // timed out without a hit — failed attempt, no cooldown
+      return;
+    }
+    this.m_watchElapsed += 0.6;   // matches the 0.6s reschedule below (no Int/Float cast needed)
+    let cb: ref<BKWatchCallback> = new BKWatchCallback();
+    cb.system = this;
+    GameInstance.GetDelaySystem(this.m_gi).DelayCallback(cb, 0.6, false);
+  }
+
+  // Close-range BUMP surge: when Bowie gets within ~16m, give him one forward physics impulse aimed
+  // at the player so he lunges in for the hit (replacing the old forcedStartSpeed jump-at-selection).
+  // A PhysicalImpulseEvent's worldImpulse = mass * deltaV, so BumpBoost() is literally the m/s gained.
+  // Hysteresis (re-arm only after he falls back beyond 30m) keeps it to one surge per approach.
+  private final func MaybeBump(attacker: ref<VehicleObject>, playerVeh: ref<VehicleObject>) -> Void {
+    let boost: Float = this.BumpBoost();
+    if boost <= 0.0 {
+      return;   // surge disabled
+    }
+    let ap: Vector4 = attacker.GetWorldPosition();
+    let pp: Vector4 = playerVeh.GetWorldPosition();
+    let dx: Float = pp.X - ap.X;
+    let dy: Float = pp.Y - ap.Y;
+    let len: Float = SqrtF(dx * dx + dy * dy);   // horizontal distance to the player
+    if this.m_lunged {
+      if len > 30.0 {
+        this.m_lunged = false;   // fell back — re-arm for the next approach
+      }
+      return;
+    }
+    if len > 16.0 || len < 0.1 {
+      return;   // not close enough yet (or degenerate)
+    }
+    this.m_lunged = true;
+    let mag: Float = attacker.GetTotalMass() * boost;   // impulse magnitude -> +boost m/s toward player
+    let imp: ref<PhysicalImpulseEvent> = new PhysicalImpulseEvent();
+    imp.radius = 1.0;
+    imp.worldPosition.X = ap.X;
+    imp.worldPosition.Y = ap.Y;
+    imp.worldPosition.Z = ap.Z + 0.3;
+    imp.worldImpulse.X = (dx / len) * mag;
+    imp.worldImpulse.Y = (dy / len) * mag;
+    imp.worldImpulse.Z = 0.0;   // horizontal only — don't launch him into the air
+    attacker.QueueEvent(imp);
+    this.Notify("BK: BUMP surge");
+  }
+
+  // Reliable stop: a forceful by-name INTERRUPT (primary), plus cancel-by-handle and cancel-by-id
+  // as backups, then a panic so the car drives away.
+  private final func StopAttacker() -> Void {
+    let attacker: ref<VehicleObject> = this.m_attacker;
+    if !IsDefined(attacker) {
+      return;
+    }
+    let agent = attacker.GetAIComponent();
+    if !IsDefined(agent) {
+      return;
+    }
+
+    // 1) primary: forcibly interrupt the executing chase by name (no id needed)
+    agent.CancelOrInterruptCommand(n"AIVehicleChaseCommand", true, true);
+    // 2) backup: cancel the exact command object we hold
+    if IsDefined(this.m_chaseCmd) {
+      agent.CancelCommand(this.m_chaseCmd);
+    }
+    // 3) backup: cancel by the live command's id
+    let live: ref<AICommand> = agent.GetEnqueuedOrExecutingCommand(n"AIVehicleChaseCommand", true);
+    if IsDefined(live) {
+      agent.CancelCommandById(live.id, true);
+    }
+
+    // send it off
+    let panic: ref<AIVehiclePanicCommand> = new AIVehiclePanicCommand();
+    panic.tryDriveAwayFromPlayer = true;
+    panic.ignoreTickets = true;
+    panic.disableStuckDetection = true;
+    agent.SendCommand(panic);
+
+    this.Notify("BowieKnife: called off (fleeing)");
+  }
+
+  // landed = did Bowie actually ram us? The cooldown is the "rest" after a SUCCESSFUL hit; a failed
+  // attempt (timeout / aborted) must NOT burn the cooldown, so the next check can roll again normally.
+  public final func EndAttack(landed: Bool) -> Void {
+    this.m_lastAttacker = this.m_attacker;   // remember it so we don't re-chase it next time
+    this.m_attacker = null;
+    this.m_chaseCmd = null;
+    this.m_attackActive = false;
+    if landed {
+      this.m_cooldownFires = this.CooldownFires();
+    }
+    // miss: leave m_cooldownFires at 0 — a failed tentative isn't penalized with a cooldown
+  }
+
+  // Called from the @wrapMethod collision hook for EVERY vehicle grid-destruction in the world.
+  // We only act if it's our active attacker physically hitting the player's vehicle.
+  public final func OnVehicleGridHit(victim: wref<VehicleObject>, other: wref<VehicleObject>) -> Void {
+    if !this.m_attackActive || this.m_smsSent {
+      return;
+    }
+    if !IsDefined(victim) || !IsDefined(other) {
+      return;
+    }
+    let att: ref<VehicleObject> = this.m_attacker;
+    let pv: ref<VehicleObject> = this.GetPlayerVehicle();
+    if !IsDefined(att) || !IsDefined(pv) {
+      return;
+    }
+    let attID: EntityID = att.GetEntityID();
+    let pvID: EntityID = pv.GetEntityID();
+    let vID: EntityID = victim.GetEntityID();
+    let oID: EntityID = other.GetEntityID();
+    // collision between our attacker and the player's vehicle, either direction
+    let isHit: Bool = (vID == pvID && oID == attID) || (vID == attID && oID == pvID);
+    if isHit {
+      this.m_smsSent = true;
+      this.SendBowieSMS();          // Notifies the exact SMS-stage result (found / sent / failed)
+      this.StopAttacker();
+      this.EndAttack(true);         // real hit landed — apply the cooldown rest
+      return;
+    }
+    // diagnostic: a collision involving our attacker OR our car, but the pair didn't match.
+    // Tells us "collision events DO fire during the ram" vs the SMS never being attempted.
+    if this.Debug() && (vID == pvID || vID == attID || oID == pvID || oID == attID) {
+      this.Notify("BK: contact, no pair match");
+    }
+  }
+
+  // Deliver a random authored phone SMS from the "BowieKnife999" contact. Reset Inactive -> Active
+  // so the same line can re-fire on a later hit (recycles the pool).
+  private final func SendBowieSMS() -> Void {
+    let k: Int32 = RandRange(1, this.MsgCount() + 1);   // 1..MsgCount
+    let path: String = "contacts/bowie/taunts/msg" + IntToString(k);
+    let jm = GameInstance.GetJournalManager(this.m_gi);
+    if !IsDefined(jm) {
+      this.Notify("BK SMS: no journal mgr");
+      return;
+    }
+    // Resolve first so we can SEE whether the merged journal path is valid (the one thing that
+    // can't be checked offline). If this is null, the archive path/format is the bug, not the code.
+    let entry: wref<JournalEntry> = jm.GetEntryByString(path, "gameJournalPhoneMessage");
+    if !IsDefined(entry) {
+      this.Notify("BK SMS: entry NOT found -> " + path);
+      return;
+    }
+    // recycle so the same line can re-fire on a later hit: Inactive(silent) -> Active(notify)
+    jm.ChangeEntryState(path, "gameJournalPhoneMessage", gameJournalEntryState.Inactive, JournalNotifyOption.DoNotNotify);
+    let ok: Bool = jm.ChangeEntryState(path, "gameJournalPhoneMessage", gameJournalEntryState.Active, JournalNotifyOption.Notify);
+    if ok {
+      this.Notify("BK SMS sent #" + IntToString(k));
+    } else {
+      this.Notify("BK SMS: ChangeEntryState FAILED #" + IntToString(k));
+    }
+  }
+
+  private final func CallOff() -> Void {
+    this.StopAttacker();
+    this.m_attacker = null;
+    this.m_chaseCmd = null;
+    this.m_attackActive = false;
+  }
+}
+
+// ---- Mod Settings (Nexus 4885) config holder ----
+// The framework reflects over these @runtimeProperty fields to build the in-game Settings page and
+// writes them back on this instance whenever the user changes a value (it's registered via
+// ModSettings.RegisterListenerToClass in OnPlayerAttach). The system reads the fields live — no
+// callback. Defaults below are the shipping tune.
+public class BowieKnifeSettings extends IScriptable {
+  // enabled + showDebug have no category, so they list at the top of the page, above "Behavior".
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.displayName", "Enable mod")
+  @runtimeProperty("ModSettings.description", "Turn the random ramming attacks on or off.")
+  public let enabled: Bool = true;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.displayName", "Show debug HUD")
+  @runtimeProperty("ModSettings.description", "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.")
+  public let showDebug: Bool = false;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Attack chance")
+  @runtimeProperty("ModSettings.description", "Probability an attack triggers on each check (0 = never, 1 = every check).")
+  @runtimeProperty("ModSettings.min", "0.0")
+  @runtimeProperty("ModSettings.max", "1.0")
+  @runtimeProperty("ModSettings.step", "0.05")
+  public let spawnChance: Float = 0.05;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Check interval (s)")
+  @runtimeProperty("ModSettings.description", "Seconds between attack checks. Lower = attacks happen more often.")
+  @runtimeProperty("ModSettings.min", "10.0")
+  @runtimeProperty("ModSettings.max", "600.0")
+  @runtimeProperty("ModSettings.step", "5.0")
+  public let schedPeriod: Float = 90.0;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Cooldown (checks)")
+  @runtimeProperty("ModSettings.description", "How many check intervals to wait after an attack before another can trigger.")
+  @runtimeProperty("ModSettings.min", "0")
+  @runtimeProperty("ModSettings.max", "25")
+  @runtimeProperty("ModSettings.step", "1")
+  public let cooldownFires: Int32 = 20;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Pursuit timeout (s)")
+  @runtimeProperty("ModSettings.description", "How long Bowie chases before giving up if he never lands a hit.")
+  @runtimeProperty("ModSettings.min", "5.0")
+  @runtimeProperty("ModSettings.max", "60.0")
+  @runtimeProperty("ModSettings.step", "1.0")
+  public let pursuitTimeout: Float = 30.0;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Max attacker distance (m)")
+  @runtimeProperty("ModSettings.description", "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).")
+  @runtimeProperty("ModSettings.min", "20.0")
+  @runtimeProperty("ModSettings.max", "120.0")
+  @runtimeProperty("ModSettings.step", "5.0")
+  public let maxDistance: Float = 50.0;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Max height difference (m)")
+  @runtimeProperty("ModSettings.description", "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.")
+  @runtimeProperty("ModSettings.min", "2.0")
+  @runtimeProperty("ModSettings.max", "20.0")
+  @runtimeProperty("ModSettings.step", "1.0")
+  public let maxHeightDelta: Float = 6.0;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Behavior")
+  @runtimeProperty("ModSettings.displayName", "Bump speed boost (m/s)")
+  @runtimeProperty("ModSettings.description", "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.")
+  @runtimeProperty("ModSettings.min", "0.0")
+  @runtimeProperty("ModSettings.max", "75.0")
+  @runtimeProperty("ModSettings.step", "1.0")
+  public let bumpBoost: Float = 15.0;
+}
+
+public class BKSchedCallback extends DelayCallback {
+  public let system: wref<BowieKnifeSystem>;
+  public func Call() -> Void {
+    if IsDefined(this.system) {
+      this.system.OnSchedTick();
+    }
+  }
+}
+
+public class BKWatchCallback extends DelayCallback {
+  public let system: wref<BowieKnifeSystem>;
+  public func Call() -> Void {
+    if IsDefined(this.system) {
+      this.system.Watch();
+    }
+  }
+}
+
+// Real physical vehicle-vehicle collision hook. Fires for EVERY grid-destruction in the world,
+// so guard cheaply and hand off to the system, which checks it's our attacker hitting the player.
+// evt.otherVehicle = the other party; this.GetVehicle() = the vehicle taking the grid damage.
+@wrapMethod(VehicleComponent)
+protected cb func OnGridDestruction(evt: ref<VehicleGridDestructionEvent>) -> Bool {
+  let r: Bool = wrappedMethod(evt);
+  if evt.damageMultiplier > 0.0 && IsDefined(evt.otherVehicle) {
+    let self: wref<VehicleObject> = this.GetVehicle();
+    if IsDefined(self) {
+      let sys: ref<BowieKnifeSystem> = GameInstance.GetScriptableSystemsContainer(self.GetGame())
+        .Get(n"BowieKnife.BowieKnifeSystem") as BowieKnifeSystem;
+      if IsDefined(sys) {
+        sys.OnVehicleGridHit(self, evt.otherVehicle as VehicleObject);
+      }
+    }
+  }
+  return r;
+}
+
+// Phone message-list preview fix.
+//
+// The contact row's preview comes from MessengerUtils.SetTitle: it reads the conversation's
+// GetTitle(); if that string IsStringValid (non-empty) it shows the TITLE, otherwise it falls
+// through to the last message text (what we want).
+//
+// A mod-added conversation can NEVER produce an empty title: the localization loader silently
+// drops onscreens entries whose value is "", so an unresolved/blank title key comes back as the
+// literal "LocKey#<hash>" — a non-empty string that IsStringValid happily accepts, so the broken
+// LocKey is rendered as the preview. (That's the "LocKey#1017240113626931080" the row showed.)
+//
+// An unresolved "LocKey#..." title is always a bug for ANY conversation, so we treat it as
+// "no title": after the original runs, if the chosen title is a raw LocKey, force hasValidTitle
+// false so the renderer falls back to the last-message preview. No journal/archive change needed.
+@wrapMethod(MessengerUtils)
+private static func SetTitle(out contactData: ref<ContactData>, conversationEntry: wref<JournalPhoneConversation>) -> Void {
+  wrappedMethod(contactData, conversationEntry);
+  if contactData.hasValidTitle && StrBeginsWith(contactData.localizedPreview, "LocKey#") {
+    contactData.hasValidTitle = false;
+    contactData.localizedPreview = "";
+  }
+}
