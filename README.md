@@ -14,6 +14,10 @@ off — and moments later your phone buzzes with a taunt from a contact named **
 - **Aggressive ramming** with a close-range lunge, then a forceful, reliable break-off (the attacker flees).
 - **Real in-phone SMS**: on a successful hit, the **Bowie Knife99** contact texts you one of **100** rotating
   taunts.
+- **Taunt voice line on impact**: when Bowie rams you he yells at you — localized across **10 languages** (English, French, German, Spanish, Italian, Polish, Russian, Chinese,
+  Japanese + Korean), with
+  English as the fallback for other languages) and **3D-positioned** from the attacker's car. Toggle it under
+  **Settings → Audio**.
 - **Fully configurable** live via the in-game **Mod Settings** menu — attack chance, check interval, cooldown,
   pursuit timeout, max distance, height limit, attack direction (behind-only or any direction), ram strength,
   debug HUD, and an on/off toggle.
@@ -26,6 +30,8 @@ off — and moments later your phone buzzes with a taunt from a contact named **
 | [REDscript](https://www.nexusmods.com/cyberpunk2077/mods/1511) | Compiles the mod's gameplay logic (`bowieknife99.reds`) |
 | [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) | Loads the phone contact (journal) + taunt text (localization) |
 | [Mod Settings](https://www.nexusmods.com/cyberpunk2077/mods/4885) | **Required** — provides the in-game configuration menu |
+| [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001) | **Required** — plays the ram-impact voice line |
+| [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) | **Required** — engine bindings used by Audioware (voice-language lookup) |
 
 ## Installation (manual)
 
@@ -35,7 +41,8 @@ Extract the release archive into your Cyberpunk 2077 install folder so the files
 Cyberpunk 2077/
 ├── archive/pc/mod/BowieKnife99.archive
 ├── archive/pc/mod/BowieKnife99.archive.xl
-└── r6/scripts/bowieknife99/bowieknife99.reds
+├── r6/scripts/bowieknife99/bowieknife99.reds
+└── r6/audioware/BowieKnife99/          (manifest + en-US.wav / fr-FR.wav taunt clips)
 ```
 
 Launch the game. Open **Settings → Mod Settings → Bowie Knife99** to tune behavior. Drive around and wait —
@@ -49,6 +56,7 @@ All settings live under **Mod Settings → Bowie Knife99**:
 - **Show debug HUD** — on-screen lines (ram start, attacker pick counts, SMS status); off for normal play.
 - **Behavior →** Attack chance, Check interval (s), Cooldown (checks), Pursuit timeout (s), max attacker
   distance, max height difference, and ram strength.
+- **Audio →** **Play taunt sound on ram** — toggle the impact voice line on/off.
 
 ## Build from source
 
@@ -56,8 +64,14 @@ The mod is a standard [WolvenKit](https://github.com/WolvenKit/WolvenKit) projec
 
 - `source/archive/mod/bowieknife99/…` — the CR2W journal + onscreens that pack into `BowieKnife99.archive`.
 - `source/resources/…` — files installed verbatim to the game root (`r6/scripts/bowieknife99/bowieknife99.reds`,
-  `archive/pc/mod/BowieKnife99.archive.xl`).
+  `archive/pc/mod/BowieKnife99.archive.xl`, and `r6/audioware/BowieKnife99/` — the Audioware manifest + taunt
+  `.wav` clips, picked by voice language in `bowieknife99.reds`).
 - `tools/gen_bowie_sms.py` — generates the SMS journal + localization sources (the 100 taunts).
+- `tools/extract_vo.py <locale> [vo_name]` — extracts a game VO line in any installed language to
+  `r6/audioware/BowieKnife99/<Locale>.wav` (WolvenKit `extract` → vgmstream decode). e.g.
+  `python tools/extract_vo.py fr-fr` for the French taunt. New languages also need a `bowieknife99.yml`
+  + `RamSoundEvent()` entry (see the script header). **First**: copy `.env.example` → `.env` and set your
+  CP2077 / WolvenKit / vgmstream paths (the script reads them from there; `.env` is gitignored).
 
 To rebuild the SMS data from scratch:
 
@@ -71,9 +85,23 @@ To rebuild the SMS data from scratch:
 > Note: editing the taunts only touches the localization/journal sources; the gameplay logic
 > (`bowieknife99.reds`) is independent.
 
+## Changelog
+
+### 0.1.0
+- **New: ram-impact taunt voice line.** Bowie now yells at you on a confirmed hit — localized (English,
+  10 languages — English, French, German, Spanish, Italian, Polish, Russian, Chinese, Japanese, Korean,
+  English fallback for the rest) and spatialized from the attacker's car. Toggle under **Settings → Audio**.
+- Adds two dependencies for the audio: **Audioware** (plays the clip) and **Codeware** (its engine bindings).
+
+### 0.0.2
+- Earlier release: hijack-and-ram behavior, reliable break-off, in-phone SMS taunts, full Mod Settings config.
+
 ## Credits
 
 Made by **Maxgoods**. Meme origin: the Forza "bowie knife99" rammer.
+Audio playback via **Audioware** + **Codeware**. Ram voice clips are Cyberpunk 2077 game audio
+(© CD PROJEKT RED), extracted with [WolvenKit](https://github.com/WolvenKit/WolvenKit) +
+[vgmstream](https://github.com/vgmstream/vgmstream).
 
 ## License
 

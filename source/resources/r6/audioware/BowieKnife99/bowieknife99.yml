@@ -1,0 +1,32 @@
+# Audioware manifest (https://nexusmods.com/cyberpunk2077/mods/12001) — registers the ram taunt clips.
+# Audioware scans r6/audioware/<ModName>/ at boot. We register one sound ID per language as plain `sfx`
+# entries (simple, in-memory, reliably parsed), and BowieKnife99 chooses which ID to play at runtime by
+# the player's voice language (see RamSoundEvent() in bowieknife99.reds) — English is the default for
+# every non-French language. (Audioware's localized `voices` section has NO fallback and uses DLL-side
+# locale codes, so doing the language pick in script is simpler and fallback-proof.)
+#
+# IDs are namespaced (bowieknife99_*) because Audioware sound IDs are GLOBAL across every mod.
+# `file` paths are relative to this manifest. Clips are CDPR game assets (English extracted by Nexus
+# 16484's author; French supplied separately) — fine for personal use; credit / re-extract to publish.
+version: 1.0.0
+sfx:
+  bowieknife99_beep:
+    file: ./en-US.wav
+  bowieknife99_beep_fr:
+    file: ./fr-FR.wav
+  bowieknife99_beep_de:
+    file: ./de-DE.wav
+  bowieknife99_beep_es:
+    file: ./es-ES.wav
+  bowieknife99_beep_pl:
+    file: ./pl-PL.wav
+  bowieknife99_beep_it:
+    file: ./it-IT.wav
+  bowieknife99_beep_ru:
+    file: ./ru-RU.wav
+  bowieknife99_beep_zh:
+    file: ./zh-CN.wav
+  bowieknife99_beep_ja:
+    file: ./jp-JP.wav
+  bowieknife99_beep_ko:
+    file: ./kr-KR.wav

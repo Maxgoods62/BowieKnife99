@@ -8,6 +8,9 @@ install_log.xml
 layout.xml
 custom_refs.txt
 
+# Local env (machine-specific paths for tools/extract_vo.py); .env.example is committed
+.env
+
 # Python
 __pycache__/
 *.pyc
@@ -16,3 +19,5 @@ __pycache__/
 *.bak
 *.bak.*
 *.bak[0-9]*
+
+.claude

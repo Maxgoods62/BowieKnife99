@@ -19,6 +19,13 @@
 
 module BowieKnife
 
+// Codeware (transitive dep via Audioware) — used only to read the player's voice language so the ram
+// taunt can pick the matching localized clip (see RamSoundEvent).
+import Codeware.Localization.*
+// Audioware's EmitterSettings — needed so AudioSystemExt.RegisterEmitter's optional `ref<EmitterSettings>`
+// parameter type resolves (overload resolution checks the full signature even though we omit that arg).
+import Audioware.EmitterSettings
+
 public class BowieKnifeSystem extends ScriptableSystem {
   private let m_gi: GameInstance;
   private let m_player: wref<PlayerPuppet>;
@@ -48,6 +55,29 @@ public class BowieKnifeSystem extends ScriptableSystem {
   private final func MaxHeightDelta() -> Float { return IsDefined(this.m_settings) ? this.m_settings.maxHeightDelta : 6.0; }
   private final func BumpBoost()      -> Float { return IsDefined(this.m_settings) ? this.m_settings.bumpBoost      : 15.0; }
   private final func RearOnly()       -> Bool  { return IsDefined(this.m_settings) ? this.m_settings.rearOnly       : false; }
+  private final func RamSoundOn()     -> Bool  { return IsDefined(this.m_settings) ? this.m_settings.ramSound      : true; }
+  // The sound played on a confirmed ram: a CUSTOM Audioware (Nexus 12001) clip, NOT a vanilla game event
+  // (vanilla VO isn't reachable by name in free-roam — its bank isn't loaded). We register one clip per
+  // language as `sfx` IDs in r6/audioware/BowieKnife99/bowieknife99.yml and pick here by the player's
+  // VOICE language: French voice -> the French clip, every other language -> the English clip (default).
+  // Probe a clip live: `Game.GetAudioSystemExt():Play("bowieknife99_beep")` / `...:Play("bowieknife99_beep_fr")`.
+  private final func RamSoundEvent()  -> CName  {
+    let loc: ref<LocalizationSystem> = LocalizationSystem.GetInstance(this.m_gi);
+    if IsDefined(loc) {
+      let lang: CName = loc.GetVoiceLanguage();
+      if Equals(lang, n"fr-fr") { return n"bowieknife99_beep_fr"; }
+      if Equals(lang, n"de-de") { return n"bowieknife99_beep_de"; }
+      if Equals(lang, n"es-es") { return n"bowieknife99_beep_es"; }
+      if Equals(lang, n"es-mx") { return n"bowieknife99_beep_es"; }  
+      if Equals(lang, n"pl-pl") { return n"bowieknife99_beep_pl"; }
+      if Equals(lang, n"it-it") { return n"bowieknife99_beep_it"; }
+      if Equals(lang, n"ru-ru") { return n"bowieknife99_beep_ru"; }
+      if Equals(lang, n"zh-cn") { return n"bowieknife99_beep_zh"; }   // Simplified Chinese
+      if Equals(lang, n"jp-jp") { return n"bowieknife99_beep_ja"; }   // game voice code is jp-jp (not ja-jp)
+      if Equals(lang, n"kr-kr") { return n"bowieknife99_beep_ko"; }   // game voice code is kr-kr (not ko-kr)
+    }
+    return n"bowieknife99_beep";   // English fallback for every other voice language
+  }
   private final func MsgCount()       -> Int32 { return 100; }  // AUTO-MANAGED by tools/gen_bowie_sms.py (= len(TAUNTS)); do not hand-edit
 
   // proven HUD pattern (from adding_my_mod_dialogue.reds: UI_Notifications.WarningMessage)
@@ -392,6 +422,7 @@ public class BowieKnifeSystem extends ScriptableSystem {
     let isHit: Bool = (vID == pvID && oID == attID) || (vID == attID && oID == pvID);
     if isHit {
       this.m_smsSent = true;
+      this.PlayRamSound(att);       // taunt audio on impact, emitted from Bowie's car (feature-flagged)
       this.SendBowieSMS();          // Notifies the exact SMS-stage result (found / sent / failed)
       this.StopAttacker();
       this.EndAttack(true);         // real hit landed — apply the cooldown rest
@@ -429,6 +460,34 @@ public class BowieKnifeSystem extends ScriptableSystem {
     } else {
       this.Notify("BK SMS: ChangeEntryState FAILED #" + IntToString(k));
     }
+  }
+
+  // Play the taunt on a confirmed ram, via Audioware (HARD dependency — Nexus 12001). The clip is
+  // SPATIALIZED: emitted from the attacker car so the taunt comes from Bowie's vehicle (panned and
+  // distance-attenuated around the player, who is automatically the listener). The attacker is a
+  // VehicleObject (a GameObject), which is a valid Audioware emitter; Audioware auto-unregisters the
+  // emitter when the car despawns, so there's no cleanup to do. Falls back to flat 2D if we have no
+  // valid emitter. Gated by the ramSound flag.
+  private final func PlayRamSound(source: wref<VehicleObject>) -> Void {
+    if !this.RamSoundOn() {
+      return;
+    }
+    let audio: ref<AudioSystemExt> = GameInstance.GetAudioSystemExt(this.m_gi);
+    let sound: CName = this.RamSoundEvent();
+    if IsDefined(source) {
+      let id: EntityID = source.GetEntityID();
+      let tag: CName = n"bowieknife99_ram";   // Audioware's internal handle for this emitter
+      if !audio.IsRegisteredEmitter(id, tag) {
+        audio.RegisterEmitter(id, tag);
+      }
+      if audio.IsRegisteredEmitter(id, tag) {
+        audio.PlayOnEmitter(sound, id, tag);   // emitterID + tag must both be valid & non-default
+        this.Notify("BK: ram sound (spatial)");
+        return;
+      }
+    }
+    audio.Play(sound);   // fallback: flat 2D if the attacker isn't a usable emitter
+    this.Notify("BK: ram sound (2D)");
   }
 
   private final func CallOff() -> Void {
@@ -524,6 +583,12 @@ public class BowieKnifeSettings extends IScriptable {
   @runtimeProperty("ModSettings.max", "75.0")
   @runtimeProperty("ModSettings.step", "1.0")
   public let bumpBoost: Float = 15.0;
+
+  @runtimeProperty("ModSettings.mod", "Bowie Knife99")
+  @runtimeProperty("ModSettings.category", "Audio")
+  @runtimeProperty("ModSettings.displayName", "Play taunt sound on ram")
+  @runtimeProperty("ModSettings.description", "Play a voice line every time Bowie rams your car.")
+  public let ramSound: Bool = true;
 }
 
 public class BKSchedCallback extends DelayCallback {
