@@ -1,0 +1,24 @@
+Attiva la mod
+Attiva o disattiva gli speronamenti casuali.
+Mostra HUD di debug
+Mostra informazioni di debug a schermo (inizio speronamento, selezione, stato degli SMS). Disattiva per il gioco normale.
+Comportamento
+Probabilità di attacco
+Probabilità che un attacco scatti a ogni controllo (0 = mai, 1 = sempre).
+Intervallo di controllo (s)
+Secondi tra un controllo d'attacco e l'altro. Più basso = attacchi più frequenti.
+Tempo di recupero (controlli)
+Quanti intervalli di controllo attendere dopo un attacco prima che un altro possa scattare.
+Timeout d'inseguimento (s)
+Per quanto tempo Bowie insegue prima di arrendersi se non riesce mai a colpire.
+Distanza max. dell'aggressore (m)
+Vengono scelte solo le auto entro questa distanza dietro di te (servono comunque ~18 m di rincorsa).
+Differenza di altezza max. (m)
+Ignora le auto la cui altezza differisce dalla tua più di questo valore — evita le auto su un ponte sopra o una strada sotto.
+Attacca solo da dietro
+Attivo: vengono scelte solo le auto dietro di te, quindi l'aggressore arriva da dietro (più naturale). Disattivo (predefinito): qualsiasi auto vicina può attaccare, anche dal senso opposto o di lato.
+Spinta di velocità all'impatto (m/s)
+Quando Bowie si avvicina, scatta in avanti di questo valore (m/s) per speronarti. 0 = nessuno scatto, solo guida aggressiva.
+Audio
+Riproduci la frase di scherno allo speronamento
+Riproduce una battuta vocale ogni volta che Bowie sperona la tua auto.

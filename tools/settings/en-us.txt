@@ -1,0 +1,24 @@
+Enable mod
+Turn the random ramming attacks on or off.
+Show debug HUD
+Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.
+Behavior
+Attack chance
+Probability an attack triggers on each check (0 = never, 1 = every check).
+Check interval (s)
+Seconds between attack checks. Lower = attacks happen more often.
+Cooldown (checks)
+How many check intervals to wait after an attack before another can trigger.
+Pursuit timeout (s)
+How long Bowie chases before giving up if he never lands a hit.
+Max attacker distance (m)
+Only cars within this distance behind you can be chosen (they still need ~18 m of runway).
+Max height difference (m)
+Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.
+Attack from behind only
+On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.
+Bump speed boost (m/s)
+When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.
+Audio
+Play taunt sound on ram
+Play a voice line every time Bowie rams your car.

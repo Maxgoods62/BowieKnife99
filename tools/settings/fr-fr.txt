@@ -1,0 +1,24 @@
+Activer le mod
+Active ou désactive les attaques par percussion aléatoires.
+Afficher le HUD de débogage
+Affiche des infos de débogage à l'écran (début d'attaque, sélection, statut des SMS). À laisser désactivé en jeu normal.
+Comportement
+Probabilité d'attaque
+Probabilité qu'une attaque se déclenche à chaque vérification (0 = jamais, 1 = à chaque fois).
+Intervalle de vérification (s)
+Secondes entre chaque vérification. Plus bas = attaques plus fréquentes.
+Temps de recharge (vérifications)
+Nombre de vérifications à attendre après une attaque avant qu'une autre puisse se déclencher.
+Délai de poursuite (s)
+Durée pendant laquelle Bowie poursuit avant d'abandonner s'il ne touche jamais.
+Distance max. de l'attaquant (m)
+Seules les voitures situées à cette distance derrière vous peuvent être choisies (il leur faut tout de même ~18 m d'élan).
+Différence de hauteur max. (m)
+Ignore les voitures dont l'altitude diffère de la vôtre au-delà de cette valeur — évite les voitures sur un pont au-dessus ou une route en dessous.
+Attaquer uniquement par l'arrière
+Activé : seules les voitures derrière vous sont choisies, l'attaquant surgit donc par l'arrière (plus naturel). Désactivé (par défaut) : n'importe quelle voiture proche peut attaquer, y compris en sens inverse ou sur les côtés.
+Boost de vitesse à l'impact (m/s)
+Quand Bowie s'approche, il bondit en avant de cette valeur (m/s) pour vous percuter. 0 = pas de bond, juste une conduite agressive.
+Audio
+Jouer la réplique à l'impact
+Joue une réplique vocale à chaque fois que Bowie percute votre voiture.

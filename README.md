@@ -18,6 +18,10 @@ off — and moments later your phone buzzes with a taunt from a contact named **
   Japanese + Korean), with
   English as the fallback for other languages) and **3D-positioned** from the attacker's car. Toggle it under
   **Settings → Audio**.
+- **Fully localized text**: the **100 SMS taunts and the entire Mod Settings menu** are translated into the
+  same **10 languages** (English, French, German, Spanish, Italian, Polish, Russian, Chinese, Japanese,
+  Korean). Text follows your game's **text/subtitle language** — independent of the voice-language audio pick
+  above — and falls back to English for any other language.
 - **Fully configurable** live via the in-game **Mod Settings** menu — attack chance, check interval, cooldown,
   pursuit timeout, max distance, height limit, attack direction (behind-only or any direction), ram strength,
   debug HUD, and an on/off toggle.
@@ -42,7 +46,7 @@ Cyberpunk 2077/
 ├── archive/pc/mod/BowieKnife99.archive
 ├── archive/pc/mod/BowieKnife99.archive.xl
 ├── r6/scripts/bowieknife99/bowieknife99.reds
-└── r6/audioware/BowieKnife99/          (manifest + en-US.wav / fr-FR.wav taunt clips)
+└── r6/audioware/BowieKnife99/          (manifest + 10 per-language taunt clips)
 ```
 
 Launch the game. Open **Settings → Mod Settings → Bowie Knife99** to tune behavior. Drive around and wait —
@@ -66,7 +70,11 @@ The mod is a standard [WolvenKit](https://github.com/WolvenKit/WolvenKit) projec
 - `source/resources/…` — files installed verbatim to the game root (`r6/scripts/bowieknife99/bowieknife99.reds`,
   `archive/pc/mod/BowieKnife99.archive.xl`, and `r6/audioware/BowieKnife99/` — the Audioware manifest + taunt
   `.wav` clips, picked by voice language in `bowieknife99.reds`).
-- `tools/gen_bowie_sms.py` — generates the SMS journal + localization sources (the 100 taunts).
+- `tools/gen_bowie_sms.py` — generates the SMS journal + per-locale localization (the 100 taunts **and** the
+  Mod Settings labels, auto-extracted from the `.reds`). Translate by filling `tools/taunts/<locale>.txt` and
+  `tools/settings/<locale>.txt` (English-filled templates; blank line = keep English).
+- `tools/build_sms.py` — one command: regenerate → compile CR2W → pack `BowieKnife99.archive` → deploy →
+  rebuild the release zip. Run it after editing any translation file.
 - `tools/extract_vo.py <locale> [vo_name]` — extracts a game VO line in any installed language to
   `r6/audioware/BowieKnife99/<Locale>.wav` (WolvenKit `extract` → vgmstream decode). e.g.
   `python tools/extract_vo.py fr-fr` for the French taunt. New languages also need a `bowieknife99.yml`
@@ -91,6 +99,9 @@ To rebuild the SMS data from scratch:
 - **New: ram-impact taunt voice line.** Bowie now yells at you on a confirmed hit — localized (English,
   10 languages — English, French, German, Spanish, Italian, Polish, Russian, Chinese, Japanese, Korean,
   English fallback for the rest) and spatialized from the attacker's car. Toggle under **Settings → Audio**.
+- **New: localized text.** The 100 SMS taunts **and** the Mod Settings menu are now translated into the same
+  10 languages. SMS/menu text follows your game's **text/subtitle language** (the audio follows the separate
+  voice language); any other language falls back to English.
 - Adds two dependencies for the audio: **Audioware** (plays the clip) and **Codeware** (its engine bindings).
 
 ### 0.0.2

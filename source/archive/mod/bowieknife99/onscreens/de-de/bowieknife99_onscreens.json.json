@@ -40,8 +40,8 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "bowie knife99 strikes again",
-              "maleVariant": "bowie knife99 strikes again",
+              "femaleVariant": "bowie knife99 schlägt wieder zu",
+              "maleVariant": "bowie knife99 schlägt wieder zu",
               "primaryKey": "8137026562564011619",
               "secondaryKey": "bowie_taunt_2"
             },
@@ -54,57 +54,57 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you just got bowie'd",
-              "maleVariant": "you just got bowie'd",
+              "femaleVariant": "du wurdest gerade gebowie't",
+              "maleVariant": "du wurdest gerade gebowie't",
               "primaryKey": "8137033159633780885",
               "secondaryKey": "bowie_taunt_4"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've taken the metro, choom",
-              "maleVariant": "should've taken the metro, choom",
+              "femaleVariant": "hättest die Metro nehmen sollen, Choom",
+              "maleVariant": "hättest die Metro nehmen sollen, Choom",
               "primaryKey": "8137032060122152674",
               "secondaryKey": "bowie_taunt_5"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "ramming speed > your driving",
-              "maleVariant": "ramming speed > your driving",
+              "femaleVariant": "Rammgeschwindigkeit > dein Fahrkönnen",
+              "maleVariant": "Rammgeschwindigkeit > dein Fahrkönnen",
               "primaryKey": "8137030960610524463",
               "secondaryKey": "bowie_taunt_6"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "that's gonna leave a mark",
-              "maleVariant": "that's gonna leave a mark",
+              "femaleVariant": "das gibt 'ne Delle",
+              "maleVariant": "das gibt 'ne Delle",
               "primaryKey": "8137029861098896252",
               "secondaryKey": "bowie_taunt_7"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "catch me if you can, V",
-              "maleVariant": "catch me if you can, V",
+              "femaleVariant": "fang mich doch, V",
+              "maleVariant": "fang mich doch, V",
               "primaryKey": "8137037557680293729",
               "secondaryKey": "bowie_taunt_8"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "insurance won't cover this one",
-              "maleVariant": "insurance won't cover this one",
+              "femaleVariant": "das zahlt keine Versicherung",
+              "maleVariant": "das zahlt keine Versicherung",
               "primaryKey": "8137036458168665518",
               "secondaryKey": "bowie_taunt_9"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "another one for the highlight reel",
-              "maleVariant": "another one for the highlight reel",
+              "femaleVariant": "noch eins fürs Highlight-Reel",
+              "maleVariant": "noch eins fürs Highlight-Reel",
               "primaryKey": "7900009599098022034",
               "secondaryKey": "bowie_taunt_10"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "ratio + you fell off",
-              "maleVariant": "ratio + you fell off",
+              "femaleVariant": "ratio + du bist abgestiegen",
+              "maleVariant": "ratio + du bist abgestiegen",
               "primaryKey": "7900010698609650245",
               "secondaryKey": "bowie_taunt_11"
             },
@@ -117,36 +117,36 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "no respawns out here, choom",
-              "maleVariant": "no respawns out here, choom",
+              "femaleVariant": "hier draußen gibt's kein Respawn, Choom",
+              "maleVariant": "hier draußen gibt's kein Respawn, Choom",
               "primaryKey": "7900008499586393823",
               "secondaryKey": "bowie_taunt_13"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "0 deaths? not anymore",
-              "maleVariant": "0 deaths? not anymore",
+              "femaleVariant": "0 Tode? nicht mehr",
+              "maleVariant": "0 Tode? nicht mehr",
               "primaryKey": "7900005201051509190",
               "secondaryKey": "bowie_taunt_14"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "respawn timer starts now",
-              "maleVariant": "respawn timer starts now",
+              "femaleVariant": "Respawn-Timer läuft",
+              "maleVariant": "Respawn-Timer läuft",
               "primaryKey": "7900006300563137401",
               "secondaryKey": "bowie_taunt_15"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "uninstall, choom",
-              "maleVariant": "uninstall, choom",
+              "femaleVariant": "deinstallier's, Choom",
+              "maleVariant": "deinstallier's, Choom",
               "primaryKey": "7900003002028252768",
               "secondaryKey": "bowie_taunt_16"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "touch grass... or guardrail",
-              "maleVariant": "touch grass... or guardrail",
+              "femaleVariant": "geh an die frische Luft... oder an die Leitplanke",
+              "maleVariant": "geh an die frische Luft... oder an die Leitplanke",
               "primaryKey": "7900004101539880979",
               "secondaryKey": "bowie_taunt_17"
             },
@@ -159,225 +159,225 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "speedrun any% on your bumper",
-              "maleVariant": "speedrun any% on your bumper",
+              "femaleVariant": "speedrun any% auf deiner Stoßstange",
+              "maleVariant": "speedrun any% auf deiner Stoßstange",
               "primaryKey": "7900019494702675933",
               "secondaryKey": "bowie_taunt_19"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "no scope, all bumper",
-              "maleVariant": "no scope, all bumper",
+              "femaleVariant": "no scope, nur Stoßstange",
+              "maleVariant": "no scope, nur Stoßstange",
               "primaryKey": "7899017839609564937",
               "secondaryKey": "bowie_taunt_20"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tell Vik I said hi",
-              "maleVariant": "tell Vik I said hi",
+              "femaleVariant": "grüß Vik von mir",
+              "maleVariant": "grüß Vik von mir",
               "primaryKey": "7899016740097936726",
               "secondaryKey": "bowie_taunt_21"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this one's on Delamain's tab",
-              "maleVariant": "this one's on Delamain's tab",
+              "femaleVariant": "das geht auf Delamains Rechnung",
+              "maleVariant": "das geht auf Delamains Rechnung",
               "primaryKey": "7899015640586308515",
               "secondaryKey": "bowie_taunt_22"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "NCPD won't even file the report",
-              "maleVariant": "NCPD won't even file the report",
+              "femaleVariant": "das NCPD nimmt die Anzeige nicht mal auf",
+              "maleVariant": "das NCPD nimmt die Anzeige nicht mal auf",
               "primaryKey": "7899014541074680304",
               "secondaryKey": "bowie_taunt_23"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Trauma Team's en route — they're billing you",
-              "maleVariant": "Trauma Team's en route — they're billing you",
+              "femaleVariant": "Trauma Team ist unterwegs — und stellt dir die Rechnung",
+              "maleVariant": "Trauma Team ist unterwegs — und stellt dir die Rechnung",
               "primaryKey": "7899022237656077781",
               "secondaryKey": "bowie_taunt_24"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "eddies can't fix that paint job",
-              "maleVariant": "eddies can't fix that paint job",
+              "femaleVariant": "so viele Eddies hat keiner für den Lack",
+              "maleVariant": "so viele Eddies hat keiner für den Lack",
               "primaryKey": "7899021138144449570",
               "secondaryKey": "bowie_taunt_25"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your ripperdoc do cars too?",
-              "maleVariant": "your ripperdoc do cars too?",
+              "femaleVariant": "repariert dein Ripperdoc auch Autos?",
+              "maleVariant": "repariert dein Ripperdoc auch Autos?",
               "primaryKey": "7899020038632821359",
               "secondaryKey": "bowie_taunt_26"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "braindance this crash later, it slaps",
-              "maleVariant": "braindance this crash later, it slaps",
+              "femaleVariant": "schau dir den Crash später als Braindance an, der knallt",
+              "maleVariant": "schau dir den Crash später als Braindance an, der knallt",
               "primaryKey": "7899018939121193148",
               "secondaryKey": "bowie_taunt_27"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've bought the Rayfield",
-              "maleVariant": "should've bought the Rayfield",
+              "femaleVariant": "hättest den Rayfield kaufen sollen",
+              "maleVariant": "hättest den Rayfield kaufen sollen",
               "primaryKey": "7899026635702590625",
               "secondaryKey": "bowie_taunt_28"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Arasaka builds better bumpers",
-              "maleVariant": "Arasaka builds better bumpers",
+              "femaleVariant": "Arasaka baut bessere Stoßstangen",
+              "maleVariant": "Arasaka baut bessere Stoßstangen",
               "primaryKey": "7899025536190962414",
               "secondaryKey": "bowie_taunt_29"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Night City traffic, am I right",
-              "maleVariant": "Night City traffic, am I right",
+              "femaleVariant": "Verkehr in Night City, was?",
+              "maleVariant": "Verkehr in Night City, was?",
               "primaryKey": "7898026080121107840",
               "secondaryKey": "bowie_taunt_30"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "GPS says: pull over",
-              "maleVariant": "GPS says: pull over",
+              "femaleVariant": "das GPS sagt: ranfahren",
+              "maleVariant": "das GPS sagt: ranfahren",
               "primaryKey": "7898027179632736051",
               "secondaryKey": "bowie_taunt_31"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "friendly reminder to wear your seatbelt",
-              "maleVariant": "friendly reminder to wear your seatbelt",
+              "femaleVariant": "freundliche Erinnerung: anschnallen",
+              "maleVariant": "freundliche Erinnerung: anschnallen",
               "primaryKey": "7898028279144364262",
               "secondaryKey": "bowie_taunt_32"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tip: the brakes are the other pedal",
-              "maleVariant": "tip: the brakes are the other pedal",
+              "femaleVariant": "Tipp: die Bremse ist das andere Pedal",
+              "maleVariant": "Tipp: die Bremse ist das andere Pedal",
               "primaryKey": "7898029378655992473",
               "secondaryKey": "bowie_taunt_33"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "drive safe out there, choom",
-              "maleVariant": "drive safe out there, choom",
+              "femaleVariant": "fahr vorsichtig, Choom",
+              "maleVariant": "fahr vorsichtig, Choom",
               "primaryKey": "7898030478167620684",
               "secondaryKey": "bowie_taunt_34"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have you tried not being in my way?",
-              "maleVariant": "have you tried not being in my way?",
+              "femaleVariant": "schon mal versucht, mir nicht im Weg zu sein?",
+              "maleVariant": "schon mal versucht, mir nicht im Weg zu sein?",
               "primaryKey": "7898031577679248895",
               "secondaryKey": "bowie_taunt_35"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have you considered public transit?",
-              "maleVariant": "have you considered public transit?",
+              "femaleVariant": "schon mal über den ÖPNV nachgedacht?",
+              "maleVariant": "schon mal über den ÖPNV nachgedacht?",
               "primaryKey": "7898032677190877106",
               "secondaryKey": "bowie_taunt_36"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "rate your ride 5 stars?",
-              "maleVariant": "rate your ride 5 stars?",
+              "femaleVariant": "5 Sterne für die Fahrt?",
+              "maleVariant": "5 Sterne für die Fahrt?",
               "primaryKey": "7898033776702505317",
               "secondaryKey": "bowie_taunt_37"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "thanks for playing, drive again soon",
-              "maleVariant": "thanks for playing, drive again soon",
+              "femaleVariant": "danke fürs Spielen, fahr bald wieder",
+              "maleVariant": "danke fürs Spielen, fahr bald wieder",
               "primaryKey": "7898034876214133528",
               "secondaryKey": "bowie_taunt_38"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you dropped this: your bumper",
-              "maleVariant": "you dropped this: your bumper",
+              "femaleVariant": "das hast du verloren: deine Stoßstange",
+              "maleVariant": "das hast du verloren: deine Stoßstange",
               "primaryKey": "7898035975725761739",
               "secondaryKey": "bowie_taunt_39"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this lane was reserved, sorry",
-              "maleVariant": "this lane was reserved, sorry",
+              "femaleVariant": "diese Spur war reserviert, sorry",
+              "maleVariant": "diese Spur war reserviert, sorry",
               "primaryKey": "7904792474679793759",
               "secondaryKey": "bowie_taunt_40"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i know where you parked",
-              "maleVariant": "i know where you parked",
+              "femaleVariant": "ich weiß, wo du parkst",
+              "maleVariant": "ich weiß, wo du parkst",
               "primaryKey": "7904791375168165548",
               "secondaryKey": "bowie_taunt_41"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "see you at the next intersection",
-              "maleVariant": "see you at the next intersection",
+              "femaleVariant": "bis zur nächsten Kreuzung",
+              "maleVariant": "bis zur nächsten Kreuzung",
               "primaryKey": "7904794673703050181",
               "secondaryKey": "bowie_taunt_42"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the road belongs to me now",
-              "maleVariant": "the road belongs to me now",
+              "femaleVariant": "die Straße gehört jetzt mir",
+              "maleVariant": "die Straße gehört jetzt mir",
               "primaryKey": "7904793574191421970",
               "secondaryKey": "bowie_taunt_43"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "run. it's funnier when you run",
-              "maleVariant": "run. it's funnier when you run",
+              "femaleVariant": "lauf. es ist lustiger, wenn du läufst",
+              "maleVariant": "lauf. es ist lustiger, wenn du läufst",
               "primaryKey": "7904788076633280915",
               "secondaryKey": "bowie_taunt_44"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "next time i aim for the engine",
-              "maleVariant": "next time i aim for the engine",
+              "femaleVariant": "nächstes Mal ziel ich auf den Motor",
+              "maleVariant": "nächstes Mal ziel ich auf den Motor",
               "primaryKey": "7904786977121652704",
               "secondaryKey": "bowie_taunt_45"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "there is no outrunning bowie knife99",
-              "maleVariant": "there is no outrunning bowie knife99",
+              "femaleVariant": "vor bowie knife99 entkommt niemand",
+              "maleVariant": "vor bowie knife99 entkommt niemand",
               "primaryKey": "7904790275656537337",
               "secondaryKey": "bowie_taunt_46"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "check your mirrors",
-              "maleVariant": "check your mirrors",
+              "femaleVariant": "schau in deine Spiegel",
+              "maleVariant": "schau in deine Spiegel",
               "primaryKey": "7904789176144909126",
               "secondaryKey": "bowie_taunt_47"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "metal meets metal. you lose",
-              "maleVariant": "metal meets metal. you lose",
+              "femaleVariant": "Metall trifft Metall. du verlierst",
+              "maleVariant": "Metall trifft Metall. du verlierst",
               "primaryKey": "7904801270772819447",
               "secondaryKey": "bowie_taunt_48"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "every car is my car",
-              "maleVariant": "every car is my car",
+              "femaleVariant": "jedes Auto ist mein Auto",
+              "maleVariant": "jedes Auto ist mein Auto",
               "primaryKey": "7904800171261191236",
               "secondaryKey": "bowie_taunt_49"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you can't merge away from this",
-              "maleVariant": "you can't merge away from this",
+              "femaleVariant": "da kannst du dich nicht wegfädeln",
+              "maleVariant": "da kannst du dich nicht wegfädeln",
               "primaryKey": "7903800715191336662",
               "secondaryKey": "bowie_taunt_50"
             },
@@ -390,29 +390,29 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "down bad, down a bumper",
-              "maleVariant": "down bad, down a bumper",
+              "femaleVariant": "schlecht drauf, eine Stoßstange weniger",
+              "maleVariant": "schlecht drauf, eine Stoßstange weniger",
               "primaryKey": "7903798516168080240",
               "secondaryKey": "bowie_taunt_52"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "mald harder, choom",
-              "maleVariant": "mald harder, choom",
+              "femaleVariant": "mald härter, Choom",
+              "maleVariant": "mald härter, Choom",
               "primaryKey": "7903799615679708451",
               "secondaryKey": "bowie_taunt_53"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "get rekt, scrub",
-              "maleVariant": "get rekt, scrub",
+              "femaleVariant": "get rekt, Noob",
+              "maleVariant": "get rekt, Noob",
               "primaryKey": "7903805113237849506",
               "secondaryKey": "bowie_taunt_54"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "1v1 me at the next light",
-              "maleVariant": "1v1 me at the next light",
+              "femaleVariant": "1v1 an der nächsten Ampel",
+              "maleVariant": "1v1 an der nächsten Ampel",
               "primaryKey": "7903806212749477717",
               "secondaryKey": "bowie_taunt_55"
             },
@@ -425,456 +425,456 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "outplayed, outdriven",
-              "maleVariant": "outplayed, outdriven",
+              "femaleVariant": "outplayed, überfahren",
+              "maleVariant": "outplayed, überfahren",
               "primaryKey": "7903804013726221295",
               "secondaryKey": "bowie_taunt_57"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "sit down, you're done",
-              "maleVariant": "sit down, you're done",
+              "femaleVariant": "setz dich, du bist erledigt",
+              "maleVariant": "setz dich, du bist erledigt",
               "primaryKey": "7903809511284362350",
               "secondaryKey": "bowie_taunt_58"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "hold this L for me",
-              "maleVariant": "hold this L for me",
+              "femaleVariant": "halt mal dieses L",
+              "maleVariant": "halt mal dieses L",
               "primaryKey": "7903810610795990561",
               "secondaryKey": "bowie_taunt_59"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "my KDA > your insurance premium",
-              "maleVariant": "my KDA > your insurance premium",
+              "femaleVariant": "mein KDA > deine Versicherungsprämie",
+              "maleVariant": "mein KDA > deine Versicherungsprämie",
               "primaryKey": "7902844140074982317",
               "secondaryKey": "bowie_taunt_60"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "one-tap on your trunk",
-              "maleVariant": "one-tap on your trunk",
+              "femaleVariant": "one-tap auf deinen Kofferraum",
+              "maleVariant": "one-tap auf deinen Kofferraum",
               "primaryKey": "7902843040563354106",
               "secondaryKey": "bowie_taunt_61"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tutorial island called, you're late",
-              "maleVariant": "tutorial island called, you're late",
+              "femaleVariant": "das Tutorial hat angerufen, du bist spät dran",
+              "maleVariant": "das Tutorial hat angerufen, du bist spät dran",
               "primaryKey": "7902841941051725895",
               "secondaryKey": "bowie_taunt_62"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "lag? no. me? yes.",
-              "maleVariant": "lag? no. me? yes.",
+              "femaleVariant": "Lag? nein. ich? ja.",
+              "maleVariant": "Lag? nein. ich? ja.",
               "primaryKey": "7902840841540097684",
               "secondaryKey": "bowie_taunt_63"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Wakako says hi",
-              "maleVariant": "Wakako says hi",
+              "femaleVariant": "Wakako lässt grüßen",
+              "maleVariant": "Wakako lässt grüßen",
               "primaryKey": "7902839742028469473",
               "secondaryKey": "bowie_taunt_64"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "even Johnny's laughing at this",
-              "maleVariant": "even Johnny's laughing at this",
+              "femaleVariant": "sogar Johnny lacht darüber",
+              "maleVariant": "sogar Johnny lacht darüber",
               "primaryKey": "7902838642516841262",
               "secondaryKey": "bowie_taunt_65"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "that's a Misty tarot card right there",
-              "maleVariant": "that's a Misty tarot card right there",
+              "femaleVariant": "das ist 'ne Tarotkarte von Misty",
+              "maleVariant": "das ist 'ne Tarotkarte von Misty",
               "primaryKey": "7902837543005213051",
               "secondaryKey": "bowie_taunt_66"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Maelstrom drives better than you",
-              "maleVariant": "Maelstrom drives better than you",
+              "femaleVariant": "Maelstrom fährt besser als du",
+              "maleVariant": "Maelstrom fährt besser als du",
               "primaryKey": "7902836443493584840",
               "secondaryKey": "bowie_taunt_67"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've taken a Delamain cab",
-              "maleVariant": "should've taken a Delamain cab",
+              "femaleVariant": "hättest ein Delamain-Taxi nehmen sollen",
+              "maleVariant": "hättest ein Delamain-Taxi nehmen sollen",
               "primaryKey": "7902835343981956629",
               "secondaryKey": "bowie_taunt_68"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your chrome won't save your fender",
-              "maleVariant": "your chrome won't save your fender",
+              "femaleVariant": "dein Chrom rettet deinen Kotflügel nicht",
+              "maleVariant": "dein Chrom rettet deinen Kotflügel nicht",
               "primaryKey": "7902834244470328418",
               "secondaryKey": "bowie_taunt_69"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Watson traffic court is closed, sorry",
-              "maleVariant": "Watson traffic court is closed, sorry",
+              "femaleVariant": "das Verkehrsgericht in Watson hat zu, sorry",
+              "maleVariant": "das Verkehrsgericht in Watson hat zu, sorry",
               "primaryKey": "7901852380586525220",
               "secondaryKey": "bowie_taunt_70"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the Aldecaldos would've dodged that",
-              "maleVariant": "the Aldecaldos would've dodged that",
+              "femaleVariant": "die Aldecaldos wären ausgewichen",
+              "maleVariant": "die Aldecaldos wären ausgewichen",
               "primaryKey": "7901853480098153431",
               "secondaryKey": "bowie_taunt_71"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Kerry wrote a song about your driving",
-              "maleVariant": "Kerry wrote a song about your driving",
+              "femaleVariant": "Kerry hat einen Song über dein Fahren geschrieben",
+              "maleVariant": "Kerry hat einen Song über dein Fahren geschrieben",
               "primaryKey": "7901854579609781642",
               "secondaryKey": "bowie_taunt_72"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Afterlife's got a drink named after this crash",
-              "maleVariant": "Afterlife's got a drink named after this crash",
+              "femaleVariant": "im Afterlife gibt's einen Drink, der nach diesem Crash benannt ist",
+              "maleVariant": "im Afterlife gibt's einen Drink, der nach diesem Crash benannt ist",
               "primaryKey": "7901855679121409853",
               "secondaryKey": "bowie_taunt_73"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "6th Street says nice parking",
-              "maleVariant": "6th Street says nice parking",
+              "femaleVariant": "die 6th Street sagt: schön geparkt",
+              "maleVariant": "die 6th Street sagt: schön geparkt",
               "primaryKey": "7901847982540012376",
               "secondaryKey": "bowie_taunt_74"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "even a flathead drives cleaner",
-              "maleVariant": "even a flathead drives cleaner",
+              "femaleVariant": "sogar ein Flathead fährt sauberer",
+              "maleVariant": "sogar ein Flathead fährt sauberer",
               "primaryKey": "7901849082051640587",
               "secondaryKey": "bowie_taunt_75"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "just a heads up, your bumper left",
-              "maleVariant": "just a heads up, your bumper left",
+              "femaleVariant": "nur zur Info, deine Stoßstange ist weg",
+              "maleVariant": "nur zur Info, deine Stoßstange ist weg",
               "primaryKey": "7901850181563268798",
               "secondaryKey": "bowie_taunt_76"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "reminder: green means go, not stop",
-              "maleVariant": "reminder: green means go, not stop",
+              "femaleVariant": "Erinnerung: grün heißt los, nicht stopp",
+              "maleVariant": "Erinnerung: grün heißt los, nicht stopp",
               "primaryKey": "7901851281074897009",
               "secondaryKey": "bowie_taunt_77"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "here's a tip — yield to me",
-              "maleVariant": "here's a tip — yield to me",
+              "femaleVariant": "ein Tipp — gib mir Vorfahrt",
+              "maleVariant": "ein Tipp — gib mir Vorfahrt",
               "primaryKey": "7901843584493499532",
               "secondaryKey": "bowie_taunt_78"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your warranty just expired",
-              "maleVariant": "your warranty just expired",
+              "femaleVariant": "deine Garantie ist gerade abgelaufen",
+              "maleVariant": "deine Garantie ist gerade abgelaufen",
               "primaryKey": "7901844684005127743",
               "secondaryKey": "bowie_taunt_79"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "might wanna get that looked at",
-              "maleVariant": "might wanna get that looked at",
+              "femaleVariant": "lass das vielleicht mal checken",
+              "maleVariant": "lass das vielleicht mal checken",
               "primaryKey": "7908583590773108387",
               "secondaryKey": "bowie_taunt_80"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "customer satisfaction: guaranteed",
-              "maleVariant": "customer satisfaction: guaranteed",
+              "femaleVariant": "Kundenzufriedenheit: garantiert",
+              "maleVariant": "Kundenzufriedenheit: garantiert",
               "primaryKey": "7908582491261480176",
               "secondaryKey": "bowie_taunt_81"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "we value your feedback (we don't)",
-              "maleVariant": "we value your feedback (we don't)",
+              "femaleVariant": "dein Feedback ist uns wichtig (ist es nicht)",
+              "maleVariant": "dein Feedback ist uns wichtig (ist es nicht)",
               "primaryKey": "7908585789796364809",
               "secondaryKey": "bowie_taunt_82"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "please remain calm and pull over",
-              "maleVariant": "please remain calm and pull over",
+              "femaleVariant": "bitte bleib ruhig und fahr ran",
+              "maleVariant": "bitte bleib ruhig und fahr ran",
               "primaryKey": "7908584690284736598",
               "secondaryKey": "bowie_taunt_83"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this has been a friendly demonstration",
-              "maleVariant": "this has been a friendly demonstration",
+              "femaleVariant": "das war eine freundliche Vorführung",
+              "maleVariant": "das war eine freundliche Vorführung",
               "primaryKey": "7908587988819621231",
               "secondaryKey": "bowie_taunt_84"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you've been selected for a free ramming",
-              "maleVariant": "you've been selected for a free ramming",
+              "femaleVariant": "du wurdest für ein kostenloses Rammen ausgewählt",
+              "maleVariant": "du wurdest für ein kostenloses Rammen ausgewählt",
               "primaryKey": "7908586889307993020",
               "secondaryKey": "bowie_taunt_85"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "don't forget to like and subscribe",
-              "maleVariant": "don't forget to like and subscribe",
+              "femaleVariant": "vergiss nicht zu liken und zu abonnieren",
+              "maleVariant": "vergiss nicht zu liken und zu abonnieren",
               "primaryKey": "7908590187842877653",
               "secondaryKey": "bowie_taunt_86"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have a nice day, genuinely",
-              "maleVariant": "have a nice day, genuinely",
+              "femaleVariant": "einen schönen Tag noch, ehrlich",
+              "maleVariant": "einen schönen Tag noch, ehrlich",
               "primaryKey": "7908589088331249442",
               "secondaryKey": "bowie_taunt_87"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i'm already behind you",
-              "maleVariant": "i'm already behind you",
+              "femaleVariant": "ich bin schon hinter dir",
+              "maleVariant": "ich bin schon hinter dir",
               "primaryKey": "7908592386866134075",
               "secondaryKey": "bowie_taunt_88"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "don't bother with the rearview",
-              "maleVariant": "don't bother with the rearview",
+              "femaleVariant": "spar dir den Rückspiegel",
+              "maleVariant": "spar dir den Rückspiegel",
               "primaryKey": "7908591287354505864",
               "secondaryKey": "bowie_taunt_89"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the next one's worse",
-              "maleVariant": "the next one's worse",
+              "femaleVariant": "der nächste wird schlimmer",
+              "maleVariant": "der nächste wird schlimmer",
               "primaryKey": "7907627015656754042",
               "secondaryKey": "bowie_taunt_90"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you felt that one, didn't you",
-              "maleVariant": "you felt that one, didn't you",
+              "femaleVariant": "den hast du gespürt, oder?",
+              "maleVariant": "den hast du gespürt, oder?",
               "primaryKey": "7907628115168382253",
               "secondaryKey": "bowie_taunt_91"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "there's no garage deep enough",
-              "maleVariant": "there's no garage deep enough",
+              "femaleVariant": "keine Garage ist tief genug",
+              "maleVariant": "keine Garage ist tief genug",
               "primaryKey": "7907624816633497620",
               "secondaryKey": "bowie_taunt_92"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i drive where you sleep",
-              "maleVariant": "i drive where you sleep",
+              "femaleVariant": "ich fahre, wo du schläfst",
+              "maleVariant": "ich fahre, wo du schläfst",
               "primaryKey": "7907625916145125831",
               "secondaryKey": "bowie_taunt_93"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "brake all you want",
-              "maleVariant": "brake all you want",
+              "femaleVariant": "brems so viel du willst",
+              "maleVariant": "brems so viel du willst",
               "primaryKey": "7907622617610241198",
               "secondaryKey": "bowie_taunt_94"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i've got all night, choom",
-              "maleVariant": "i've got all night, choom",
+              "femaleVariant": "ich hab die ganze Nacht Zeit, Choom",
+              "maleVariant": "ich hab die ganze Nacht Zeit, Choom",
               "primaryKey": "7907623717121869409",
               "secondaryKey": "bowie_taunt_95"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your engine block is mine",
-              "maleVariant": "your engine block is mine",
+              "femaleVariant": "dein Motorblock gehört mir",
+              "maleVariant": "dein Motorblock gehört mir",
               "primaryKey": "7907620418586984776",
               "secondaryKey": "bowie_taunt_96"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "keep driving. i dare you",
-              "maleVariant": "keep driving. i dare you",
+              "femaleVariant": "fahr ruhig weiter. trau dich",
+              "maleVariant": "fahr ruhig weiter. trau dich",
               "primaryKey": "7907621518098612987",
               "secondaryKey": "bowie_taunt_97"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "every red light is mine",
-              "maleVariant": "every red light is mine",
+              "femaleVariant": "jede rote Ampel gehört mir",
+              "maleVariant": "jede rote Ampel gehört mir",
               "primaryKey": "7907618219563728354",
               "secondaryKey": "bowie_taunt_98"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i never miss twice",
-              "maleVariant": "i never miss twice",
+              "femaleVariant": "ich verfehle nie zweimal",
+              "maleVariant": "ich verfehle nie zweimal",
               "primaryKey": "7907619319075356565",
               "secondaryKey": "bowie_taunt_99"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "say goodnight to your suspension",
-              "maleVariant": "say goodnight to your suspension",
+              "femaleVariant": "sag deinem Fahrwerk gute Nacht",
+              "maleVariant": "sag deinem Fahrwerk gute Nacht",
               "primaryKey": "13041305587125996358",
               "secondaryKey": "bowie_taunt_100"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Enable mod",
-              "maleVariant": "Enable mod",
+              "femaleVariant": "Mod aktivieren",
+              "maleVariant": "Mod aktivieren",
               "primaryKey": "2143662024956131856",
               "secondaryKey": "BowieKnife99-Enable-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Turn the random ramming attacks on or off.",
-              "maleVariant": "Turn the random ramming attacks on or off.",
+              "femaleVariant": "Schaltet die zufälligen Rammattacken ein oder aus.",
+              "maleVariant": "Schaltet die zufälligen Rammattacken ein oder aus.",
               "primaryKey": "4326102803886100614",
               "secondaryKey": "BowieKnife99-Enable-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Show debug HUD",
-              "maleVariant": "Show debug HUD",
+              "femaleVariant": "Debug-HUD anzeigen",
+              "maleVariant": "Debug-HUD anzeigen",
               "primaryKey": "5611261748329956462",
               "secondaryKey": "BowieKnife99-Debug-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.",
-              "maleVariant": "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.",
+              "femaleVariant": "Zeigt Debug-Infos auf dem Bildschirm (Ramm-Start, Auswahl, SMS-Status). Im normalen Spiel ausgeschaltet lassen.",
+              "maleVariant": "Zeigt Debug-Infos auf dem Bildschirm (Ramm-Start, Auswahl, SMS-Status). Im normalen Spiel ausgeschaltet lassen.",
               "primaryKey": "9488054211642199624",
               "secondaryKey": "BowieKnife99-Debug-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Behavior",
-              "maleVariant": "Behavior",
+              "femaleVariant": "Verhalten",
+              "maleVariant": "Verhalten",
               "primaryKey": "7199784825471876842",
               "secondaryKey": "BowieKnife99-Cat-Behavior"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Attack chance",
-              "maleVariant": "Attack chance",
+              "femaleVariant": "Angriffschance",
+              "maleVariant": "Angriffschance",
               "primaryKey": "2567276510498431929",
               "secondaryKey": "BowieKnife99-Chance-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Probability an attack triggers on each check (0 = never, 1 = every check).",
-              "maleVariant": "Probability an attack triggers on each check (0 = never, 1 = every check).",
+              "femaleVariant": "Wahrscheinlichkeit, dass bei jeder Prüfung ein Angriff ausgelöst wird (0 = nie, 1 = jedes Mal).",
+              "maleVariant": "Wahrscheinlichkeit, dass bei jeder Prüfung ein Angriff ausgelöst wird (0 = nie, 1 = jedes Mal).",
               "primaryKey": "12705118755998484723",
               "secondaryKey": "BowieKnife99-Chance-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Check interval (s)",
-              "maleVariant": "Check interval (s)",
+              "femaleVariant": "Prüfintervall (s)",
+              "maleVariant": "Prüfintervall (s)",
               "primaryKey": "11504224705266917198",
               "secondaryKey": "BowieKnife99-Interval-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Seconds between attack checks. Lower = attacks happen more often.",
-              "maleVariant": "Seconds between attack checks. Lower = attacks happen more often.",
+              "femaleVariant": "Sekunden zwischen den Angriffsprüfungen. Niedriger = häufigere Angriffe.",
+              "maleVariant": "Sekunden zwischen den Angriffsprüfungen. Niedriger = häufigere Angriffe.",
               "primaryKey": "3168662332961832488",
               "secondaryKey": "BowieKnife99-Interval-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Cooldown (checks)",
-              "maleVariant": "Cooldown (checks)",
+              "femaleVariant": "Abklingzeit (Prüfungen)",
+              "maleVariant": "Abklingzeit (Prüfungen)",
               "primaryKey": "6351628774326012258",
               "secondaryKey": "BowieKnife99-Cooldown-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "How many check intervals to wait after an attack before another can trigger.",
-              "maleVariant": "How many check intervals to wait after an attack before another can trigger.",
+              "femaleVariant": "Wie viele Prüfintervalle nach einem Angriff gewartet wird, bevor ein weiterer ausgelöst werden kann.",
+              "maleVariant": "Wie viele Prüfintervalle nach einem Angriff gewartet wird, bevor ein weiterer ausgelöst werden kann.",
               "primaryKey": "14683624744769913524",
               "secondaryKey": "BowieKnife99-Cooldown-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Pursuit timeout (s)",
-              "maleVariant": "Pursuit timeout (s)",
+              "femaleVariant": "Verfolgungs-Timeout (s)",
+              "maleVariant": "Verfolgungs-Timeout (s)",
               "primaryKey": "4632948351712965706",
               "secondaryKey": "BowieKnife99-Timeout-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "How long Bowie chases before giving up if he never lands a hit.",
-              "maleVariant": "How long Bowie chases before giving up if he never lands a hit.",
+              "femaleVariant": "Wie lange Bowie verfolgt, bevor er aufgibt, falls er nie trifft.",
+              "maleVariant": "Wie lange Bowie verfolgt, bevor er aufgibt, falls er nie trifft.",
               "primaryKey": "15965431821875619260",
               "secondaryKey": "BowieKnife99-Timeout-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Max attacker distance (m)",
-              "maleVariant": "Max attacker distance (m)",
+              "femaleVariant": "Max. Angreifer-Distanz (m)",
+              "maleVariant": "Max. Angreifer-Distanz (m)",
               "primaryKey": "9306647328346220416",
               "secondaryKey": "BowieKnife99-Distance-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).",
-              "maleVariant": "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).",
+              "femaleVariant": "Nur Fahrzeuge innerhalb dieser Distanz hinter dir können ausgewählt werden (sie brauchen trotzdem ~18 m Anlauf).",
+              "maleVariant": "Nur Fahrzeuge innerhalb dieser Distanz hinter dir können ausgewählt werden (sie brauchen trotzdem ~18 m Anlauf).",
               "primaryKey": "11519557773511117206",
               "secondaryKey": "BowieKnife99-Distance-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Max height difference (m)",
-              "maleVariant": "Max height difference (m)",
+              "femaleVariant": "Max. Höhenunterschied (m)",
+              "maleVariant": "Max. Höhenunterschied (m)",
               "primaryKey": "3961924841682973632",
               "secondaryKey": "BowieKnife99-Height-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.",
-              "maleVariant": "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.",
+              "femaleVariant": "Überspringt Fahrzeuge, deren Höhe um mehr als diesen Wert von deiner abweicht — vermeidet Autos auf einer Brücke darüber oder einer Straße darunter.",
+              "maleVariant": "Überspringt Fahrzeuge, deren Höhe um mehr als diesen Wert von deiner abweicht — vermeidet Autos auf einer Brücke darüber oder einer Straße darunter.",
               "primaryKey": "5929952057061158102",
               "secondaryKey": "BowieKnife99-Height-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Attack from behind only",
-              "maleVariant": "Attack from behind only",
+              "femaleVariant": "Nur von hinten angreifen",
+              "maleVariant": "Nur von hinten angreifen",
               "primaryKey": "16940616017810024449",
               "secondaryKey": "BowieKnife99-RearOnly-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.",
-              "maleVariant": "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.",
+              "femaleVariant": "Ein: Nur Fahrzeuge hinter dir werden ausgewählt, der Angreifer holt also von hinten auf (wirkt natürlicher). Aus (Standard): jedes Fahrzeug in der Nähe kann angreifen, auch Gegenverkehr oder von der Seite.",
+              "maleVariant": "Ein: Nur Fahrzeuge hinter dir werden ausgewählt, der Angreifer holt also von hinten auf (wirkt natürlicher). Aus (Standard): jedes Fahrzeug in der Nähe kann angreifen, auch Gegenverkehr oder von der Seite.",
               "primaryKey": "5416742757585783547",
               "secondaryKey": "BowieKnife99-RearOnly-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Bump speed boost (m/s)",
-              "maleVariant": "Bump speed boost (m/s)",
+              "femaleVariant": "Aufprall-Geschwindigkeitsschub (m/s)",
+              "maleVariant": "Aufprall-Geschwindigkeitsschub (m/s)",
               "primaryKey": "2362180185579179461",
               "secondaryKey": "BowieKnife99-Bump-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.",
-              "maleVariant": "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.",
+              "femaleVariant": "Wenn Bowie nah herankommt, schießt er um diesen Wert (m/s) nach vorne, um dich zu rammen. 0 = kein Schub, nur aggressives Fahren.",
+              "maleVariant": "Wenn Bowie nah herankommt, schießt er um diesen Wert (m/s) nach vorne, um dich zu rammen. 0 = kein Schub, nur aggressives Fahren.",
               "primaryKey": "7529719699482486951",
               "secondaryKey": "BowieKnife99-Bump-Desc"
             },
@@ -887,15 +887,15 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Play taunt sound on ram",
-              "maleVariant": "Play taunt sound on ram",
+              "femaleVariant": "Spott-Spruch beim Rammen abspielen",
+              "maleVariant": "Spott-Spruch beim Rammen abspielen",
               "primaryKey": "5377376972595605988",
               "secondaryKey": "BowieKnife99-RamSound-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Play a voice line every time Bowie rams your car.",
-              "maleVariant": "Play a voice line every time Bowie rams your car.",
+              "femaleVariant": "Spielt bei jedem Rammstoß von Bowie eine Sprachausgabe ab.",
+              "maleVariant": "Spielt bei jedem Rammstoß von Bowie eine Sprachausgabe ab.",
               "primaryKey": "6202967043463660338",
               "secondaryKey": "BowieKnife99-RamSound-Desc"
             }

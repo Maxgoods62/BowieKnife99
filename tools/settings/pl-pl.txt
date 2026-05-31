@@ -1,0 +1,24 @@
+Włącz moda
+Włącza lub wyłącza losowe ataki taranujące.
+Pokaż HUD debugowania
+Pokazuje informacje debugowania na ekranie (start tarana, wybór celu, status SMS-ów). Wyłącz na czas normalnej gry.
+Zachowanie
+Szansa na atak
+Prawdopodobieństwo wyzwolenia ataku przy każdym sprawdzeniu (0 = nigdy, 1 = za każdym razem).
+Odstęp sprawdzania (s)
+Sekundy między sprawdzeniami ataku. Mniej = ataki częściej.
+Czas odnowienia (sprawdzenia)
+Ile odstępów sprawdzania odczekać po ataku, zanim może wyzwolić się kolejny.
+Limit czasu pościgu (s)
+Jak długo Bowie ściga, zanim się podda, jeśli nigdy nie trafi.
+Maks. dystans napastnika (m)
+Wybierane są tylko samochody w tej odległości za tobą (i tak potrzebują ~18 m rozbiegu).
+Maks. różnica wysokości (m)
+Pomija samochody, których wysokość różni się od twojej o więcej niż to — unika aut na moście powyżej lub drodze poniżej.
+Atakuj tylko z tyłu
+Wł.: wybierane są tylko samochody za tobą, więc napastnik dogania od tyłu (wygląda naturalniej). Wył. (domyślnie): zaatakować może każdy pobliski samochód, również z naprzeciwka lub z boku.
+Dopalenie prędkości przy uderzeniu (m/s)
+Gdy Bowie się zbliża, rzuca się naprzód o tę wartość (m/s), żeby cię staranować. 0 = brak zrywu, tylko agresywna jazda.
+Dźwięk
+Odtwarzaj drwinę przy taranowaniu
+Odtwarza kwestię głosową za każdym razem, gdy Bowie taranuje twój samochód.

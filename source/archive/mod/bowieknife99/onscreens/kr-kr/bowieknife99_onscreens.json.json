@@ -40,8 +40,8 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "bowie knife99 strikes again",
-              "maleVariant": "bowie knife99 strikes again",
+              "femaleVariant": "bowie knife99 가 또 한 방 먹였다",
+              "maleVariant": "bowie knife99 가 또 한 방 먹였다",
               "primaryKey": "8137026562564011619",
               "secondaryKey": "bowie_taunt_2"
             },
@@ -54,57 +54,57 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you just got bowie'd",
-              "maleVariant": "you just got bowie'd",
+              "femaleVariant": "방금 보위당했네",
+              "maleVariant": "방금 보위당했네",
               "primaryKey": "8137033159633780885",
               "secondaryKey": "bowie_taunt_4"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've taken the metro, choom",
-              "maleVariant": "should've taken the metro, choom",
+              "femaleVariant": "지하철 탔어야지, 춤",
+              "maleVariant": "지하철 탔어야지, 춤",
               "primaryKey": "8137032060122152674",
               "secondaryKey": "bowie_taunt_5"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "ramming speed > your driving",
-              "maleVariant": "ramming speed > your driving",
+              "femaleVariant": "들이받기 속도 ＞ 네 운전 실력",
+              "maleVariant": "들이받기 속도 ＞ 네 운전 실력",
               "primaryKey": "8137030960610524463",
               "secondaryKey": "bowie_taunt_6"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "that's gonna leave a mark",
-              "maleVariant": "that's gonna leave a mark",
+              "femaleVariant": "자국 남겠는데",
+              "maleVariant": "자국 남겠는데",
               "primaryKey": "8137029861098896252",
               "secondaryKey": "bowie_taunt_7"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "catch me if you can, V",
-              "maleVariant": "catch me if you can, V",
+              "femaleVariant": "잡을 수 있으면 잡아봐, V",
+              "maleVariant": "잡을 수 있으면 잡아봐, V",
               "primaryKey": "8137037557680293729",
               "secondaryKey": "bowie_taunt_8"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "insurance won't cover this one",
-              "maleVariant": "insurance won't cover this one",
+              "femaleVariant": "이건 보험 처리 안 돼",
+              "maleVariant": "이건 보험 처리 안 돼",
               "primaryKey": "8137036458168665518",
               "secondaryKey": "bowie_taunt_9"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "another one for the highlight reel",
-              "maleVariant": "another one for the highlight reel",
+              "femaleVariant": "하이라이트 영상에 한 장면 추가",
+              "maleVariant": "하이라이트 영상에 한 장면 추가",
               "primaryKey": "7900009599098022034",
               "secondaryKey": "bowie_taunt_10"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "ratio + you fell off",
-              "maleVariant": "ratio + you fell off",
+              "femaleVariant": "ratio ＋ 넌 한물갔어",
+              "maleVariant": "ratio ＋ 넌 한물갔어",
               "primaryKey": "7900010698609650245",
               "secondaryKey": "bowie_taunt_11"
             },
@@ -117,36 +117,36 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "no respawns out here, choom",
-              "maleVariant": "no respawns out here, choom",
+              "femaleVariant": "여긴 리스폰 없어, 춤",
+              "maleVariant": "여긴 리스폰 없어, 춤",
               "primaryKey": "7900008499586393823",
               "secondaryKey": "bowie_taunt_13"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "0 deaths? not anymore",
-              "maleVariant": "0 deaths? not anymore",
+              "femaleVariant": "0데스? 이제 아니지",
+              "maleVariant": "0데스? 이제 아니지",
               "primaryKey": "7900005201051509190",
               "secondaryKey": "bowie_taunt_14"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "respawn timer starts now",
-              "maleVariant": "respawn timer starts now",
+              "femaleVariant": "리스폰 타이머 시작",
+              "maleVariant": "리스폰 타이머 시작",
               "primaryKey": "7900006300563137401",
               "secondaryKey": "bowie_taunt_15"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "uninstall, choom",
-              "maleVariant": "uninstall, choom",
+              "femaleVariant": "게임 지워, 춤",
+              "maleVariant": "게임 지워, 춤",
               "primaryKey": "7900003002028252768",
               "secondaryKey": "bowie_taunt_16"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "touch grass... or guardrail",
-              "maleVariant": "touch grass... or guardrail",
+              "femaleVariant": "바람 좀 쐬고 와… 가드레일이라도",
+              "maleVariant": "바람 좀 쐬고 와… 가드레일이라도",
               "primaryKey": "7900004101539880979",
               "secondaryKey": "bowie_taunt_17"
             },
@@ -159,225 +159,225 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "speedrun any% on your bumper",
-              "maleVariant": "speedrun any% on your bumper",
+              "femaleVariant": "네 범퍼로 any% 스피드런",
+              "maleVariant": "네 범퍼로 any% 스피드런",
               "primaryKey": "7900019494702675933",
               "secondaryKey": "bowie_taunt_19"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "no scope, all bumper",
-              "maleVariant": "no scope, all bumper",
+              "femaleVariant": "노스코프, 전부 범퍼",
+              "maleVariant": "노스코프, 전부 범퍼",
               "primaryKey": "7899017839609564937",
               "secondaryKey": "bowie_taunt_20"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tell Vik I said hi",
-              "maleVariant": "tell Vik I said hi",
+              "femaleVariant": "빅한테 안부 전해줘",
+              "maleVariant": "빅한테 안부 전해줘",
               "primaryKey": "7899016740097936726",
               "secondaryKey": "bowie_taunt_21"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this one's on Delamain's tab",
-              "maleVariant": "this one's on Delamain's tab",
+              "femaleVariant": "이건 델라메인 앞으로 달아둬",
+              "maleVariant": "이건 델라메인 앞으로 달아둬",
               "primaryKey": "7899015640586308515",
               "secondaryKey": "bowie_taunt_22"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "NCPD won't even file the report",
-              "maleVariant": "NCPD won't even file the report",
+              "femaleVariant": "NCPD는 신고 접수도 안 할걸",
+              "maleVariant": "NCPD는 신고 접수도 안 할걸",
               "primaryKey": "7899014541074680304",
               "secondaryKey": "bowie_taunt_23"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Trauma Team's en route — they're billing you",
-              "maleVariant": "Trauma Team's en route — they're billing you",
+              "femaleVariant": "트라우마 팀이 오는 중 — 청구서는 네 앞으로",
+              "maleVariant": "트라우마 팀이 오는 중 — 청구서는 네 앞으로",
               "primaryKey": "7899022237656077781",
               "secondaryKey": "bowie_taunt_24"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "eddies can't fix that paint job",
-              "maleVariant": "eddies can't fix that paint job",
+              "femaleVariant": "그 도색은 에디로도 못 살려",
+              "maleVariant": "그 도색은 에디로도 못 살려",
               "primaryKey": "7899021138144449570",
               "secondaryKey": "bowie_taunt_25"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your ripperdoc do cars too?",
-              "maleVariant": "your ripperdoc do cars too?",
+              "femaleVariant": "네 리퍼독은 차도 고치냐?",
+              "maleVariant": "네 리퍼독은 차도 고치냐?",
               "primaryKey": "7899020038632821359",
               "secondaryKey": "bowie_taunt_26"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "braindance this crash later, it slaps",
-              "maleVariant": "braindance this crash later, it slaps",
+              "femaleVariant": "이 충돌 나중에 브레인댄스로 봐, 죽인다",
+              "maleVariant": "이 충돌 나중에 브레인댄스로 봐, 죽인다",
               "primaryKey": "7899018939121193148",
               "secondaryKey": "bowie_taunt_27"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've bought the Rayfield",
-              "maleVariant": "should've bought the Rayfield",
+              "femaleVariant": "레이필드 샀어야지",
+              "maleVariant": "레이필드 샀어야지",
               "primaryKey": "7899026635702590625",
               "secondaryKey": "bowie_taunt_28"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Arasaka builds better bumpers",
-              "maleVariant": "Arasaka builds better bumpers",
+              "femaleVariant": "아라사카 범퍼가 더 낫겠다",
+              "maleVariant": "아라사카 범퍼가 더 낫겠다",
               "primaryKey": "7899025536190962414",
               "secondaryKey": "bowie_taunt_29"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Night City traffic, am I right",
-              "maleVariant": "Night City traffic, am I right",
+              "femaleVariant": "나이트 시티 교통, 그렇지?",
+              "maleVariant": "나이트 시티 교통, 그렇지?",
               "primaryKey": "7898026080121107840",
               "secondaryKey": "bowie_taunt_30"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "GPS says: pull over",
-              "maleVariant": "GPS says: pull over",
+              "femaleVariant": "내비가 그러네: 갓길에 대",
+              "maleVariant": "내비가 그러네: 갓길에 대",
               "primaryKey": "7898027179632736051",
               "secondaryKey": "bowie_taunt_31"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "friendly reminder to wear your seatbelt",
-              "maleVariant": "friendly reminder to wear your seatbelt",
+              "femaleVariant": "친절한 알림: 안전벨트 매",
+              "maleVariant": "친절한 알림: 안전벨트 매",
               "primaryKey": "7898028279144364262",
               "secondaryKey": "bowie_taunt_32"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tip: the brakes are the other pedal",
-              "maleVariant": "tip: the brakes are the other pedal",
+              "femaleVariant": "팁: 브레이크는 다른 페달이야",
+              "maleVariant": "팁: 브레이크는 다른 페달이야",
               "primaryKey": "7898029378655992473",
               "secondaryKey": "bowie_taunt_33"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "drive safe out there, choom",
-              "maleVariant": "drive safe out there, choom",
+              "femaleVariant": "운전 조심해, 춤",
+              "maleVariant": "운전 조심해, 춤",
               "primaryKey": "7898030478167620684",
               "secondaryKey": "bowie_taunt_34"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have you tried not being in my way?",
-              "maleVariant": "have you tried not being in my way?",
+              "femaleVariant": "내 앞길 막지 않는 건 해봤어?",
+              "maleVariant": "내 앞길 막지 않는 건 해봤어?",
               "primaryKey": "7898031577679248895",
               "secondaryKey": "bowie_taunt_35"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have you considered public transit?",
-              "maleVariant": "have you considered public transit?",
+              "femaleVariant": "대중교통은 생각해봤어?",
+              "maleVariant": "대중교통은 생각해봤어?",
               "primaryKey": "7898032677190877106",
               "secondaryKey": "bowie_taunt_36"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "rate your ride 5 stars?",
-              "maleVariant": "rate your ride 5 stars?",
+              "femaleVariant": "이 주행 별 5개 줄래?",
+              "maleVariant": "이 주행 별 5개 줄래?",
               "primaryKey": "7898033776702505317",
               "secondaryKey": "bowie_taunt_37"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "thanks for playing, drive again soon",
-              "maleVariant": "thanks for playing, drive again soon",
+              "femaleVariant": "플레이해줘서 고마워, 또 운전하러 와",
+              "maleVariant": "플레이해줘서 고마워, 또 운전하러 와",
               "primaryKey": "7898034876214133528",
               "secondaryKey": "bowie_taunt_38"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you dropped this: your bumper",
-              "maleVariant": "you dropped this: your bumper",
+              "femaleVariant": "이거 떨어뜨렸어: 네 범퍼",
+              "maleVariant": "이거 떨어뜨렸어: 네 범퍼",
               "primaryKey": "7898035975725761739",
               "secondaryKey": "bowie_taunt_39"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this lane was reserved, sorry",
-              "maleVariant": "this lane was reserved, sorry",
+              "femaleVariant": "이 차선은 예약돼 있었어, 미안",
+              "maleVariant": "이 차선은 예약돼 있었어, 미안",
               "primaryKey": "7904792474679793759",
               "secondaryKey": "bowie_taunt_40"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i know where you parked",
-              "maleVariant": "i know where you parked",
+              "femaleVariant": "네가 어디 주차했는지 알아",
+              "maleVariant": "네가 어디 주차했는지 알아",
               "primaryKey": "7904791375168165548",
               "secondaryKey": "bowie_taunt_41"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "see you at the next intersection",
-              "maleVariant": "see you at the next intersection",
+              "femaleVariant": "다음 교차로에서 보자",
+              "maleVariant": "다음 교차로에서 보자",
               "primaryKey": "7904794673703050181",
               "secondaryKey": "bowie_taunt_42"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the road belongs to me now",
-              "maleVariant": "the road belongs to me now",
+              "femaleVariant": "이제 이 도로는 내 거야",
+              "maleVariant": "이제 이 도로는 내 거야",
               "primaryKey": "7904793574191421970",
               "secondaryKey": "bowie_taunt_43"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "run. it's funnier when you run",
-              "maleVariant": "run. it's funnier when you run",
+              "femaleVariant": "도망가. 도망갈 때가 더 재밌어",
+              "maleVariant": "도망가. 도망갈 때가 더 재밌어",
               "primaryKey": "7904788076633280915",
               "secondaryKey": "bowie_taunt_44"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "next time i aim for the engine",
-              "maleVariant": "next time i aim for the engine",
+              "femaleVariant": "다음엔 엔진을 노린다",
+              "maleVariant": "다음엔 엔진을 노린다",
               "primaryKey": "7904786977121652704",
               "secondaryKey": "bowie_taunt_45"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "there is no outrunning bowie knife99",
-              "maleVariant": "there is no outrunning bowie knife99",
+              "femaleVariant": "bowie knife99 한테선 못 도망가",
+              "maleVariant": "bowie knife99 한테선 못 도망가",
               "primaryKey": "7904790275656537337",
               "secondaryKey": "bowie_taunt_46"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "check your mirrors",
-              "maleVariant": "check your mirrors",
+              "femaleVariant": "거울 좀 봐",
+              "maleVariant": "거울 좀 봐",
               "primaryKey": "7904789176144909126",
               "secondaryKey": "bowie_taunt_47"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "metal meets metal. you lose",
-              "maleVariant": "metal meets metal. you lose",
+              "femaleVariant": "금속 대 금속. 네가 진다",
+              "maleVariant": "금속 대 금속. 네가 진다",
               "primaryKey": "7904801270772819447",
               "secondaryKey": "bowie_taunt_48"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "every car is my car",
-              "maleVariant": "every car is my car",
+              "femaleVariant": "모든 차가 내 차야",
+              "maleVariant": "모든 차가 내 차야",
               "primaryKey": "7904800171261191236",
               "secondaryKey": "bowie_taunt_49"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you can't merge away from this",
-              "maleVariant": "you can't merge away from this",
+              "femaleVariant": "차선 바꿔도 이건 못 피해",
+              "maleVariant": "차선 바꿔도 이건 못 피해",
               "primaryKey": "7903800715191336662",
               "secondaryKey": "bowie_taunt_50"
             },
@@ -390,29 +390,29 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "down bad, down a bumper",
-              "maleVariant": "down bad, down a bumper",
+              "femaleVariant": "망했고, 범퍼도 하나 날렸네",
+              "maleVariant": "망했고, 범퍼도 하나 날렸네",
               "primaryKey": "7903798516168080240",
               "secondaryKey": "bowie_taunt_52"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "mald harder, choom",
-              "maleVariant": "mald harder, choom",
+              "femaleVariant": "더 mald 해봐, 춤",
+              "maleVariant": "더 mald 해봐, 춤",
               "primaryKey": "7903799615679708451",
               "secondaryKey": "bowie_taunt_53"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "get rekt, scrub",
-              "maleVariant": "get rekt, scrub",
+              "femaleVariant": "get rekt, 초보",
+              "maleVariant": "get rekt, 초보",
               "primaryKey": "7903805113237849506",
               "secondaryKey": "bowie_taunt_54"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "1v1 me at the next light",
-              "maleVariant": "1v1 me at the next light",
+              "femaleVariant": "다음 신호에서 1v1 뜨자",
+              "maleVariant": "다음 신호에서 1v1 뜨자",
               "primaryKey": "7903806212749477717",
               "secondaryKey": "bowie_taunt_55"
             },
@@ -425,477 +425,477 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "outplayed, outdriven",
-              "maleVariant": "outplayed, outdriven",
+              "femaleVariant": "outplayed, 운전으로도 발렸어",
+              "maleVariant": "outplayed, 운전으로도 발렸어",
               "primaryKey": "7903804013726221295",
               "secondaryKey": "bowie_taunt_57"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "sit down, you're done",
-              "maleVariant": "sit down, you're done",
+              "femaleVariant": "앉아, 넌 끝났어",
+              "maleVariant": "앉아, 넌 끝났어",
               "primaryKey": "7903809511284362350",
               "secondaryKey": "bowie_taunt_58"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "hold this L for me",
-              "maleVariant": "hold this L for me",
+              "femaleVariant": "이 L 좀 들고 있어",
+              "maleVariant": "이 L 좀 들고 있어",
               "primaryKey": "7903810610795990561",
               "secondaryKey": "bowie_taunt_59"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "my KDA > your insurance premium",
-              "maleVariant": "my KDA > your insurance premium",
+              "femaleVariant": "내 KDA ＞ 네 보험료",
+              "maleVariant": "내 KDA ＞ 네 보험료",
               "primaryKey": "7902844140074982317",
               "secondaryKey": "bowie_taunt_60"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "one-tap on your trunk",
-              "maleVariant": "one-tap on your trunk",
+              "femaleVariant": "네 트렁크 원샷",
+              "maleVariant": "네 트렁크 원샷",
               "primaryKey": "7902843040563354106",
               "secondaryKey": "bowie_taunt_61"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tutorial island called, you're late",
-              "maleVariant": "tutorial island called, you're late",
+              "femaleVariant": "튜토리얼에서 전화 왔어, 너 늦었대",
+              "maleVariant": "튜토리얼에서 전화 왔어, 너 늦었대",
               "primaryKey": "7902841941051725895",
               "secondaryKey": "bowie_taunt_62"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "lag? no. me? yes.",
-              "maleVariant": "lag? no. me? yes.",
+              "femaleVariant": "랙? 아니. 나? 응.",
+              "maleVariant": "랙? 아니. 나? 응.",
               "primaryKey": "7902840841540097684",
               "secondaryKey": "bowie_taunt_63"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Wakako says hi",
-              "maleVariant": "Wakako says hi",
+              "femaleVariant": "와카코가 안부 전한대",
+              "maleVariant": "와카코가 안부 전한대",
               "primaryKey": "7902839742028469473",
               "secondaryKey": "bowie_taunt_64"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "even Johnny's laughing at this",
-              "maleVariant": "even Johnny's laughing at this",
+              "femaleVariant": "조니도 이거 보고 웃는다",
+              "maleVariant": "조니도 이거 보고 웃는다",
               "primaryKey": "7902838642516841262",
               "secondaryKey": "bowie_taunt_65"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "that's a Misty tarot card right there",
-              "maleVariant": "that's a Misty tarot card right there",
+              "femaleVariant": "이거 완전 미스티 타로 카드네",
+              "maleVariant": "이거 완전 미스티 타로 카드네",
               "primaryKey": "7902837543005213051",
               "secondaryKey": "bowie_taunt_66"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Maelstrom drives better than you",
-              "maleVariant": "Maelstrom drives better than you",
+              "femaleVariant": "메일스트롬이 너보다 운전 잘하겠다",
+              "maleVariant": "메일스트롬이 너보다 운전 잘하겠다",
               "primaryKey": "7902836443493584840",
               "secondaryKey": "bowie_taunt_67"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've taken a Delamain cab",
-              "maleVariant": "should've taken a Delamain cab",
+              "femaleVariant": "델라메인 택시 탔어야지",
+              "maleVariant": "델라메인 택시 탔어야지",
               "primaryKey": "7902835343981956629",
               "secondaryKey": "bowie_taunt_68"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your chrome won't save your fender",
-              "maleVariant": "your chrome won't save your fender",
+              "femaleVariant": "네 크롬으론 펜더 못 살려",
+              "maleVariant": "네 크롬으론 펜더 못 살려",
               "primaryKey": "7902834244470328418",
               "secondaryKey": "bowie_taunt_69"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Watson traffic court is closed, sorry",
-              "maleVariant": "Watson traffic court is closed, sorry",
+              "femaleVariant": "왓슨 교통 법원은 닫혔어, 미안",
+              "maleVariant": "왓슨 교통 법원은 닫혔어, 미안",
               "primaryKey": "7901852380586525220",
               "secondaryKey": "bowie_taunt_70"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the Aldecaldos would've dodged that",
-              "maleVariant": "the Aldecaldos would've dodged that",
+              "femaleVariant": "알데칼도스였으면 피했을 거야",
+              "maleVariant": "알데칼도스였으면 피했을 거야",
               "primaryKey": "7901853480098153431",
               "secondaryKey": "bowie_taunt_71"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Kerry wrote a song about your driving",
-              "maleVariant": "Kerry wrote a song about your driving",
+              "femaleVariant": "케리가 네 운전 얘기로 곡을 썼대",
+              "maleVariant": "케리가 네 운전 얘기로 곡을 썼대",
               "primaryKey": "7901854579609781642",
               "secondaryKey": "bowie_taunt_72"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Afterlife's got a drink named after this crash",
-              "maleVariant": "Afterlife's got a drink named after this crash",
+              "femaleVariant": "애프터라이프에 이 충돌 이름 딴 칵테일이 있어",
+              "maleVariant": "애프터라이프에 이 충돌 이름 딴 칵테일이 있어",
               "primaryKey": "7901855679121409853",
               "secondaryKey": "bowie_taunt_73"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "6th Street says nice parking",
-              "maleVariant": "6th Street says nice parking",
+              "femaleVariant": "식스 스트리트가 그러네: 주차 잘했다",
+              "maleVariant": "식스 스트리트가 그러네: 주차 잘했다",
               "primaryKey": "7901847982540012376",
               "secondaryKey": "bowie_taunt_74"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "even a flathead drives cleaner",
-              "maleVariant": "even a flathead drives cleaner",
+              "femaleVariant": "플랫헤드가 더 깔끔하게 몰겠다",
+              "maleVariant": "플랫헤드가 더 깔끔하게 몰겠다",
               "primaryKey": "7901849082051640587",
               "secondaryKey": "bowie_taunt_75"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "just a heads up, your bumper left",
-              "maleVariant": "just a heads up, your bumper left",
+              "femaleVariant": "그냥 알려주는 건데, 네 범퍼 떠났어",
+              "maleVariant": "그냥 알려주는 건데, 네 범퍼 떠났어",
               "primaryKey": "7901850181563268798",
               "secondaryKey": "bowie_taunt_76"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "reminder: green means go, not stop",
-              "maleVariant": "reminder: green means go, not stop",
+              "femaleVariant": "알림: 초록불은 가라는 거야, 서라는 게 아니라",
+              "maleVariant": "알림: 초록불은 가라는 거야, 서라는 게 아니라",
               "primaryKey": "7901851281074897009",
               "secondaryKey": "bowie_taunt_77"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "here's a tip — yield to me",
-              "maleVariant": "here's a tip — yield to me",
+              "femaleVariant": "팁 하나 — 나한테 양보해",
+              "maleVariant": "팁 하나 — 나한테 양보해",
               "primaryKey": "7901843584493499532",
               "secondaryKey": "bowie_taunt_78"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your warranty just expired",
-              "maleVariant": "your warranty just expired",
+              "femaleVariant": "네 보증 방금 만료됐어",
+              "maleVariant": "네 보증 방금 만료됐어",
               "primaryKey": "7901844684005127743",
               "secondaryKey": "bowie_taunt_79"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "might wanna get that looked at",
-              "maleVariant": "might wanna get that looked at",
+              "femaleVariant": "그거 한번 점검받는 게 좋겠어",
+              "maleVariant": "그거 한번 점검받는 게 좋겠어",
               "primaryKey": "7908583590773108387",
               "secondaryKey": "bowie_taunt_80"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "customer satisfaction: guaranteed",
-              "maleVariant": "customer satisfaction: guaranteed",
+              "femaleVariant": "고객 만족: 보장",
+              "maleVariant": "고객 만족: 보장",
               "primaryKey": "7908582491261480176",
               "secondaryKey": "bowie_taunt_81"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "we value your feedback (we don't)",
-              "maleVariant": "we value your feedback (we don't)",
+              "femaleVariant": "고객님의 의견을 소중히 여깁니다 (아닌데)",
+              "maleVariant": "고객님의 의견을 소중히 여깁니다 (아닌데)",
               "primaryKey": "7908585789796364809",
               "secondaryKey": "bowie_taunt_82"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "please remain calm and pull over",
-              "maleVariant": "please remain calm and pull over",
+              "femaleVariant": "침착하게 갓길에 대주세요",
+              "maleVariant": "침착하게 갓길에 대주세요",
               "primaryKey": "7908584690284736598",
               "secondaryKey": "bowie_taunt_83"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this has been a friendly demonstration",
-              "maleVariant": "this has been a friendly demonstration",
+              "femaleVariant": "이상 친절한 시연이었습니다",
+              "maleVariant": "이상 친절한 시연이었습니다",
               "primaryKey": "7908587988819621231",
               "secondaryKey": "bowie_taunt_84"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you've been selected for a free ramming",
-              "maleVariant": "you've been selected for a free ramming",
+              "femaleVariant": "무료 들이받기에 당첨되셨습니다",
+              "maleVariant": "무료 들이받기에 당첨되셨습니다",
               "primaryKey": "7908586889307993020",
               "secondaryKey": "bowie_taunt_85"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "don't forget to like and subscribe",
-              "maleVariant": "don't forget to like and subscribe",
+              "femaleVariant": "좋아요와 구독 잊지 마",
+              "maleVariant": "좋아요와 구독 잊지 마",
               "primaryKey": "7908590187842877653",
               "secondaryKey": "bowie_taunt_86"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have a nice day, genuinely",
-              "maleVariant": "have a nice day, genuinely",
+              "femaleVariant": "좋은 하루 보내, 진심으로",
+              "maleVariant": "좋은 하루 보내, 진심으로",
               "primaryKey": "7908589088331249442",
               "secondaryKey": "bowie_taunt_87"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i'm already behind you",
-              "maleVariant": "i'm already behind you",
+              "femaleVariant": "난 이미 네 뒤에 있어",
+              "maleVariant": "난 이미 네 뒤에 있어",
               "primaryKey": "7908592386866134075",
               "secondaryKey": "bowie_taunt_88"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "don't bother with the rearview",
-              "maleVariant": "don't bother with the rearview",
+              "femaleVariant": "백미러는 볼 필요 없어",
+              "maleVariant": "백미러는 볼 필요 없어",
               "primaryKey": "7908591287354505864",
               "secondaryKey": "bowie_taunt_89"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the next one's worse",
-              "maleVariant": "the next one's worse",
+              "femaleVariant": "다음 건 더 심해",
+              "maleVariant": "다음 건 더 심해",
               "primaryKey": "7907627015656754042",
               "secondaryKey": "bowie_taunt_90"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you felt that one, didn't you",
-              "maleVariant": "you felt that one, didn't you",
+              "femaleVariant": "방금 그거 느꼈지?",
+              "maleVariant": "방금 그거 느꼈지?",
               "primaryKey": "7907628115168382253",
               "secondaryKey": "bowie_taunt_91"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "there's no garage deep enough",
-              "maleVariant": "there's no garage deep enough",
+              "femaleVariant": "아무리 깊은 차고도 소용없어",
+              "maleVariant": "아무리 깊은 차고도 소용없어",
               "primaryKey": "7907624816633497620",
               "secondaryKey": "bowie_taunt_92"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i drive where you sleep",
-              "maleVariant": "i drive where you sleep",
+              "femaleVariant": "네가 자는 곳에서도 난 달려",
+              "maleVariant": "네가 자는 곳에서도 난 달려",
               "primaryKey": "7907625916145125831",
               "secondaryKey": "bowie_taunt_93"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "brake all you want",
-              "maleVariant": "brake all you want",
+              "femaleVariant": "마음껏 브레이크 밟아",
+              "maleVariant": "마음껏 브레이크 밟아",
               "primaryKey": "7907622617610241198",
               "secondaryKey": "bowie_taunt_94"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i've got all night, choom",
-              "maleVariant": "i've got all night, choom",
+              "femaleVariant": "난 밤새 시간 있어, 춤",
+              "maleVariant": "난 밤새 시간 있어, 춤",
               "primaryKey": "7907623717121869409",
               "secondaryKey": "bowie_taunt_95"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your engine block is mine",
-              "maleVariant": "your engine block is mine",
+              "femaleVariant": "네 엔진 블록은 내 거야",
+              "maleVariant": "네 엔진 블록은 내 거야",
               "primaryKey": "7907620418586984776",
               "secondaryKey": "bowie_taunt_96"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "keep driving. i dare you",
-              "maleVariant": "keep driving. i dare you",
+              "femaleVariant": "계속 몰아봐. 어디 한번",
+              "maleVariant": "계속 몰아봐. 어디 한번",
               "primaryKey": "7907621518098612987",
               "secondaryKey": "bowie_taunt_97"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "every red light is mine",
-              "maleVariant": "every red light is mine",
+              "femaleVariant": "모든 빨간불은 내 거야",
+              "maleVariant": "모든 빨간불은 내 거야",
               "primaryKey": "7907618219563728354",
               "secondaryKey": "bowie_taunt_98"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i never miss twice",
-              "maleVariant": "i never miss twice",
+              "femaleVariant": "난 두 번은 안 놓쳐",
+              "maleVariant": "난 두 번은 안 놓쳐",
               "primaryKey": "7907619319075356565",
               "secondaryKey": "bowie_taunt_99"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "say goodnight to your suspension",
-              "maleVariant": "say goodnight to your suspension",
+              "femaleVariant": "네 서스펜션한테 잘 자라고 해",
+              "maleVariant": "네 서스펜션한테 잘 자라고 해",
               "primaryKey": "13041305587125996358",
               "secondaryKey": "bowie_taunt_100"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Enable mod",
-              "maleVariant": "Enable mod",
+              "femaleVariant": "모드 활성화",
+              "maleVariant": "모드 활성화",
               "primaryKey": "2143662024956131856",
               "secondaryKey": "BowieKnife99-Enable-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Turn the random ramming attacks on or off.",
-              "maleVariant": "Turn the random ramming attacks on or off.",
+              "femaleVariant": "무작위 들이받기 공격을 켜거나 끕니다.",
+              "maleVariant": "무작위 들이받기 공격을 켜거나 끕니다.",
               "primaryKey": "4326102803886100614",
               "secondaryKey": "BowieKnife99-Enable-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Show debug HUD",
-              "maleVariant": "Show debug HUD",
+              "femaleVariant": "디버그 HUD 표시",
+              "maleVariant": "디버그 HUD 표시",
               "primaryKey": "5611261748329956462",
               "secondaryKey": "BowieKnife99-Debug-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.",
-              "maleVariant": "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.",
+              "femaleVariant": "화면에 디버그 정보를 표시합니다(들이받기 시작, 대상 선택, 문자 상태). 일반 플레이 시에는 끄세요.",
+              "maleVariant": "화면에 디버그 정보를 표시합니다(들이받기 시작, 대상 선택, 문자 상태). 일반 플레이 시에는 끄세요.",
               "primaryKey": "9488054211642199624",
               "secondaryKey": "BowieKnife99-Debug-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Behavior",
-              "maleVariant": "Behavior",
+              "femaleVariant": "동작",
+              "maleVariant": "동작",
               "primaryKey": "7199784825471876842",
               "secondaryKey": "BowieKnife99-Cat-Behavior"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Attack chance",
-              "maleVariant": "Attack chance",
+              "femaleVariant": "공격 확률",
+              "maleVariant": "공격 확률",
               "primaryKey": "2567276510498431929",
               "secondaryKey": "BowieKnife99-Chance-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Probability an attack triggers on each check (0 = never, 1 = every check).",
-              "maleVariant": "Probability an attack triggers on each check (0 = never, 1 = every check).",
+              "femaleVariant": "매 검사마다 공격이 발동할 확률(0 = 절대 안 함, 1 = 매번).",
+              "maleVariant": "매 검사마다 공격이 발동할 확률(0 = 절대 안 함, 1 = 매번).",
               "primaryKey": "12705118755998484723",
               "secondaryKey": "BowieKnife99-Chance-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Check interval (s)",
-              "maleVariant": "Check interval (s)",
+              "femaleVariant": "검사 간격(초)",
+              "maleVariant": "검사 간격(초)",
               "primaryKey": "11504224705266917198",
               "secondaryKey": "BowieKnife99-Interval-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Seconds between attack checks. Lower = attacks happen more often.",
-              "maleVariant": "Seconds between attack checks. Lower = attacks happen more often.",
+              "femaleVariant": "공격 검사 사이의 시간(초). 낮을수록 공격이 더 자주 일어납니다.",
+              "maleVariant": "공격 검사 사이의 시간(초). 낮을수록 공격이 더 자주 일어납니다.",
               "primaryKey": "3168662332961832488",
               "secondaryKey": "BowieKnife99-Interval-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Cooldown (checks)",
-              "maleVariant": "Cooldown (checks)",
+              "femaleVariant": "재사용 대기(검사 횟수)",
+              "maleVariant": "재사용 대기(검사 횟수)",
               "primaryKey": "6351628774326012258",
               "secondaryKey": "BowieKnife99-Cooldown-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "How many check intervals to wait after an attack before another can trigger.",
-              "maleVariant": "How many check intervals to wait after an attack before another can trigger.",
+              "femaleVariant": "한 번 공격한 뒤 다음 공격이 발동하기까지 기다릴 검사 횟수.",
+              "maleVariant": "한 번 공격한 뒤 다음 공격이 발동하기까지 기다릴 검사 횟수.",
               "primaryKey": "14683624744769913524",
               "secondaryKey": "BowieKnife99-Cooldown-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Pursuit timeout (s)",
-              "maleVariant": "Pursuit timeout (s)",
+              "femaleVariant": "추격 제한 시간(초)",
+              "maleVariant": "추격 제한 시간(초)",
               "primaryKey": "4632948351712965706",
               "secondaryKey": "BowieKnife99-Timeout-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "How long Bowie chases before giving up if he never lands a hit.",
-              "maleVariant": "How long Bowie chases before giving up if he never lands a hit.",
+              "femaleVariant": "한 번도 들이받지 못했을 때 Bowie가 포기하기까지 추격하는 시간.",
+              "maleVariant": "한 번도 들이받지 못했을 때 Bowie가 포기하기까지 추격하는 시간.",
               "primaryKey": "15965431821875619260",
               "secondaryKey": "BowieKnife99-Timeout-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Max attacker distance (m)",
-              "maleVariant": "Max attacker distance (m)",
+              "femaleVariant": "최대 공격자 거리(m)",
+              "maleVariant": "최대 공격자 거리(m)",
               "primaryKey": "9306647328346220416",
               "secondaryKey": "BowieKnife99-Distance-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).",
-              "maleVariant": "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).",
+              "femaleVariant": "뒤쪽 이 거리 안에 있는 차량만 선택됩니다(그래도 약 18m의 가속 거리가 필요합니다).",
+              "maleVariant": "뒤쪽 이 거리 안에 있는 차량만 선택됩니다(그래도 약 18m의 가속 거리가 필요합니다).",
               "primaryKey": "11519557773511117206",
               "secondaryKey": "BowieKnife99-Distance-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Max height difference (m)",
-              "maleVariant": "Max height difference (m)",
+              "femaleVariant": "최대 높이 차(m)",
+              "maleVariant": "최대 높이 차(m)",
               "primaryKey": "3961924841682973632",
               "secondaryKey": "BowieKnife99-Height-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.",
-              "maleVariant": "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.",
+              "femaleVariant": "당신과 높이 차가 이 값을 넘는 차량은 제외합니다 — 위쪽 다리나 아래쪽 도로의 차량을 피합니다.",
+              "maleVariant": "당신과 높이 차가 이 값을 넘는 차량은 제외합니다 — 위쪽 다리나 아래쪽 도로의 차량을 피합니다.",
               "primaryKey": "5929952057061158102",
               "secondaryKey": "BowieKnife99-Height-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Attack from behind only",
-              "maleVariant": "Attack from behind only",
+              "femaleVariant": "뒤에서만 공격",
+              "maleVariant": "뒤에서만 공격",
               "primaryKey": "16940616017810024449",
               "secondaryKey": "BowieKnife99-RearOnly-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.",
-              "maleVariant": "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.",
+              "femaleVariant": "켜기: 뒤쪽 차량만 선택되어 공격자가 뒤에서 따라붙습니다(더 자연스러움). 끄기(기본값): 마주 오는 차나 옆 차선을 포함해 근처의 어떤 차량이든 공격할 수 있습니다.",
+              "maleVariant": "켜기: 뒤쪽 차량만 선택되어 공격자가 뒤에서 따라붙습니다(더 자연스러움). 끄기(기본값): 마주 오는 차나 옆 차선을 포함해 근처의 어떤 차량이든 공격할 수 있습니다.",
               "primaryKey": "5416742757585783547",
               "secondaryKey": "BowieKnife99-RearOnly-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Bump speed boost (m/s)",
-              "maleVariant": "Bump speed boost (m/s)",
+              "femaleVariant": "충돌 속도 부스트(m/s)",
+              "maleVariant": "충돌 속도 부스트(m/s)",
               "primaryKey": "2362180185579179461",
               "secondaryKey": "BowieKnife99-Bump-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.",
-              "maleVariant": "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.",
+              "femaleVariant": "Bowie가 가까워지면 이만큼(m/s) 앞으로 돌진해 당신을 들이받습니다. 0 = 돌진 없음, 공격적인 주행만.",
+              "maleVariant": "Bowie가 가까워지면 이만큼(m/s) 앞으로 돌진해 당신을 들이받습니다. 0 = 돌진 없음, 공격적인 주행만.",
               "primaryKey": "7529719699482486951",
               "secondaryKey": "BowieKnife99-Bump-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Audio",
-              "maleVariant": "Audio",
+              "femaleVariant": "오디오",
+              "maleVariant": "오디오",
               "primaryKey": "11712940302506155770",
               "secondaryKey": "BowieKnife99-Cat-Audio"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Play taunt sound on ram",
-              "maleVariant": "Play taunt sound on ram",
+              "femaleVariant": "들이받을 때 도발 음성 재생",
+              "maleVariant": "들이받을 때 도발 음성 재생",
               "primaryKey": "5377376972595605988",
               "secondaryKey": "BowieKnife99-RamSound-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Play a voice line every time Bowie rams your car.",
-              "maleVariant": "Play a voice line every time Bowie rams your car.",
+              "femaleVariant": "Bowie가 당신의 차를 들이받을 때마다 음성을 재생합니다.",
+              "maleVariant": "Bowie가 당신의 차를 들이받을 때마다 음성을 재생합니다.",
               "primaryKey": "6202967043463660338",
               "secondaryKey": "BowieKnife99-RamSound-Desc"
             }

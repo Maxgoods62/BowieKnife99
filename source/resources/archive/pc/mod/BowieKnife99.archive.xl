@@ -4,3 +4,12 @@ journal:
 localization:
   onscreens:
     en-us: mod\bowieknife99\onscreens\en-us\bowieknife99_onscreens.json
+    fr-fr: mod\bowieknife99\onscreens\fr-fr\bowieknife99_onscreens.json
+    de-de: mod\bowieknife99\onscreens\de-de\bowieknife99_onscreens.json
+    es-es: mod\bowieknife99\onscreens\es-es\bowieknife99_onscreens.json
+    it-it: mod\bowieknife99\onscreens\it-it\bowieknife99_onscreens.json
+    ru-ru: mod\bowieknife99\onscreens\ru-ru\bowieknife99_onscreens.json
+    jp-jp: mod\bowieknife99\onscreens\jp-jp\bowieknife99_onscreens.json
+    pl-pl: mod\bowieknife99\onscreens\pl-pl\bowieknife99_onscreens.json
+    zh-cn: mod\bowieknife99\onscreens\zh-cn\bowieknife99_onscreens.json
+    kr-kr: mod\bowieknife99\onscreens\kr-kr\bowieknife99_onscreens.json

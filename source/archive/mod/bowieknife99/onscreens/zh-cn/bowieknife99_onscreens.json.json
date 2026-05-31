@@ -40,8 +40,8 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "bowie knife99 strikes again",
-              "maleVariant": "bowie knife99 strikes again",
+              "femaleVariant": "bowie knife99 又出手了",
+              "maleVariant": "bowie knife99 又出手了",
               "primaryKey": "8137026562564011619",
               "secondaryKey": "bowie_taunt_2"
             },
@@ -54,57 +54,57 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you just got bowie'd",
-              "maleVariant": "you just got bowie'd",
+              "femaleVariant": "你刚被 bowie 了",
+              "maleVariant": "你刚被 bowie 了",
               "primaryKey": "8137033159633780885",
               "secondaryKey": "bowie_taunt_4"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've taken the metro, choom",
-              "maleVariant": "should've taken the metro, choom",
+              "femaleVariant": "早该坐地铁的，崇姆",
+              "maleVariant": "早该坐地铁的，崇姆",
               "primaryKey": "8137032060122152674",
               "secondaryKey": "bowie_taunt_5"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "ramming speed > your driving",
-              "maleVariant": "ramming speed > your driving",
+              "femaleVariant": "撞击速度 ＞ 你的车技",
+              "maleVariant": "撞击速度 ＞ 你的车技",
               "primaryKey": "8137030960610524463",
               "secondaryKey": "bowie_taunt_6"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "that's gonna leave a mark",
-              "maleVariant": "that's gonna leave a mark",
+              "femaleVariant": "这下要留印子了",
+              "maleVariant": "这下要留印子了",
               "primaryKey": "8137029861098896252",
               "secondaryKey": "bowie_taunt_7"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "catch me if you can, V",
-              "maleVariant": "catch me if you can, V",
+              "femaleVariant": "有本事就来抓我啊，V",
+              "maleVariant": "有本事就来抓我啊，V",
               "primaryKey": "8137037557680293729",
               "secondaryKey": "bowie_taunt_8"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "insurance won't cover this one",
-              "maleVariant": "insurance won't cover this one",
+              "femaleVariant": "这次保险可不赔",
+              "maleVariant": "这次保险可不赔",
               "primaryKey": "8137036458168665518",
               "secondaryKey": "bowie_taunt_9"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "another one for the highlight reel",
-              "maleVariant": "another one for the highlight reel",
+              "femaleVariant": "又一个集锦镜头",
+              "maleVariant": "又一个集锦镜头",
               "primaryKey": "7900009599098022034",
               "secondaryKey": "bowie_taunt_10"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "ratio + you fell off",
-              "maleVariant": "ratio + you fell off",
+              "femaleVariant": "ratio ＋ 你已经过气了",
+              "maleVariant": "ratio ＋ 你已经过气了",
               "primaryKey": "7900010698609650245",
               "secondaryKey": "bowie_taunt_11"
             },
@@ -117,36 +117,36 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "no respawns out here, choom",
-              "maleVariant": "no respawns out here, choom",
+              "femaleVariant": "这里可没有重生，崇姆",
+              "maleVariant": "这里可没有重生，崇姆",
               "primaryKey": "7900008499586393823",
               "secondaryKey": "bowie_taunt_13"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "0 deaths? not anymore",
-              "maleVariant": "0 deaths? not anymore",
+              "femaleVariant": "0死亡？现在不是了",
+              "maleVariant": "0死亡？现在不是了",
               "primaryKey": "7900005201051509190",
               "secondaryKey": "bowie_taunt_14"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "respawn timer starts now",
-              "maleVariant": "respawn timer starts now",
+              "femaleVariant": "重生倒计时开始",
+              "maleVariant": "重生倒计时开始",
               "primaryKey": "7900006300563137401",
               "secondaryKey": "bowie_taunt_15"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "uninstall, choom",
-              "maleVariant": "uninstall, choom",
+              "femaleVariant": "卸载吧，崇姆",
+              "maleVariant": "卸载吧，崇姆",
               "primaryKey": "7900003002028252768",
               "secondaryKey": "bowie_taunt_16"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "touch grass... or guardrail",
-              "maleVariant": "touch grass... or guardrail",
+              "femaleVariant": "去外面透透气吧…撞护栏也行",
+              "maleVariant": "去外面透透气吧…撞护栏也行",
               "primaryKey": "7900004101539880979",
               "secondaryKey": "bowie_taunt_17"
             },
@@ -159,225 +159,225 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "speedrun any% on your bumper",
-              "maleVariant": "speedrun any% on your bumper",
+              "femaleVariant": "拿你的保险杠速通 any%",
+              "maleVariant": "拿你的保险杠速通 any%",
               "primaryKey": "7900019494702675933",
               "secondaryKey": "bowie_taunt_19"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "no scope, all bumper",
-              "maleVariant": "no scope, all bumper",
+              "femaleVariant": "no scope，全靠保险杠",
+              "maleVariant": "no scope，全靠保险杠",
               "primaryKey": "7899017839609564937",
               "secondaryKey": "bowie_taunt_20"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tell Vik I said hi",
-              "maleVariant": "tell Vik I said hi",
+              "femaleVariant": "替我向维克问好",
+              "maleVariant": "替我向维克问好",
               "primaryKey": "7899016740097936726",
               "secondaryKey": "bowie_taunt_21"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this one's on Delamain's tab",
-              "maleVariant": "this one's on Delamain's tab",
+              "femaleVariant": "这笔算德拉曼的账",
+              "maleVariant": "这笔算德拉曼的账",
               "primaryKey": "7899015640586308515",
               "secondaryKey": "bowie_taunt_22"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "NCPD won't even file the report",
-              "maleVariant": "NCPD won't even file the report",
+              "femaleVariant": "NCPD 连报案都懒得受理",
+              "maleVariant": "NCPD 连报案都懒得受理",
               "primaryKey": "7899014541074680304",
               "secondaryKey": "bowie_taunt_23"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Trauma Team's en route — they're billing you",
-              "maleVariant": "Trauma Team's en route — they're billing you",
+              "femaleVariant": "创伤小组正在赶来——账单算你的",
+              "maleVariant": "创伤小组正在赶来——账单算你的",
               "primaryKey": "7899022237656077781",
               "secondaryKey": "bowie_taunt_24"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "eddies can't fix that paint job",
-              "maleVariant": "eddies can't fix that paint job",
+              "femaleVariant": "再多欧币也救不了那车漆",
+              "maleVariant": "再多欧币也救不了那车漆",
               "primaryKey": "7899021138144449570",
               "secondaryKey": "bowie_taunt_25"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your ripperdoc do cars too?",
-              "maleVariant": "your ripperdoc do cars too?",
+              "femaleVariant": "你的义体医生连车也修？",
+              "maleVariant": "你的义体医生连车也修？",
               "primaryKey": "7899020038632821359",
               "secondaryKey": "bowie_taunt_26"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "braindance this crash later, it slaps",
-              "maleVariant": "braindance this crash later, it slaps",
+              "femaleVariant": "回头用超梦重温这场撞击，超带感",
+              "maleVariant": "回头用超梦重温这场撞击，超带感",
               "primaryKey": "7899018939121193148",
               "secondaryKey": "bowie_taunt_27"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've bought the Rayfield",
-              "maleVariant": "should've bought the Rayfield",
+              "femaleVariant": "早该买雷菲尔德的",
+              "maleVariant": "早该买雷菲尔德的",
               "primaryKey": "7899026635702590625",
               "secondaryKey": "bowie_taunt_28"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Arasaka builds better bumpers",
-              "maleVariant": "Arasaka builds better bumpers",
+              "femaleVariant": "荒坂的保险杠都比这强",
+              "maleVariant": "荒坂的保险杠都比这强",
               "primaryKey": "7899025536190962414",
               "secondaryKey": "bowie_taunt_29"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Night City traffic, am I right",
-              "maleVariant": "Night City traffic, am I right",
+              "femaleVariant": "夜之城的交通，对吧？",
+              "maleVariant": "夜之城的交通，对吧？",
               "primaryKey": "7898026080121107840",
               "secondaryKey": "bowie_taunt_30"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "GPS says: pull over",
-              "maleVariant": "GPS says: pull over",
+              "femaleVariant": "导航说：靠边停车",
+              "maleVariant": "导航说：靠边停车",
               "primaryKey": "7898027179632736051",
               "secondaryKey": "bowie_taunt_31"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "friendly reminder to wear your seatbelt",
-              "maleVariant": "friendly reminder to wear your seatbelt",
+              "femaleVariant": "友情提醒：系好安全带",
+              "maleVariant": "友情提醒：系好安全带",
               "primaryKey": "7898028279144364262",
               "secondaryKey": "bowie_taunt_32"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tip: the brakes are the other pedal",
-              "maleVariant": "tip: the brakes are the other pedal",
+              "femaleVariant": "小贴士：刹车是另一个踏板",
+              "maleVariant": "小贴士：刹车是另一个踏板",
               "primaryKey": "7898029378655992473",
               "secondaryKey": "bowie_taunt_33"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "drive safe out there, choom",
-              "maleVariant": "drive safe out there, choom",
+              "femaleVariant": "路上小心点，崇姆",
+              "maleVariant": "路上小心点，崇姆",
               "primaryKey": "7898030478167620684",
               "secondaryKey": "bowie_taunt_34"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have you tried not being in my way?",
-              "maleVariant": "have you tried not being in my way?",
+              "femaleVariant": "你试过别挡我的道吗？",
+              "maleVariant": "你试过别挡我的道吗？",
               "primaryKey": "7898031577679248895",
               "secondaryKey": "bowie_taunt_35"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have you considered public transit?",
-              "maleVariant": "have you considered public transit?",
+              "femaleVariant": "考虑过坐公共交通吗？",
+              "maleVariant": "考虑过坐公共交通吗？",
               "primaryKey": "7898032677190877106",
               "secondaryKey": "bowie_taunt_36"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "rate your ride 5 stars?",
-              "maleVariant": "rate your ride 5 stars?",
+              "femaleVariant": "给这趟车程打五星好评？",
+              "maleVariant": "给这趟车程打五星好评？",
               "primaryKey": "7898033776702505317",
               "secondaryKey": "bowie_taunt_37"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "thanks for playing, drive again soon",
-              "maleVariant": "thanks for playing, drive again soon",
+              "femaleVariant": "感谢游玩，欢迎下次再来开车",
+              "maleVariant": "感谢游玩，欢迎下次再来开车",
               "primaryKey": "7898034876214133528",
               "secondaryKey": "bowie_taunt_38"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you dropped this: your bumper",
-              "maleVariant": "you dropped this: your bumper",
+              "femaleVariant": "你掉了这个：你的保险杠",
+              "maleVariant": "你掉了这个：你的保险杠",
               "primaryKey": "7898035975725761739",
               "secondaryKey": "bowie_taunt_39"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this lane was reserved, sorry",
-              "maleVariant": "this lane was reserved, sorry",
+              "femaleVariant": "这条车道是预留的，抱歉",
+              "maleVariant": "这条车道是预留的，抱歉",
               "primaryKey": "7904792474679793759",
               "secondaryKey": "bowie_taunt_40"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i know where you parked",
-              "maleVariant": "i know where you parked",
+              "femaleVariant": "我知道你把车停哪了",
+              "maleVariant": "我知道你把车停哪了",
               "primaryKey": "7904791375168165548",
               "secondaryKey": "bowie_taunt_41"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "see you at the next intersection",
-              "maleVariant": "see you at the next intersection",
+              "femaleVariant": "下个路口见",
+              "maleVariant": "下个路口见",
               "primaryKey": "7904794673703050181",
               "secondaryKey": "bowie_taunt_42"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the road belongs to me now",
-              "maleVariant": "the road belongs to me now",
+              "femaleVariant": "这条路现在归我了",
+              "maleVariant": "这条路现在归我了",
               "primaryKey": "7904793574191421970",
               "secondaryKey": "bowie_taunt_43"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "run. it's funnier when you run",
-              "maleVariant": "run. it's funnier when you run",
+              "femaleVariant": "快跑啊。你跑起来更有意思",
+              "maleVariant": "快跑啊。你跑起来更有意思",
               "primaryKey": "7904788076633280915",
               "secondaryKey": "bowie_taunt_44"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "next time i aim for the engine",
-              "maleVariant": "next time i aim for the engine",
+              "femaleVariant": "下次我瞄准引擎",
+              "maleVariant": "下次我瞄准引擎",
               "primaryKey": "7904786977121652704",
               "secondaryKey": "bowie_taunt_45"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "there is no outrunning bowie knife99",
-              "maleVariant": "there is no outrunning bowie knife99",
+              "femaleVariant": "你甩不掉 bowie knife99",
+              "maleVariant": "你甩不掉 bowie knife99",
               "primaryKey": "7904790275656537337",
               "secondaryKey": "bowie_taunt_46"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "check your mirrors",
-              "maleVariant": "check your mirrors",
+              "femaleVariant": "看看你的后视镜",
+              "maleVariant": "看看你的后视镜",
               "primaryKey": "7904789176144909126",
               "secondaryKey": "bowie_taunt_47"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "metal meets metal. you lose",
-              "maleVariant": "metal meets metal. you lose",
+              "femaleVariant": "金属撞金属。你输了",
+              "maleVariant": "金属撞金属。你输了",
               "primaryKey": "7904801270772819447",
               "secondaryKey": "bowie_taunt_48"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "every car is my car",
-              "maleVariant": "every car is my car",
+              "femaleVariant": "每辆车都是我的车",
+              "maleVariant": "每辆车都是我的车",
               "primaryKey": "7904800171261191236",
               "secondaryKey": "bowie_taunt_49"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you can't merge away from this",
-              "maleVariant": "you can't merge away from this",
+              "femaleVariant": "你变道也躲不掉这一下",
+              "maleVariant": "你变道也躲不掉这一下",
               "primaryKey": "7903800715191336662",
               "secondaryKey": "bowie_taunt_50"
             },
@@ -390,29 +390,29 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "down bad, down a bumper",
-              "maleVariant": "down bad, down a bumper",
+              "femaleVariant": "惨兮兮，还少了个保险杠",
+              "maleVariant": "惨兮兮，还少了个保险杠",
               "primaryKey": "7903798516168080240",
               "secondaryKey": "bowie_taunt_52"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "mald harder, choom",
-              "maleVariant": "mald harder, choom",
+              "femaleVariant": "再 mald 一点，崇姆",
+              "maleVariant": "再 mald 一点，崇姆",
               "primaryKey": "7903799615679708451",
               "secondaryKey": "bowie_taunt_53"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "get rekt, scrub",
-              "maleVariant": "get rekt, scrub",
+              "femaleVariant": "get rekt，菜鸟",
+              "maleVariant": "get rekt，菜鸟",
               "primaryKey": "7903805113237849506",
               "secondaryKey": "bowie_taunt_54"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "1v1 me at the next light",
-              "maleVariant": "1v1 me at the next light",
+              "femaleVariant": "下个红绿灯 1v1",
+              "maleVariant": "下个红绿灯 1v1",
               "primaryKey": "7903806212749477717",
               "secondaryKey": "bowie_taunt_55"
             },
@@ -425,477 +425,477 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "outplayed, outdriven",
-              "maleVariant": "outplayed, outdriven",
+              "femaleVariant": "outplayed，车技也被碾压",
+              "maleVariant": "outplayed，车技也被碾压",
               "primaryKey": "7903804013726221295",
               "secondaryKey": "bowie_taunt_57"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "sit down, you're done",
-              "maleVariant": "sit down, you're done",
+              "femaleVariant": "坐下吧，你完了",
+              "maleVariant": "坐下吧，你完了",
               "primaryKey": "7903809511284362350",
               "secondaryKey": "bowie_taunt_58"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "hold this L for me",
-              "maleVariant": "hold this L for me",
+              "femaleVariant": "替我拿着这个 L",
+              "maleVariant": "替我拿着这个 L",
               "primaryKey": "7903810610795990561",
               "secondaryKey": "bowie_taunt_59"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "my KDA > your insurance premium",
-              "maleVariant": "my KDA > your insurance premium",
+              "femaleVariant": "我的 KDA ＞ 你的保费",
+              "maleVariant": "我的 KDA ＞ 你的保费",
               "primaryKey": "7902844140074982317",
               "secondaryKey": "bowie_taunt_60"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "one-tap on your trunk",
-              "maleVariant": "one-tap on your trunk",
+              "femaleVariant": "一枪秒了你的后备箱",
+              "maleVariant": "一枪秒了你的后备箱",
               "primaryKey": "7902843040563354106",
               "secondaryKey": "bowie_taunt_61"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "tutorial island called, you're late",
-              "maleVariant": "tutorial island called, you're late",
+              "femaleVariant": "新手教程打电话了，你迟到了",
+              "maleVariant": "新手教程打电话了，你迟到了",
               "primaryKey": "7902841941051725895",
               "secondaryKey": "bowie_taunt_62"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "lag? no. me? yes.",
-              "maleVariant": "lag? no. me? yes.",
+              "femaleVariant": "卡顿？没有。我？有。",
+              "maleVariant": "卡顿？没有。我？有。",
               "primaryKey": "7902840841540097684",
               "secondaryKey": "bowie_taunt_63"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Wakako says hi",
-              "maleVariant": "Wakako says hi",
+              "femaleVariant": "若狭子向你问好",
+              "maleVariant": "若狭子向你问好",
               "primaryKey": "7902839742028469473",
               "secondaryKey": "bowie_taunt_64"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "even Johnny's laughing at this",
-              "maleVariant": "even Johnny's laughing at this",
+              "femaleVariant": "连强尼都在笑话这一幕",
+              "maleVariant": "连强尼都在笑话这一幕",
               "primaryKey": "7902838642516841262",
               "secondaryKey": "bowie_taunt_65"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "that's a Misty tarot card right there",
-              "maleVariant": "that's a Misty tarot card right there",
+              "femaleVariant": "这简直就是米丝蒂的塔罗牌",
+              "maleVariant": "这简直就是米丝蒂的塔罗牌",
               "primaryKey": "7902837543005213051",
               "secondaryKey": "bowie_taunt_66"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Maelstrom drives better than you",
-              "maleVariant": "Maelstrom drives better than you",
+              "femaleVariant": "漩涡帮都开得比你好",
+              "maleVariant": "漩涡帮都开得比你好",
               "primaryKey": "7902836443493584840",
               "secondaryKey": "bowie_taunt_67"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "should've taken a Delamain cab",
-              "maleVariant": "should've taken a Delamain cab",
+              "femaleVariant": "早该叫辆德拉曼出租车的",
+              "maleVariant": "早该叫辆德拉曼出租车的",
               "primaryKey": "7902835343981956629",
               "secondaryKey": "bowie_taunt_68"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your chrome won't save your fender",
-              "maleVariant": "your chrome won't save your fender",
+              "femaleVariant": "你的义体救不了你的挡泥板",
+              "maleVariant": "你的义体救不了你的挡泥板",
               "primaryKey": "7902834244470328418",
               "secondaryKey": "bowie_taunt_69"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Watson traffic court is closed, sorry",
-              "maleVariant": "Watson traffic court is closed, sorry",
+              "femaleVariant": "沃森的交通法庭关门了，抱歉",
+              "maleVariant": "沃森的交通法庭关门了，抱歉",
               "primaryKey": "7901852380586525220",
               "secondaryKey": "bowie_taunt_70"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the Aldecaldos would've dodged that",
-              "maleVariant": "the Aldecaldos would've dodged that",
+              "femaleVariant": "阿德卡多早就躲开了",
+              "maleVariant": "阿德卡多早就躲开了",
               "primaryKey": "7901853480098153431",
               "secondaryKey": "bowie_taunt_71"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Kerry wrote a song about your driving",
-              "maleVariant": "Kerry wrote a song about your driving",
+              "femaleVariant": "凯瑞为你的车技写了首歌",
+              "maleVariant": "凯瑞为你的车技写了首歌",
               "primaryKey": "7901854579609781642",
               "secondaryKey": "bowie_taunt_72"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Afterlife's got a drink named after this crash",
-              "maleVariant": "Afterlife's got a drink named after this crash",
+              "femaleVariant": "来世酒吧有杯酒就是以这场撞击命名的",
+              "maleVariant": "来世酒吧有杯酒就是以这场撞击命名的",
               "primaryKey": "7901855679121409853",
               "secondaryKey": "bowie_taunt_73"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "6th Street says nice parking",
-              "maleVariant": "6th Street says nice parking",
+              "femaleVariant": "六街帮说：停得真好",
+              "maleVariant": "六街帮说：停得真好",
               "primaryKey": "7901847982540012376",
               "secondaryKey": "bowie_taunt_74"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "even a flathead drives cleaner",
-              "maleVariant": "even a flathead drives cleaner",
+              "femaleVariant": "连扁头都开得比你干净",
+              "maleVariant": "连扁头都开得比你干净",
               "primaryKey": "7901849082051640587",
               "secondaryKey": "bowie_taunt_75"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "just a heads up, your bumper left",
-              "maleVariant": "just a heads up, your bumper left",
+              "femaleVariant": "提醒一下，你的保险杠跑了",
+              "maleVariant": "提醒一下，你的保险杠跑了",
               "primaryKey": "7901850181563268798",
               "secondaryKey": "bowie_taunt_76"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "reminder: green means go, not stop",
-              "maleVariant": "reminder: green means go, not stop",
+              "femaleVariant": "提醒：绿灯是走，不是停",
+              "maleVariant": "提醒：绿灯是走，不是停",
               "primaryKey": "7901851281074897009",
               "secondaryKey": "bowie_taunt_77"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "here's a tip — yield to me",
-              "maleVariant": "here's a tip — yield to me",
+              "femaleVariant": "给你个建议——给我让路",
+              "maleVariant": "给你个建议——给我让路",
               "primaryKey": "7901843584493499532",
               "secondaryKey": "bowie_taunt_78"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your warranty just expired",
-              "maleVariant": "your warranty just expired",
+              "femaleVariant": "你的保修刚刚到期",
+              "maleVariant": "你的保修刚刚到期",
               "primaryKey": "7901844684005127743",
               "secondaryKey": "bowie_taunt_79"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "might wanna get that looked at",
-              "maleVariant": "might wanna get that looked at",
+              "femaleVariant": "你最好找人看看那个",
+              "maleVariant": "你最好找人看看那个",
               "primaryKey": "7908583590773108387",
               "secondaryKey": "bowie_taunt_80"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "customer satisfaction: guaranteed",
-              "maleVariant": "customer satisfaction: guaranteed",
+              "femaleVariant": "顾客满意度：保证",
+              "maleVariant": "顾客满意度：保证",
               "primaryKey": "7908582491261480176",
               "secondaryKey": "bowie_taunt_81"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "we value your feedback (we don't)",
-              "maleVariant": "we value your feedback (we don't)",
+              "femaleVariant": "我们重视您的反馈（才怪）",
+              "maleVariant": "我们重视您的反馈（才怪）",
               "primaryKey": "7908585789796364809",
               "secondaryKey": "bowie_taunt_82"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "please remain calm and pull over",
-              "maleVariant": "please remain calm and pull over",
+              "femaleVariant": "请保持冷静并靠边停车",
+              "maleVariant": "请保持冷静并靠边停车",
               "primaryKey": "7908584690284736598",
               "secondaryKey": "bowie_taunt_83"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "this has been a friendly demonstration",
-              "maleVariant": "this has been a friendly demonstration",
+              "femaleVariant": "以上是一次友好的演示",
+              "maleVariant": "以上是一次友好的演示",
               "primaryKey": "7908587988819621231",
               "secondaryKey": "bowie_taunt_84"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you've been selected for a free ramming",
-              "maleVariant": "you've been selected for a free ramming",
+              "femaleVariant": "您已被选中享受一次免费撞击",
+              "maleVariant": "您已被选中享受一次免费撞击",
               "primaryKey": "7908586889307993020",
               "secondaryKey": "bowie_taunt_85"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "don't forget to like and subscribe",
-              "maleVariant": "don't forget to like and subscribe",
+              "femaleVariant": "别忘了点赞和订阅",
+              "maleVariant": "别忘了点赞和订阅",
               "primaryKey": "7908590187842877653",
               "secondaryKey": "bowie_taunt_86"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "have a nice day, genuinely",
-              "maleVariant": "have a nice day, genuinely",
+              "femaleVariant": "祝你今天愉快，真心的",
+              "maleVariant": "祝你今天愉快，真心的",
               "primaryKey": "7908589088331249442",
               "secondaryKey": "bowie_taunt_87"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i'm already behind you",
-              "maleVariant": "i'm already behind you",
+              "femaleVariant": "我已经在你后面了",
+              "maleVariant": "我已经在你后面了",
               "primaryKey": "7908592386866134075",
               "secondaryKey": "bowie_taunt_88"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "don't bother with the rearview",
-              "maleVariant": "don't bother with the rearview",
+              "femaleVariant": "后视镜就别看了",
+              "maleVariant": "后视镜就别看了",
               "primaryKey": "7908591287354505864",
               "secondaryKey": "bowie_taunt_89"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "the next one's worse",
-              "maleVariant": "the next one's worse",
+              "femaleVariant": "下一下更狠",
+              "maleVariant": "下一下更狠",
               "primaryKey": "7907627015656754042",
               "secondaryKey": "bowie_taunt_90"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "you felt that one, didn't you",
-              "maleVariant": "you felt that one, didn't you",
+              "femaleVariant": "这一下你感觉到了吧？",
+              "maleVariant": "这一下你感觉到了吧？",
               "primaryKey": "7907628115168382253",
               "secondaryKey": "bowie_taunt_91"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "there's no garage deep enough",
-              "maleVariant": "there's no garage deep enough",
+              "femaleVariant": "再深的车库也藏不住你",
+              "maleVariant": "再深的车库也藏不住你",
               "primaryKey": "7907624816633497620",
               "secondaryKey": "bowie_taunt_92"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i drive where you sleep",
-              "maleVariant": "i drive where you sleep",
+              "femaleVariant": "你睡觉的地方我也照开",
+              "maleVariant": "你睡觉的地方我也照开",
               "primaryKey": "7907625916145125831",
               "secondaryKey": "bowie_taunt_93"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "brake all you want",
-              "maleVariant": "brake all you want",
+              "femaleVariant": "你尽管踩刹车",
+              "maleVariant": "你尽管踩刹车",
               "primaryKey": "7907622617610241198",
               "secondaryKey": "bowie_taunt_94"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i've got all night, choom",
-              "maleVariant": "i've got all night, choom",
+              "femaleVariant": "我有一整晚的时间，崇姆",
+              "maleVariant": "我有一整晚的时间，崇姆",
               "primaryKey": "7907623717121869409",
               "secondaryKey": "bowie_taunt_95"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "your engine block is mine",
-              "maleVariant": "your engine block is mine",
+              "femaleVariant": "你的引擎缸体归我了",
+              "maleVariant": "你的引擎缸体归我了",
               "primaryKey": "7907620418586984776",
               "secondaryKey": "bowie_taunt_96"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "keep driving. i dare you",
-              "maleVariant": "keep driving. i dare you",
+              "femaleVariant": "继续开啊。我谅你也不敢",
+              "maleVariant": "继续开啊。我谅你也不敢",
               "primaryKey": "7907621518098612987",
               "secondaryKey": "bowie_taunt_97"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "every red light is mine",
-              "maleVariant": "every red light is mine",
+              "femaleVariant": "每个红灯都是我的",
+              "maleVariant": "每个红灯都是我的",
               "primaryKey": "7907618219563728354",
               "secondaryKey": "bowie_taunt_98"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "i never miss twice",
-              "maleVariant": "i never miss twice",
+              "femaleVariant": "我从不失手第二次",
+              "maleVariant": "我从不失手第二次",
               "primaryKey": "7907619319075356565",
               "secondaryKey": "bowie_taunt_99"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "say goodnight to your suspension",
-              "maleVariant": "say goodnight to your suspension",
+              "femaleVariant": "跟你的悬挂说晚安吧",
+              "maleVariant": "跟你的悬挂说晚安吧",
               "primaryKey": "13041305587125996358",
               "secondaryKey": "bowie_taunt_100"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Enable mod",
-              "maleVariant": "Enable mod",
+              "femaleVariant": "启用模组",
+              "maleVariant": "启用模组",
               "primaryKey": "2143662024956131856",
               "secondaryKey": "BowieKnife99-Enable-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Turn the random ramming attacks on or off.",
-              "maleVariant": "Turn the random ramming attacks on or off.",
+              "femaleVariant": "开启或关闭随机的撞击攻击。",
+              "maleVariant": "开启或关闭随机的撞击攻击。",
               "primaryKey": "4326102803886100614",
               "secondaryKey": "BowieKnife99-Enable-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Show debug HUD",
-              "maleVariant": "Show debug HUD",
+              "femaleVariant": "显示调试HUD",
+              "maleVariant": "显示调试HUD",
               "primaryKey": "5611261748329956462",
               "secondaryKey": "BowieKnife99-Debug-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.",
-              "maleVariant": "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.",
+              "femaleVariant": "在屏幕上显示调试信息（撞击开始、目标选择、短信状态）。正常游戏时请关闭。",
+              "maleVariant": "在屏幕上显示调试信息（撞击开始、目标选择、短信状态）。正常游戏时请关闭。",
               "primaryKey": "9488054211642199624",
               "secondaryKey": "BowieKnife99-Debug-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Behavior",
-              "maleVariant": "Behavior",
+              "femaleVariant": "行为",
+              "maleVariant": "行为",
               "primaryKey": "7199784825471876842",
               "secondaryKey": "BowieKnife99-Cat-Behavior"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Attack chance",
-              "maleVariant": "Attack chance",
+              "femaleVariant": "攻击几率",
+              "maleVariant": "攻击几率",
               "primaryKey": "2567276510498431929",
               "secondaryKey": "BowieKnife99-Chance-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Probability an attack triggers on each check (0 = never, 1 = every check).",
-              "maleVariant": "Probability an attack triggers on each check (0 = never, 1 = every check).",
+              "femaleVariant": "每次检测触发攻击的概率（0＝从不，1＝每次）。",
+              "maleVariant": "每次检测触发攻击的概率（0＝从不，1＝每次）。",
               "primaryKey": "12705118755998484723",
               "secondaryKey": "BowieKnife99-Chance-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Check interval (s)",
-              "maleVariant": "Check interval (s)",
+              "femaleVariant": "检测间隔（秒）",
+              "maleVariant": "检测间隔（秒）",
               "primaryKey": "11504224705266917198",
               "secondaryKey": "BowieKnife99-Interval-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Seconds between attack checks. Lower = attacks happen more often.",
-              "maleVariant": "Seconds between attack checks. Lower = attacks happen more often.",
+              "femaleVariant": "攻击检测之间的秒数。越低＝攻击越频繁。",
+              "maleVariant": "攻击检测之间的秒数。越低＝攻击越频繁。",
               "primaryKey": "3168662332961832488",
               "secondaryKey": "BowieKnife99-Interval-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Cooldown (checks)",
-              "maleVariant": "Cooldown (checks)",
+              "femaleVariant": "冷却（检测次数）",
+              "maleVariant": "冷却（检测次数）",
               "primaryKey": "6351628774326012258",
               "secondaryKey": "BowieKnife99-Cooldown-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "How many check intervals to wait after an attack before another can trigger.",
-              "maleVariant": "How many check intervals to wait after an attack before another can trigger.",
+              "femaleVariant": "一次攻击后需等待多少次检测间隔，下一次才能触发。",
+              "maleVariant": "一次攻击后需等待多少次检测间隔，下一次才能触发。",
               "primaryKey": "14683624744769913524",
               "secondaryKey": "BowieKnife99-Cooldown-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Pursuit timeout (s)",
-              "maleVariant": "Pursuit timeout (s)",
+              "femaleVariant": "追击超时（秒）",
+              "maleVariant": "追击超时（秒）",
               "primaryKey": "4632948351712965706",
               "secondaryKey": "BowieKnife99-Timeout-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "How long Bowie chases before giving up if he never lands a hit.",
-              "maleVariant": "How long Bowie chases before giving up if he never lands a hit.",
+              "femaleVariant": "如果一直没撞到你，Bowie追击多久后放弃。",
+              "maleVariant": "如果一直没撞到你，Bowie追击多久后放弃。",
               "primaryKey": "15965431821875619260",
               "secondaryKey": "BowieKnife99-Timeout-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Max attacker distance (m)",
-              "maleVariant": "Max attacker distance (m)",
+              "femaleVariant": "攻击者最大距离（米）",
+              "maleVariant": "攻击者最大距离（米）",
               "primaryKey": "9306647328346220416",
               "secondaryKey": "BowieKnife99-Distance-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).",
-              "maleVariant": "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).",
+              "femaleVariant": "只有在你身后此距离内的车辆才会被选中（它们仍需约18米的助跑距离）。",
+              "maleVariant": "只有在你身后此距离内的车辆才会被选中（它们仍需约18米的助跑距离）。",
               "primaryKey": "11519557773511117206",
               "secondaryKey": "BowieKnife99-Distance-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Max height difference (m)",
-              "maleVariant": "Max height difference (m)",
+              "femaleVariant": "最大高度差（米）",
+              "maleVariant": "最大高度差（米）",
               "primaryKey": "3961924841682973632",
               "secondaryKey": "BowieKnife99-Height-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.",
-              "maleVariant": "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.",
+              "femaleVariant": "跳过与你高度差超过此值的车辆——避免选中上方桥梁或下方道路上的车。",
+              "maleVariant": "跳过与你高度差超过此值的车辆——避免选中上方桥梁或下方道路上的车。",
               "primaryKey": "5929952057061158102",
               "secondaryKey": "BowieKnife99-Height-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Attack from behind only",
-              "maleVariant": "Attack from behind only",
+              "femaleVariant": "仅从后方攻击",
+              "maleVariant": "仅从后方攻击",
               "primaryKey": "16940616017810024449",
               "secondaryKey": "BowieKnife99-RearOnly-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.",
-              "maleVariant": "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.",
+              "femaleVariant": "开启：只选中你身后的车辆，因此攻击者会从后方追上来（看起来更自然）。关闭（默认）：附近任何车辆都可能攻击，包括对向或侧向的车流。",
+              "maleVariant": "开启：只选中你身后的车辆，因此攻击者会从后方追上来（看起来更自然）。关闭（默认）：附近任何车辆都可能攻击，包括对向或侧向的车流。",
               "primaryKey": "5416742757585783547",
               "secondaryKey": "BowieKnife99-RearOnly-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Bump speed boost (m/s)",
-              "maleVariant": "Bump speed boost (m/s)",
+              "femaleVariant": "撞击加速（米/秒）",
+              "maleVariant": "撞击加速（米/秒）",
               "primaryKey": "2362180185579179461",
               "secondaryKey": "BowieKnife99-Bump-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.",
-              "maleVariant": "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.",
+              "femaleVariant": "当Bowie靠近时，会以此速度（米/秒）向前冲撞你。0＝不冲刺，仅激进驾驶。",
+              "maleVariant": "当Bowie靠近时，会以此速度（米/秒）向前冲撞你。0＝不冲刺，仅激进驾驶。",
               "primaryKey": "7529719699482486951",
               "secondaryKey": "BowieKnife99-Bump-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Audio",
-              "maleVariant": "Audio",
+              "femaleVariant": "音频",
+              "maleVariant": "音频",
               "primaryKey": "11712940302506155770",
               "secondaryKey": "BowieKnife99-Cat-Audio"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Play taunt sound on ram",
-              "maleVariant": "Play taunt sound on ram",
+              "femaleVariant": "撞击时播放嘲讽语音",
+              "maleVariant": "撞击时播放嘲讽语音",
               "primaryKey": "5377376972595605988",
               "secondaryKey": "BowieKnife99-RamSound-Name"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Play a voice line every time Bowie rams your car.",
-              "maleVariant": "Play a voice line every time Bowie rams your car.",
+              "femaleVariant": "每次Bowie撞击你的车时播放一句语音。",
+              "maleVariant": "每次Bowie撞击你的车时播放一句语音。",
               "primaryKey": "6202967043463660338",
               "secondaryKey": "BowieKnife99-RamSound-Desc"
             }

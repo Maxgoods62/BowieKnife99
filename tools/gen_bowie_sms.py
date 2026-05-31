@@ -10,10 +10,18 @@ import json, os, re
 # `convert_from_json` then yields the CR2W binaries (bowieknife99.journal / bowieknife99_onscreens.json)
 # alongside, which WolvenKit packs into BowieKnife99.archive.
 OUT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "source", "archive"))
-JDIR = os.path.join(OUT, "mod", "bowieknife99", "journal")
-ODIR = os.path.join(OUT, "mod", "bowieknife99", "onscreens", "en-us")
+JDIR  = os.path.join(OUT, "mod", "bowieknife99", "journal")
+OSDIR = os.path.join(OUT, "mod", "bowieknife99", "onscreens")   # per-locale subfolders created below
+TAUNTS_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "taunts")
+SETTINGS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "settings")
+REDS = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                     "..", "source", "resources", "r6", "scripts", "bowieknife99", "bowieknife99.reds"))
+# en-us is canonical (the TAUNTS list below + the English Mod Settings labels read from the .reds). The
+# rest read translations from tools/taunts/<locale>.txt and tools/settings/<locale>.txt (one line per
+# string, same order; a blank/missing line falls back to English). Add a locale here + those two .txt
+# files to ship a language — nothing else changes.
+LOCALES = ["en-us", "fr-fr", "de-de", "es-es", "it-it", "ru-ru", "jp-jp", "pl-pl", "zh-cn", "kr-kr"]
 os.makedirs(JDIR, exist_ok=True)
-os.makedirs(ODIR, exist_ok=True)
 
 CONTACT_ID   = "bowie"
 CONVO_ID     = "taunts"
@@ -125,6 +133,33 @@ TAUNTS = [
     "say goodnight to your suspension",
 ]
 
+# Mod Settings UI labels localize through the SAME onscreens system: the framework resolves each
+# category/displayName/description via GetLocalizedTextByKey(<string>) and falls back to the literal when
+# there's no entry — so the English label string IS the localization key. Pull them from the .reds (single
+# source of truth) so translating the settings page is just filling tools/settings/<locale>.txt.
+def extract_settings_strings(reds_path):
+    with open(reds_path, encoding="utf-8") as f:
+        src = f.read()
+    out = []
+    for _prop, val in re.findall(
+            r'@runtimeProperty\("ModSettings\.(category|displayName|description)",\s*"([^"]*)"\)', src):
+        if val and val not in out:
+            out.append(val)   # de-dup, keep first-seen order (stable for the per-locale line alignment)
+    return out
+
+# The .reds @runtimeProperty values are NAMESPACED keys (BowieKnife99-...), not display text — so keying
+# onscreens by them is collision-free. (Keying by the bare English labels once crashed the game: their
+# FNV-1a64 hashes collided with base-game localization entries.) SETTINGS_KEYS = those keys (from the
+# .reds); SETTINGS_EN = the matching English text, the canonical SOURCE hand-maintained in
+# tools/settings/en-us.txt, aligned to the same order. A namespaced key has NO English literal fallback,
+# so en-us must ship onscreens too (that's why en-us is included in the loop below).
+SETTINGS_KEYS = extract_settings_strings(REDS)
+SETTINGS_EN = open(os.path.join(SETTINGS_DIR, "en-us.txt"), encoding="utf-8").read().split("\n")
+while SETTINGS_EN and SETTINGS_EN[-1] == "":
+    SETTINGS_EN.pop()
+assert len(SETTINGS_EN) == len(SETTINGS_KEYS), \
+    f"tools/settings/en-us.txt has {len(SETTINGS_EN)} lines but the .reds has {len(SETTINGS_KEYS)} settings keys — re-align them"
+
 def fnv1a64(s):
     # CP2077 LocKey ID = FNV-1a 64-bit of the key string. GetText() (used by the phone's contact-row
     # preview) resolves text via this numeric id (the localizationString's unk1), so unk1 + the
@@ -231,7 +266,7 @@ journal = {
     },
 }
 
-# ---- onscreens ----
+# ---- onscreens (one file per locale; SAME keys/hashes across locales, only the text differs) ----
 def osentry(key, text):
     return {
         "$type": "localizationPersistenceOnScreenEntry",
@@ -241,42 +276,78 @@ def osentry(key, text):
         "secondaryKey": key,
     }
 
-os_entries = [osentry(CONTACT_NAME_KEY, CONTACT_NAME), osentry(BLANK_KEY, "")]
-os_entries += [osentry(f"bowie_taunt_{i+1}", t) for i, t in enumerate(TAUNTS)]
+def locale_lines(locale, canonical, dirpath, label):
+    """Per-locale strings aligned to `canonical`. en-us = canonical. Others read <dirpath>/<locale>.txt
+    (line i -> item i; a blank/missing line falls back to English via .strip(), which also drops CRLF \\r).
+    Bootstraps an English-filled template the first time so the file is ready to translate in place."""
+    if locale == "en-us":
+        return list(canonical)
+    path = os.path.join(dirpath, locale + ".txt")
+    if not os.path.isfile(path):
+        os.makedirs(dirpath, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("\n".join(canonical) + "\n")
+        print(f"bootstrapped {label} template (English-filled):", path)
+    with open(path, encoding="utf-8") as f:
+        lines = f.read().split("\n")
+    return [(lines[i].strip() if i < len(lines) and lines[i].strip() else canonical[i])
+            for i in range(len(canonical))]
 
-onscreens = {
-    "Header": header("bowieknife99_onscreens.json"),
-    "Data": {
-        "Version": 195,
-        "BuildVersion": 0,
-        "RootChunk": {
-            "$type": "JsonResource",
-            "cookingPlatform": "PLATFORM_None",
-            "root": {
-                "HandleId": "0",
-                "Data": {
-                    "$type": "localizationPersistenceOnScreenEntries",
-                    "entries": os_entries,
+def build_onscreens(taunts, settings):
+    entries = [osentry(CONTACT_NAME_KEY, CONTACT_NAME), osentry(BLANK_KEY, "")]   # name/title: not translated
+    entries += [osentry(f"bowie_taunt_{i+1}", t) for i, t in enumerate(taunts)]
+    # Mod Settings labels: namespaced KEY (collision-free) -> localized text (en-us text = English).
+    entries += [osentry(SETTINGS_KEYS[i], settings[i]) for i in range(len(SETTINGS_KEYS))]
+    return {
+        "Header": header("bowieknife99_onscreens.json"),
+        "Data": {
+            "Version": 195,
+            "BuildVersion": 0,
+            "RootChunk": {
+                "$type": "JsonResource",
+                "cookingPlatform": "PLATFORM_None",
+                "root": {
+                    "HandleId": "0",
+                    "Data": {
+                        "$type": "localizationPersistenceOnScreenEntries",
+                        "entries": entries,
+                    },
                 },
             },
         },
-    },
-}
+    }
 
+# refresh the taunts English reference (canonical = TAUNTS in this file). NOTE: settings/en-us.txt is the
+# canonical English SOURCE (read above into SETTINGS_EN, aligned to the .reds keys) — do NOT overwrite it.
+os.makedirs(TAUNTS_DIR, exist_ok=True)
+os.makedirs(SETTINGS_DIR, exist_ok=True)
+with open(os.path.join(TAUNTS_DIR, "en-us.txt"), "w", encoding="utf-8") as f:
+    f.write("\n".join(TAUNTS) + "\n")
+
+# journal: language-independent (references keys, not text) — written once
 jpath = os.path.join(JDIR, "bowieknife99.journal.json")
-opath = os.path.join(ODIR, "bowieknife99_onscreens.json.json")
 with open(jpath, "w", encoding="utf-8") as f:
     json.dump(journal, f, indent=2, ensure_ascii=False)
-with open(opath, "w", encoding="utf-8") as f:
-    json.dump(onscreens, f, indent=2, ensure_ascii=False)
+
+# onscreens: one CR2W-JSON source per locale
+opaths = []
+for locale in LOCALES:
+    taunts   = locale_lines(locale, TAUNTS,      TAUNTS_DIR,   "taunts")
+    settings = locale_lines(locale, SETTINGS_EN, SETTINGS_DIR, "settings")
+    odir = os.path.join(OSDIR, locale)
+    os.makedirs(odir, exist_ok=True)
+    opath = os.path.join(odir, "bowieknife99_onscreens.json.json")
+    with open(opath, "w", encoding="utf-8") as f:
+        json.dump(build_onscreens(taunts, settings), f, indent=2, ensure_ascii=False)
+    n_t = sum(1 for i, t in enumerate(taunts)   if t != TAUNTS[i])
+    n_s = sum(1 for i, s in enumerate(settings) if s != SETTINGS_EN[i])
+    opaths.append((opath, locale, n_t, n_s))
 
 # ---- keep the gameplay script's MsgCount() in lockstep with len(TAUNTS) ----
 # SendBowieSMS() rolls msg1..msgMsgCount(), so this literal MUST equal the number of authored
 # messages. Stamping it here makes this generator the single source of truth: editing TAUNTS and
 # re-running can never silently desync the script (too-high -> "entry NOT found"; too-low -> dead
 # taunts that never fire). Matches `return <N>;` on the MsgCount() line; leaves the comment intact.
-REDS = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                     "..", "source", "resources", "r6", "scripts", "bowieknife99", "bowieknife99.reds"))
 def stamp_msgcount(path, n):
     with open(path, encoding="utf-8") as f:
         src = f.read()
@@ -293,6 +364,9 @@ def stamp_msgcount(path, n):
 changed = stamp_msgcount(REDS, len(TAUNTS))
 
 print("wrote", jpath)
-print("wrote", opath)
+for opath, locale, n_t, n_s in opaths:
+    note = "canonical" if locale == "en-us" else \
+        f"{n_t}/{len(TAUNTS)} taunts + {n_s}/{len(SETTINGS_KEYS)} settings translated"
+    print(f"wrote {opath}  [{locale}: {note}]")
 print("MsgCount() in bowieknife99.reds:", "updated to" if changed else "already", len(TAUNTS))
 print("messages:", len(TAUNTS), "realPaths: contacts/%s/%s/msg1..msg%d" % (CONTACT_ID, CONVO_ID, len(TAUNTS)))

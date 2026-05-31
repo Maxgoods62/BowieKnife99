@@ -1,0 +1,24 @@
+Activar el mod
+Activa o desactiva los ataques de embestida aleatorios.
+Mostrar HUD de depuración
+Muestra información de depuración en pantalla (inicio de embestida, selección, estado de los SMS). Desactívalo para jugar normalmente.
+Comportamiento
+Probabilidad de ataque
+Probabilidad de que se desencadene un ataque en cada comprobación (0 = nunca, 1 = siempre).
+Intervalo de comprobación (s)
+Segundos entre comprobaciones de ataque. Más bajo = ataques más frecuentes.
+Tiempo de recarga (comprobaciones)
+Cuántos intervalos de comprobación esperar tras un ataque antes de que pueda desencadenarse otro.
+Tiempo de persecución (s)
+Cuánto tiempo persigue Bowie antes de rendirse si nunca llega a embestir.
+Distancia máx. del atacante (m)
+Solo se eligen coches que estén a esta distancia por detrás de ti (aun así necesitan ~18 m de carrerilla).
+Diferencia máx. de altura (m)
+Descarta coches cuya altura difiera de la tuya más de este valor — evita coches en un puente por encima o en una carretera por debajo.
+Atacar solo por detrás
+Activado: solo se eligen coches detrás de ti, así que el atacante se acerca desde atrás (más natural). Desactivado (por defecto): cualquier coche cercano puede atacar, incluidos los de sentido contrario o laterales.
+Impulso de velocidad al embestir (m/s)
+Cuando Bowie se acerca, se lanza hacia delante a esta velocidad (m/s) para embestirte. 0 = sin impulso, solo conducción agresiva.
+Audio
+Reproducir frase burlona al embestir
+Reproduce una frase de voz cada vez que Bowie embiste tu coche.

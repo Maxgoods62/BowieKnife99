@@ -506,88 +506,88 @@ public class BowieKnifeSystem extends ScriptableSystem {
 public class BowieKnifeSettings extends IScriptable {
   // enabled + showDebug have no category, so they list at the top of the page, above "Behavior".
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.displayName", "Enable mod")
-  @runtimeProperty("ModSettings.description", "Turn the random ramming attacks on or off.")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Enable-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Enable-Desc")
   public let enabled: Bool = true;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.displayName", "Show debug HUD")
-  @runtimeProperty("ModSettings.description", "Show on-screen debug lines (ram start, pick counts, SMS status). Off for normal play.")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Debug-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Debug-Desc")
   public let showDebug: Bool = false;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Attack chance")
-  @runtimeProperty("ModSettings.description", "Probability an attack triggers on each check (0 = never, 1 = every check).")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Chance-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Chance-Desc")
   @runtimeProperty("ModSettings.min", "0.0")
   @runtimeProperty("ModSettings.max", "1.0")
   @runtimeProperty("ModSettings.step", "0.05")
   public let spawnChance: Float = 0.05;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Check interval (s)")
-  @runtimeProperty("ModSettings.description", "Seconds between attack checks. Lower = attacks happen more often.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Interval-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Interval-Desc")
   @runtimeProperty("ModSettings.min", "10.0")
   @runtimeProperty("ModSettings.max", "600.0")
   @runtimeProperty("ModSettings.step", "5.0")
   public let schedPeriod: Float = 90.0;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Cooldown (checks)")
-  @runtimeProperty("ModSettings.description", "How many check intervals to wait after an attack before another can trigger.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Cooldown-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Cooldown-Desc")
   @runtimeProperty("ModSettings.min", "0")
   @runtimeProperty("ModSettings.max", "25")
   @runtimeProperty("ModSettings.step", "1")
   public let cooldownFires: Int32 = 20;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Pursuit timeout (s)")
-  @runtimeProperty("ModSettings.description", "How long Bowie chases before giving up if he never lands a hit.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Timeout-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Timeout-Desc")
   @runtimeProperty("ModSettings.min", "10.0")
   @runtimeProperty("ModSettings.max", "120.0")
   @runtimeProperty("ModSettings.step", "1.0")
   public let pursuitTimeout: Float = 30.0;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Max attacker distance (m)")
-  @runtimeProperty("ModSettings.description", "Only cars within this distance behind you can be chosen (they still need ~18 m of runway).")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Distance-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Distance-Desc")
   @runtimeProperty("ModSettings.min", "20.0")
   @runtimeProperty("ModSettings.max", "120.0")
   @runtimeProperty("ModSettings.step", "5.0")
   public let maxDistance: Float = 50.0;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Max height difference (m)")
-  @runtimeProperty("ModSettings.description", "Skip cars whose elevation differs from yours by more than this — avoids cars on a bridge above or a road below.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Height-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Height-Desc")
   @runtimeProperty("ModSettings.min", "2.0")
   @runtimeProperty("ModSettings.max", "20.0")
   @runtimeProperty("ModSettings.step", "1.0")
   public let maxHeightDelta: Float = 6.0;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Attack from behind only")
-  @runtimeProperty("ModSettings.description", "On: only cars behind you are chosen, so the attacker chases up from the rear (natural-looking). Off (default): any nearby car can attack, including oncoming/side traffic.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-RearOnly-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-RearOnly-Desc")
   public let rearOnly: Bool = false;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Behavior")
-  @runtimeProperty("ModSettings.displayName", "Bump speed boost (m/s)")
-  @runtimeProperty("ModSettings.description", "When Bowie gets close he surges forward by this much (m/s) to bump you. 0 = no surge, just aggressive driving.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Behavior")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-Bump-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-Bump-Desc")
   @runtimeProperty("ModSettings.min", "0.0")
   @runtimeProperty("ModSettings.max", "75.0")
   @runtimeProperty("ModSettings.step", "1.0")
   public let bumpBoost: Float = 15.0;
 
   @runtimeProperty("ModSettings.mod", "Bowie Knife99")
-  @runtimeProperty("ModSettings.category", "Audio")
-  @runtimeProperty("ModSettings.displayName", "Play taunt sound on ram")
-  @runtimeProperty("ModSettings.description", "Play a voice line every time Bowie rams your car.")
+  @runtimeProperty("ModSettings.category", "BowieKnife99-Cat-Audio")
+  @runtimeProperty("ModSettings.displayName", "BowieKnife99-RamSound-Name")
+  @runtimeProperty("ModSettings.description", "BowieKnife99-RamSound-Desc")
   public let ramSound: Bool = true;
 }
 

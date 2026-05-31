@@ -1,0 +1,24 @@
+Mod aktivieren
+Schaltet die zufälligen Rammattacken ein oder aus.
+Debug-HUD anzeigen
+Zeigt Debug-Infos auf dem Bildschirm (Ramm-Start, Auswahl, SMS-Status). Im normalen Spiel ausgeschaltet lassen.
+Verhalten
+Angriffschance
+Wahrscheinlichkeit, dass bei jeder Prüfung ein Angriff ausgelöst wird (0 = nie, 1 = jedes Mal).
+Prüfintervall (s)
+Sekunden zwischen den Angriffsprüfungen. Niedriger = häufigere Angriffe.
+Abklingzeit (Prüfungen)
+Wie viele Prüfintervalle nach einem Angriff gewartet wird, bevor ein weiterer ausgelöst werden kann.
+Verfolgungs-Timeout (s)
+Wie lange Bowie verfolgt, bevor er aufgibt, falls er nie trifft.
+Max. Angreifer-Distanz (m)
+Nur Fahrzeuge innerhalb dieser Distanz hinter dir können ausgewählt werden (sie brauchen trotzdem ~18 m Anlauf).
+Max. Höhenunterschied (m)
+Überspringt Fahrzeuge, deren Höhe um mehr als diesen Wert von deiner abweicht — vermeidet Autos auf einer Brücke darüber oder einer Straße darunter.
+Nur von hinten angreifen
+Ein: Nur Fahrzeuge hinter dir werden ausgewählt, der Angreifer holt also von hinten auf (wirkt natürlicher). Aus (Standard): jedes Fahrzeug in der Nähe kann angreifen, auch Gegenverkehr oder von der Seite.
+Aufprall-Geschwindigkeitsschub (m/s)
+Wenn Bowie nah herankommt, schießt er um diesen Wert (m/s) nach vorne, um dich zu rammen. 0 = kein Schub, nur aggressives Fahren.
+Audio
+Spott-Spruch beim Rammen abspielen
+Spielt bei jedem Rammstoß von Bowie eine Sprachausgabe ab.
